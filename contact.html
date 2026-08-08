@@ -1,0 +1,1676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Kuje Area Council, FCT Abuja - Get in touch for inquiries, feedback, complaints, and emergency contacts.">
+  <meta name="theme-color" content="#008751">
+  <meta property="og:title" content="Contact Us | Kuje Area Council, FCT Abuja">
+  <meta property="og:description" content="Reach out to Kuje Area Council for inquiries, feedback, and emergency contacts.">
+  <title>Contact & Feedback – Kuje Area Council | FCT Abuja</title>
+
+  <!-- Favicon Asset -->
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <style>
+    :root {
+      --primary: #008751;
+      --primary-dark: #005c37;
+      --primary-light: #e8f5e9;
+      --primary-glow: rgba(0, 135, 81, 0.3);
+      --secondary: #1f2937;
+      --secondary-light: #374151;
+      --accent: #d97706;
+      --accent-light: #fef3c7;
+      --light-bg: #f8fafc;
+      --white: #ffffff;
+      --text: #334155;
+      --text-light: #64748b;
+      --text-muted: #94a3b8;
+      --border: #e2e8f0;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+      --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.12);
+      --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.15);
+      --transition-fast: 0.2s ease;
+      --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* ========== SCROLL TO TOP BUTTON ========== */
+    .scroll-top-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 48px;
+      height: 48px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      font-size: 1.3rem;
+      cursor: pointer;
+      z-index: 999;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: var(--transition-smooth);
+      box-shadow: 0 4px 15px var(--primary-glow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .scroll-top-btn.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .scroll-top-btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0, 135, 81, 0.5);
+    }
+
+    /* ========== TOP UTILITY BAR ========== */
+    .top-bar {
+      background: linear-gradient(135deg, var(--secondary) 0%, #111827 100%);
+      color: #cbd5e1;
+      font-size: 0.82rem;
+      padding: 0;
+      position: relative;
+      z-index: 1001;
+    }
+
+    .top-bar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 5%;
+      max-width: 1400px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .top-bar-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .top-bar-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition-fast);
+    }
+
+    .top-bar-item:hover {
+      color: white;
+    }
+
+    .top-bar-icon {
+      font-size: 0.9rem;
+      color: var(--primary);
+      filter: brightness(1.3);
+    }
+
+    .top-bar-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .govt-badge {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    /* ========== HEADER & NAVIGATION ========== */
+    header {
+      background-color: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid transparent;
+      transition: var(--transition-smooth);
+    }
+
+    header.scrolled {
+      border-bottom-color: var(--border);
+      box-shadow: var(--shadow-md);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 5%;
+      max-width: 1400px;
+      margin: 0 auto;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-shrink: 0;
+    }
+
+    .logo-img-wrapper {
+      position: relative;
+      width: 52px;
+      height: 52px;
+      flex-shrink: 0;
+    }
+
+    .logo-img {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--primary-light);
+      transition: var(--transition-smooth);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo:hover .logo-img {
+      transform: scale(1.05);
+      border-color: var(--primary);
+      box-shadow: 0 4px 15px var(--primary-glow);
+    }
+
+    .logo-pulse {
+      position: absolute;
+      top: -3px;
+      right: -3px;
+      width: 14px;
+      height: 14px;
+      background: var(--primary);
+      border-radius: 50%;
+      border: 2px solid white;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 var(--primary-glow); }
+      50% { box-shadow: 0 0 0 12px transparent; }
+    }
+
+    .logo-text h1 {
+      font-size: 1.15rem;
+      color: var(--secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .logo-text p {
+      font-size: 0.72rem;
+      color: var(--primary);
+      font-weight: 700;
+      letter-spacing: 1.5px;
+    }
+
+    /* Navigation */
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 5px;
+      align-items: center;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav a {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--secondary);
+      padding: 8px 14px;
+      border-radius: var(--radius-sm);
+      transition: var(--transition-fast);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    nav a:hover {
+      background: var(--primary-light);
+      color: var(--primary);
+    }
+
+    nav a.nav-active {
+      background: var(--primary);
+      color: white;
+    }
+
+    .nav-arrow {
+      font-size: 0.6rem;
+      transition: var(--transition-fast);
+    }
+
+    nav li:hover .nav-arrow {
+      transform: rotate(180deg);
+    }
+
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: white;
+      min-width: 220px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-xl);
+      padding: 8px 0;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: var(--transition-smooth);
+      border: 1px solid var(--border);
+      z-index: 100;
+    }
+
+    nav li:hover .dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(5px);
+    }
+
+    .dropdown a {
+      padding: 10px 18px;
+      font-size: 0.85rem;
+      border-radius: 0;
+      font-weight: 500;
+      display: block;
+    }
+
+    .dropdown a:hover {
+      background: var(--light-bg);
+      padding-left: 22px;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 2px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 8px 10px;
+      cursor: pointer;
+      transition: var(--transition-fast);
+    }
+
+    .menu-toggle:hover {
+      border-color: var(--primary);
+      background: var(--primary-light);
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 24px;
+      height: 2.5px;
+      background: var(--secondary);
+      margin: 5px 0;
+      border-radius: 2px;
+      transition: var(--transition-smooth);
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    .menu-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+    .menu-toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* ========== PAGE HERO BANNER ========== */
+    .page-hero {
+      background: linear-gradient(135deg, rgba(0, 92, 55, 0.92) 0%, rgba(31, 41, 55, 0.88) 100%),
+                  url('assets/images/hero-bg.jpg') center/cover no-repeat;
+      color: white;
+      padding: 70px 5%;
+      text-align: center;
+      position: relative;
+    }
+
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    .page-hero-content {
+      position: relative;
+      z-index: 2;
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .page-hero-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(8px);
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .page-hero h2 {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 800;
+      margin-bottom: 12px;
+      text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .page-hero p {
+      font-size: 1.1rem;
+      color: #e2e8f0;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* ========== BREADCRUMB ========== */
+    .breadcrumb {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 5%;
+    }
+
+    .breadcrumb-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .breadcrumb-inner a {
+      color: var(--primary);
+      font-weight: 600;
+      transition: var(--transition-fast);
+    }
+
+    .breadcrumb-inner a:hover {
+      color: var(--primary-dark);
+      text-decoration: underline;
+    }
+
+    .breadcrumb-separator {
+      margin: 0 8px;
+      color: var(--text-muted);
+    }
+
+    /* ========== CONTACT SECTION ========== */
+    .contact-section {
+      padding: 50px 5% 70px;
+    }
+
+    .contact-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 40px;
+    }
+
+    /* Contact Info Cards */
+    .contact-info-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact-info-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 25px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+      transition: var(--transition-smooth);
+    }
+
+    .contact-info-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-3px);
+    }
+
+    .contact-card-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--primary-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      color: var(--primary);
+    }
+
+    .contact-info-card h3 {
+      font-size: 1.1rem;
+      color: var(--secondary);
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .contact-info-card p,
+    .contact-info-card .info-line {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      margin-bottom: 8px;
+      line-height: 1.5;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .contact-info-card .info-line strong {
+      color: var(--secondary);
+      min-width: 70px;
+      font-weight: 600;
+    }
+
+    .contact-info-card .info-line a {
+      color: var(--primary);
+      font-weight: 500;
+      transition: var(--transition-fast);
+    }
+
+    .contact-info-card .info-line a:hover {
+      color: var(--primary-dark);
+      text-decoration: underline;
+    }
+
+    .working-hours-list {
+      list-style: none;
+      margin-top: 8px;
+    }
+
+    .working-hours-list li {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 0;
+      font-size: 0.85rem;
+      border-bottom: 1px dashed var(--border);
+    }
+
+    .working-hours-list li:last-child {
+      border-bottom: none;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* Contact Form */
+    .contact-form-wrapper {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 35px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border);
+    }
+
+    .contact-form-wrapper h2 {
+      font-size: 1.5rem;
+      color: var(--secondary);
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+
+    .contact-form-wrapper .form-subtitle {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      margin-bottom: 25px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--secondary);
+    }
+
+    .form-group label .required {
+      color: #dc2626;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      padding: 12px 16px;
+      border: 2px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-size: 0.95rem;
+      font-family: inherit;
+      color: var(--text);
+      background: var(--light-bg);
+      transition: var(--transition-fast);
+      width: 100%;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 4px var(--primary-glow);
+      background: var(--white);
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: var(--text-muted);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 140px;
+    }
+
+    .form-group select {
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23334155' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+      padding-right: 40px;
+    }
+
+    .btn-submit {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 36px;
+      background: var(--primary);
+      color: white;
+      font-weight: 700;
+      font-size: 1rem;
+      border: 2px solid var(--primary);
+      border-radius: 50px;
+      cursor: pointer;
+      transition: var(--transition-bounce);
+      width: 100%;
+      justify-content: center;
+    }
+
+    .btn-submit:hover {
+      background: var(--primary-dark);
+      border-color: var(--primary-dark);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(0, 135, 81, 0.4);
+    }
+
+    .btn-submit .btn-icon {
+      transition: var(--transition-fast);
+    }
+
+    .btn-submit:hover .btn-icon {
+      transform: translateX(4px);
+    }
+
+    /* Success/Error Message */
+    .form-message {
+      display: none;
+      padding: 14px 18px;
+      border-radius: var(--radius-sm);
+      margin-top: 15px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    .form-message.success {
+      display: block;
+      background: #f0fdf4;
+      color: #166534;
+      border: 1px solid #bbf7d0;
+    }
+
+    .form-message.error {
+      display: block;
+      background: #fef2f2;
+      color: #991b1b;
+      border: 1px solid #fecaca;
+    }
+
+    /* ========== MAP SECTION ========== */
+    .map-section {
+      padding: 0 5% 60px;
+    }
+
+    .map-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border);
+    }
+
+    .map-header {
+      padding: 20px 25px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .map-header .map-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--primary-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      color: var(--primary);
+    }
+
+    .map-header h3 {
+      font-size: 1.1rem;
+      color: var(--secondary);
+      font-weight: 700;
+    }
+
+    .map-placeholder {
+      width: 100%;
+      height: 400px;
+      background: linear-gradient(135deg, #e8f5e9 0%, #f0fdf4 50%, #dcfce7 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-light);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .map-placeholder::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23008751' fill-opacity='0.05'%3E%3Cpath d='M0 0h40v40H0z'/%3E%3Ccircle cx='20' cy='20' r='2' fill-opacity='0.1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    .map-placeholder .map-pin {
+      font-size: 3.5rem;
+      margin-bottom: 15px;
+      animation: bounce 2s infinite;
+      position: relative;
+      z-index: 1;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    .map-placeholder p {
+      position: relative;
+      z-index: 1;
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--secondary);
+      margin-bottom: 5px;
+    }
+
+    .map-placeholder span {
+      position: relative;
+      z-index: 1;
+      font-size: 0.85rem;
+      color: var(--text-light);
+    }
+
+    .map-placeholder iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      z-index: 2;
+    }
+
+    /* ========== EMERGENCY CONTACTS ========== */
+    .emergency-section {
+      padding: 0 5% 60px;
+    }
+
+    .emergency-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .emergency-header {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .emergency-header .section-label {
+      display: inline-block;
+      color: #dc2626;
+      font-weight: 700;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .emergency-header h2 {
+      font-size: 2rem;
+      color: var(--secondary);
+      font-weight: 800;
+    }
+
+    .emergency-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .emergency-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 25px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+      border-left: 4px solid #dc2626;
+      transition: var(--transition-smooth);
+    }
+
+    .emergency-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-4px);
+    }
+
+    .emergency-card h4 {
+      font-size: 1rem;
+      color: var(--secondary);
+      margin-bottom: 10px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .emergency-card h4 .em-icon {
+      font-size: 1.2rem;
+    }
+
+    .emergency-card p {
+      font-size: 0.88rem;
+      color: var(--text-light);
+      margin-bottom: 6px;
+    }
+
+    .emergency-card .em-phone {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #dc2626;
+      display: block;
+      margin-top: 8px;
+    }
+
+    .emergency-card .em-phone a {
+      color: #dc2626;
+      transition: var(--transition-fast);
+    }
+
+    .emergency-card .em-phone a:hover {
+      color: #991b1b;
+      text-decoration: underline;
+    }
+
+    /* ========== FOOTER ========== */
+    footer {
+      background: linear-gradient(180deg, var(--secondary) 0%, #111827 100%);
+      color: #cbd5e1;
+      padding: 60px 5% 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+      gap: 40px;
+      margin-bottom: 40px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .footer-col h4 {
+      color: var(--white);
+      margin-bottom: 20px;
+      font-size: 1rem;
+      font-weight: 700;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .footer-col h4::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 3px;
+      background: var(--primary);
+      border-radius: 3px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col ul a {
+      font-size: 0.88rem;
+      transition: var(--transition-fast);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: #9ca3af;
+    }
+
+    .footer-col ul a:hover {
+      color: var(--white);
+      padding-left: 6px;
+    }
+
+    .footer-about-text {
+      font-size: 0.85rem;
+      color: #9ca3af;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    .tax-download-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 10px 16px;
+      border-radius: var(--radius-sm);
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.85rem;
+      transition: var(--transition-smooth);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .tax-download-link:hover {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 20px 0;
+      text-align: center;
+      font-size: 0.82rem;
+      color: #6b7280;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* ========== RESPONSIVE DESIGN ========== */
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .contact-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      .contact-info-sidebar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        box-shadow: var(--shadow-lg);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      nav.open {
+        max-height: 500px;
+        overflow-y: auto;
+      }
+
+      nav ul {
+        flex-direction: column;
+        padding: 15px 5%;
+        gap: 5px;
+      }
+
+      nav a {
+        padding: 12px 15px;
+        border-radius: var(--radius-sm);
+      }
+
+      .dropdown {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        border: none;
+        padding-left: 20px;
+        display: none;
+      }
+
+      nav li:hover .dropdown {
+        display: block;
+      }
+
+      .contact-info-sidebar {
+        grid-template-columns: 1fr;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .page-hero {
+        padding: 50px 5%;
+      }
+
+      .map-placeholder {
+        height: 300px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .top-bar-right {
+        display: none;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .page-hero h2 {
+        font-size: 1.6rem;
+      }
+
+      .contact-form-wrapper {
+        padding: 20px;
+      }
+
+      .emergency-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .map-placeholder {
+        height: 250px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--primary);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+  <!-- ==================== SCROLL TO TOP ==================== -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+  <!-- ==================== TOP BAR ==================== -->
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="top-bar-left">
+        <div class="top-bar-item">
+          <span class="top-bar-icon">📞</span>
+          <span>+234 9 000 0000</span>
+        </div>
+        <div class="top-bar-item">
+          <span class="top-bar-icon">🕐</span>
+          <span>Mon - Fri: 8:00 AM - 4:00 PM</span>
+        </div>
+        <div class="top-bar-item">
+          <span class="top-bar-icon">📍</span>
+          <span>Kuje, FCT Abuja, Nigeria</span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <span class="govt-badge">🇳🇬 Federal Republic of Nigeria</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== HEADER ==================== -->
+  <header id="mainHeader">
+    <div class="nav-container">
+      <a href="/" class="logo" aria-label="Kuje Area Council Home">
+        <div class="logo-img-wrapper">
+          <img src="assets/images/logo.jpeg" alt="Kuje Area Council Official Seal" class="logo-img">
+          <span class="logo-pulse"></span>
+        </div>
+        <div class="logo-text">
+          <h1>Kuje Area Council</h1>
+          <p>FCT – ABUJA</p>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="navMenu" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li>
+            <a href="/about-us.html">About Us <span class="nav-arrow">▾</span></a>
+            <div class="dropdown">
+              <a href="/about-us/history">Our History</a>
+              <a href="/about-us/chairman">Executive Chairman</a>
+              <a href="/about-us/council-members">Council Members</a>
+              <a href="/about-us/wards">Wards & Districts</a>
+            </div>
+          </li>
+          <li><a href="/services">Services</a></li>
+          <li>
+            <a href="/departments">Departments <span class="nav-arrow">▾</span></a>
+            <div class="dropdown">
+              <a href="/departments/administration-and-general-services">Admin & General Services</a>
+              <a href="/departments/agriculture-and-natural-resources">Agriculture & Resources</a>
+              <a href="/departments/education-and-social-development">Education & Social Dev.</a>
+              <a href="/departments/finance-and-accounts">Finance & Accounts</a>
+              <a href="/departments/environmental-services">Environmental Services</a>
+            </div>
+          </li>
+          <li><a href="/governance-and-strategy">Governance</a></li>
+          <li><a href="/news">News</a></li>
+          <li><a href="/faqs.html">FAQs</a></li>
+          <li><a href="/contact.html" class="nav-active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <!-- ==================== PAGE HERO BANNER ==================== -->
+   <section class="page-hero" aria-labelledby="page-hero-heading" style="background-image: url('/assets/images/hero.jpeg'); background-size: cover; background-position: center;">
+  <div class="page-hero-content">
+    <span class="page-hero-badge">📬 Get In Touch</span>
+    <h2 id="page-hero-heading">Contact & Feedback</h2>
+    <p>We welcome your inquiries, suggestions, and feedback. Our team is dedicated to serving the residents and visitors of Kuje Area Council.</p>
+  </div>
+</section>
+
+<!-- ==================== BREADCRUMB ==================== -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="/">Home</a>
+    <span class="breadcrumb-separator" aria-hidden="true">›</span>
+    <span aria-current="page">Contact & Feedback</span>
+  </div>
+</nav>
+
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="contact-section" aria-labelledby="contact-heading">
+      <div class="contact-container">
+        <!-- Left Sidebar: Contact Info Cards -->
+        <div class="contact-info-sidebar">
+          <!-- Address Card -->
+          <div class="contact-info-card">
+            <div class="contact-card-icon">📍</div>
+            <h3>Office Address</h3>
+            <p>Kuje Area Council Secretariat<br>Secretariat Road, Kuje<br>Federal Capital Territory<br>Abuja, Nigeria</p>
+          </div>
+
+          <!-- Phone Numbers Card -->
+          <div class="contact-info-card">
+            <div class="contact-card-icon">📞</div>
+            <h3>Phone Numbers</h3>
+            <div class="info-line">
+              <strong>Helpline:</strong>
+              <a href="tel:+2347015676309">+2347015676309</a>
+            </div>
+            <div class="info-line">
+              <strong>Executive:</strong>
+              <a href="tel:+2348000000000">+234 800 000 0000</a>
+            </div>
+            <div class="info-line">
+              <strong>Revenue:</strong>
+              <a href="tel:+23490000001">+234 9 000 0001</a>
+            </div>
+          </div>
+
+          <!-- Email Addresses Card -->
+          <div class="contact-info-card">
+            <div class="contact-card-icon">📧</div>
+            <h3>Email Addresses</h3>
+            <div class="info-line">
+              <strong>General:</strong>
+              <a href="mailto:info@kujeareacouncil.gov.ng">info@kujeareacouncil.gov.ng</a>
+            </div>
+            <div class="info-line">
+              <strong>Revenue:</strong>
+              <a href="mailto:revenue@kujeareacouncil.gov.ng">revenue@kujeareacouncil.gov.ng</a>
+            </div>
+            <div class="info-line">
+              <strong>Media:</strong>
+              <a href="mailto:press@kujeareacouncil.gov.ng">press@kujeareacouncil.gov.ng</a>
+            </div>
+          </div>
+
+          <!-- Working Hours Card -->
+          <div class="contact-info-card">
+            <div class="contact-card-icon">🕐</div>
+            <h3>Working Hours</h3>
+            <ul class="working-hours-list">
+              <li><span>Monday – Friday</span><span>8:00 AM – 4:00 PM</span></li>
+              <li><span>Saturday – Sunday</span><span>Closed</span></li>
+              <li><span>Public Holidays</span><span>Closed</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right Side: Contact Form -->
+        <div class="contact-form-wrapper" id="contactFormWrapper">
+          <h2 id="contact-heading">Send Us a Message</h2>
+          <p class="form-subtitle">Fill out the form below and we will get back to you as soon as possible.</p>
+
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Full Name <span class="required">*</span></label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+234 000 000 0000">
+              </div>
+              <div class="form-group">
+                <label for="department">Department / Category <span class="required">*</span></label>
+                <select id="department" name="department" required>
+                  <option value="">Select a department...</option>
+                  <option value="general">General Enquiry</option>
+                  <option value="tax-revenue">Tax / Revenue</option>
+                  <option value="agriculture">Agriculture & Rural Development</option>
+                  <option value="health">Health Services</option>
+                  <option value="works-housing">Works & Housing</option>
+                  <option value="education">Education & Social Development</option>
+                  <option value="environment">Environmental Services</option>
+                  <option value="complaints">Complaints & Grievances</option>
+                  <option value="media">Media / Press Relations</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject <span class="required">*</span></label>
+              <input type="text" id="subject" name="subject" placeholder="Brief subject of your message" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message / Request Details <span class="required">*</span></label>
+              <textarea id="message" name="message" placeholder="Please provide detailed information about your inquiry or feedback..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">
+              Send Message <span class="btn-icon">→</span>
+            </button>
+
+            <div class="form-message" id="formMessage"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== MAP SECTION ==================== -->
+    <section class="map-section" aria-labelledby="map-heading">
+      <div class="map-container">
+        <div class="map-header">
+          <div class="map-icon">🗺️</div>
+          <h3 id="map-heading">Our Location – Kuje Area Council Secretariat</h3>
+        </div>
+        <div class="map-placeholder" id="mapPlaceholder">
+          <!-- 
+            REPLACE WITH ACTUAL GOOGLE MAPS EMBED CODE:
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.XXXXX!2d7.XXXXX!3d8.XXXXX!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sKuje%20Area%20Council%20Secretariat!5e0!3m2!1sen!2sng!4v1690000000000"
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          -->
+          <div class="map-pin">📍</div>
+          <p>Kuje Area Council Secretariat</p>
+          <span>Secretariat Road, Kuje, FCT Abuja, Nigeria</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EMERGENCY CONTACTS ==================== -->
+    <section class="emergency-section" aria-labelledby="emergency-heading">
+      <div class="emergency-container">
+        <div class="emergency-header">
+          <span class="section-label">⚡ Quick Response</span>
+          <h2 id="emergency-heading">Emergency & Quick Contacts</h2>
+        </div>
+
+        <div class="emergency-grid">
+          <!-- Police -->
+          <div class="emergency-card">
+            <h4><span class="em-icon">🚔</span> Kuje Divisional Police Command</h4>
+            <p>For emergencies, crime reporting, and security concerns within Kuje Area Council.</p>
+            <span class="em-phone"><a href="tel: +2348061581938 ">+2348061581938</a></span>
+            <p style="font-size:0.8rem; margin-top:5px;">Available 24/7</p>
+          </div>
+
+          <!-- Fire Service -->
+          <div class="emergency-card">
+            <h4><span class="em-icon">🚒</span> FCT Fire Service – Kuje Station</h4>
+            <p>Fire outbreaks, rescue operations, and fire safety inquiries.</p>
+            <span class="em-phone"><a href="tel:+2348032003557">+2348032003557</a></span>
+            <p style="font-size:0.8rem; margin-top:5px;">Available 24/7</p>
+          </div>
+
+          <!-- Healthcare -->
+          <div class="emergency-card">
+            <h4><span class="em-icon">🏥</span> Primary Healthcare Response</h4>
+            <p>Kuje Primary Health Care Center – medical emergencies and health advisories.</p>
+            <span class="em-phone"><a href="tel:+2348097520012">+2348097520012</a></span>
+            <p style="font-size:0.8rem; margin-top:5px;">Available 24/7</p>
+          </div>
+
+          <!-- Emergency Hotline -->
+          <div class="emergency-card">
+            <h4><span class="em-icon">🆘</span> National Emergency Number</h4>
+            <p>Nigeria's unified emergency toll-free number for all emergency services.</p>
+            <span class="em-phone"><a href="tel:112">112</a></span>
+            <p style="font-size:0.8rem; margin-top:5px;">Toll-Free | Available 24/7</p>
+          </div>
+
+          <!-- Council Security -->
+          <div class="emergency-card">
+            <h4><span class="em-icon">🛡️</span> Council Security Unit</h4>
+            <p>Local council security personnel for community safety and incident reporting.</p>
+            <span class="em-phone"><a href="tel:+2348050802083">+2348050802083</a></span>
+            <p style="font-size:0.8rem; margin-top:5px;">Mon-Sun: 6AM – 10PM</p>
+          </div>
+
+          <!-- Environmental Emergency -->
+          <div class="emergency-card">
+            <h4><span class="em-icon">🌳</span> Environmental Emergency</h4>
+            <p>Flooding, waste management emergencies, and environmental hazard reporting.</p>
+            <span class="em-phone"><a href="tel:+2348050802083">+2348050802083</a></span>
+            <p style="font-size:0.8rem; margin-top:5px;">Mon-Fri: 8AM – 4PM</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Kuje Area Council</h4>
+        <p class="footer-about-text">
+          Official portal of Kuje Local Government Secretariat, Federal Capital Territory, 
+          Abuja, Nigeria. Committed to transparent governance and community development.
+        </p>
+        <a href="assets/docs/tax-policy.pdf" download class="tax-download-link">
+          📄 Download Tax Guidelines (PDF)
+        </a>
+      </div>
+      <div class="footer-col">
+        <h4>Departments</h4>
+        <ul>
+          <li><a href="/departments/administration-and-general-services">Admin & General Services</a></li>
+          <li><a href="/departments/agriculture-and-natural-resources">Agriculture & Resources</a></li>
+          <li><a href="/departments/education-and-social-development">Education & Social Dev.</a></li>
+          <li><a href="/departments/finance-and-accounts">Finance & Accounts</a></li>
+          <li><a href="/departments/environmental-services">Environmental Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="/about-us">About Kuje</a></li>
+          <li><a href="/governance-and-strategy">Governance Policy</a></li>
+          <li><a href="/news">News & Announcements</a></li>
+          <li><a href="/faqs">Frequently Asked Questions</a></li>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li>📍 Council Secretariat, Kuje, FCT</li>
+          <li>📞 +234 9 000 0000</li>
+          <li>📧 info@kujeareacouncil.gov.ng</li>
+          <li>🕐 Mon - Fri: 8AM - 4PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Kuje Area Council, Federal Capital Territory, Abuja. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ==================== EXTERNAL SCRIPTS ==================== -->
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- ==================== CONTACT PAGE JAVASCRIPT ==================== -->
+  <script>
+    (function() {
+      'use strict';
+
+      // ========== MOBILE MENU TOGGLE ==========
+      const menuToggle = document.getElementById('menuToggle');
+      const navMenu = document.getElementById('navMenu');
+
+      if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', function() {
+          const isOpen = navMenu.classList.toggle('open');
+          menuToggle.classList.toggle('active');
+          menuToggle.setAttribute('aria-expanded', isOpen);
+        });
+
+        navMenu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', function() {
+            if (window.innerWidth <= 768 && navMenu.classList.contains('open')) {
+              navMenu.classList.remove('open');
+              menuToggle.classList.remove('active');
+              menuToggle.setAttribute('aria-expanded', 'false');
+            }
+          });
+        });
+      }
+
+      // ========== HEADER SCROLL EFFECT ==========
+      const header = document.getElementById('mainHeader');
+
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+
+      // ========== SCROLL TO TOP BUTTON ==========
+      const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 400) {
+          scrollTopBtn.classList.add('visible');
+        } else {
+          scrollTopBtn.classList.remove('visible');
+        }
+      });
+
+      scrollTopBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // ========== CONTACT FORM HANDLING ==========
+      const contactForm = document.getElementById('contactForm');
+      const formMessage = document.getElementById('formMessage');
+
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+
+          // Clear previous messages
+          formMessage.className = 'form-message';
+          formMessage.textContent = '';
+
+          // Get form values
+          const fullName = document.getElementById('fullName').value.trim();
+          const email = document.getElementById('email').value.trim();
+          const phone = document.getElementById('phone').value.trim();
+          const department = document.getElementById('department').value;
+          const subject = document.getElementById('subject').value.trim();
+          const message = document.getElementById('message').value.trim();
+
+          // Basic validation
+          if (!fullName) {
+            showFormMessage('Please enter your full name.', 'error');
+            document.getElementById('fullName').focus();
+            return;
+          }
+
+          if (!email || !isValidEmail(email)) {
+            showFormMessage('Please enter a valid email address.', 'error');
+            document.getElementById('email').focus();
+            return;
+          }
+
+          if (!department) {
+            showFormMessage('Please select a department or category.', 'error');
+            document.getElementById('department').focus();
+            return;
+          }
+
+          if (!subject) {
+            showFormMessage('Please enter a subject for your message.', 'error');
+            document.getElementById('subject').focus();
+            return;
+          }
+
+          if (!message || message.length < 10) {
+            showFormMessage('Please enter a message with at least 10 characters.', 'error');
+            document.getElementById('message').focus();
+            return;
+          }
+
+          // Simulate form submission
+          const submitBtn = contactForm.querySelector('.btn-submit');
+          const originalBtnText = submitBtn.innerHTML;
+          submitBtn.innerHTML = '⏳ Sending...';
+          submitBtn.disabled = true;
+
+          setTimeout(function() {
+            // Success simulation
+            showFormMessage(
+              '✅ Thank you, ' + fullName + '! Your message has been received. We will respond to your ' + 
+              getDepartmentLabel(department) + ' inquiry within 2-3 business days.',
+              'success'
+            );
+            submitBtn.innerHTML = originalBtnText;
+            submitBtn.disabled = false;
+            contactForm.reset();
+
+            // Scroll to message
+            formMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+            // Hide success message after 8 seconds
+            setTimeout(function() {
+              formMessage.className = 'form-message';
+              formMessage.textContent = '';
+            }, 8000);
+          }, 1500);
+        });
+      }
+
+      function showFormMessage(msg, type) {
+        formMessage.textContent = msg;
+        formMessage.className = 'form-message ' + type;
+        formMessage.style.display = 'block';
+      }
+
+      function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      }
+
+      function getDepartmentLabel(value) {
+        const departmentSelect = document.getElementById('department');
+        const selectedOption = departmentSelect.options[departmentSelect.selectedIndex];
+        return selectedOption ? selectedOption.text : 'general';
+      }
+
+      // ========== MAP PLACEHOLDER CLICK TO LOAD ==========
+      const mapPlaceholder = document.getElementById('mapPlaceholder');
+      let mapLoaded = false;
+
+      if (mapPlaceholder) {
+        mapPlaceholder.addEventListener('click', function() {
+          if (!mapLoaded) {
+            mapLoaded = true;
+            // Clear placeholder content
+            mapPlaceholder.innerHTML = '';
+            
+            // Create and load iframe
+            const iframe = document.createElement('iframe');
+            iframe.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.5!2d7.22!3d8.89!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e6b5c5c5c5c5d%3A0x5c5c5c5c5c5c5c5c!2sKuje%20Area%20Council!5e0!3m2!1sen!2sng!4v1690000000000';
+            iframe.width = '100%';
+            iframe.height = '100%';
+            iframe.style.border = '0';
+            iframe.allowFullscreen = true;
+            iframe.loading = 'lazy';
+            iframe.referrerPolicy = 'no-referrer-when-downgrade';
+            iframe.title = 'Kuje Area Council Secretariat Location';
+            
+            mapPlaceholder.appendChild(iframe);
+            mapPlaceholder.style.cursor = 'default';
+            
+            // Remove click handler
+            mapPlaceholder.replaceWith(mapPlaceholder.cloneNode(true));
+          }
+        });
+
+        // Add visual cue that map is clickable
+        mapPlaceholder.style.cursor = 'pointer';
+        mapPlaceholder.title = 'Click to load interactive map';
+      }
+
+      // ========== ACTIVE NAV LINK ==========
+      // Contact link already has nav-active class in HTML
+
+      console.log('📬 Kuje Area Council Contact Page Ready');
+      console.log('📋 Contact form with validation initialized');
+      console.log('🗺️ Interactive map placeholder ready');
+      console.log('🚨 Emergency contacts section loaded');
+    })();
+  </script>
+</body>
+</html>

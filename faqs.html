@@ -1,0 +1,1796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frequently Asked Questions about Kuje Area Council services, taxes, permits, and community programs in FCT Abuja.">
+  <meta name="theme-color" content="#008751">
+  <meta property="og:title" content="FAQs | Kuje Area Council, FCT Abuja">
+  <meta property="og:description" content="Find answers to common questions about Kuje Area Council services, taxes, permits, and community programs.">
+  <title>Frequently Asked Questions – Kuje Area Council | FCT Abuja</title>
+
+  <!-- Favicon Asset -->
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <style>
+    :root {
+      --primary: #008751;
+      --primary-dark: #005c37;
+      --primary-light: #e8f5e9;
+      --primary-glow: rgba(0, 135, 81, 0.3);
+      --secondary: #1f2937;
+      --secondary-light: #374151;
+      --accent: #d97706;
+      --accent-light: #fef3c7;
+      --light-bg: #f8fafc;
+      --white: #ffffff;
+      --text: #334155;
+      --text-light: #64748b;
+      --text-muted: #94a3b8;
+      --border: #e2e8f0;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+      --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.12);
+      --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.15);
+      --transition-fast: 0.2s ease;
+      --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* ========== SCROLL TO TOP BUTTON ========== */
+    .scroll-top-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 48px;
+      height: 48px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      font-size: 1.3rem;
+      cursor: pointer;
+      z-index: 999;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: var(--transition-smooth);
+      box-shadow: 0 4px 15px var(--primary-glow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .scroll-top-btn.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .scroll-top-btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0, 135, 81, 0.5);
+    }
+
+    /* ========== TOP UTILITY BAR ========== */
+    .top-bar {
+      background: linear-gradient(135deg, var(--secondary) 0%, #111827 100%);
+      color: #cbd5e1;
+      font-size: 0.82rem;
+      padding: 0;
+      position: relative;
+      z-index: 1001;
+    }
+
+    .top-bar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 5%;
+      max-width: 1400px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .top-bar-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .top-bar-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition-fast);
+    }
+
+    .top-bar-item:hover {
+      color: white;
+    }
+
+    .top-bar-icon {
+      font-size: 0.9rem;
+      color: var(--primary);
+      filter: brightness(1.3);
+    }
+
+    .top-bar-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .govt-badge {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    /* ========== HEADER & NAVIGATION ========== */
+    header {
+      background-color: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid transparent;
+      transition: var(--transition-smooth);
+    }
+
+    header.scrolled {
+      border-bottom-color: var(--border);
+      box-shadow: var(--shadow-md);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 5%;
+      max-width: 1400px;
+      margin: 0 auto;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-shrink: 0;
+    }
+
+    .logo-img-wrapper {
+      position: relative;
+      width: 52px;
+      height: 52px;
+      flex-shrink: 0;
+    }
+
+    .logo-img {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--primary-light);
+      transition: var(--transition-smooth);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo:hover .logo-img {
+      transform: scale(1.05);
+      border-color: var(--primary);
+      box-shadow: 0 4px 15px var(--primary-glow);
+    }
+
+    .logo-pulse {
+      position: absolute;
+      top: -3px;
+      right: -3px;
+      width: 14px;
+      height: 14px;
+      background: var(--primary);
+      border-radius: 50%;
+      border: 2px solid white;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 var(--primary-glow); }
+      50% { box-shadow: 0 0 0 12px transparent; }
+    }
+
+    .logo-text h1 {
+      font-size: 1.15rem;
+      color: var(--secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .logo-text p {
+      font-size: 0.72rem;
+      color: var(--primary);
+      font-weight: 700;
+      letter-spacing: 1.5px;
+    }
+
+    /* Navigation */
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 5px;
+      align-items: center;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav a {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--secondary);
+      padding: 8px 14px;
+      border-radius: var(--radius-sm);
+      transition: var(--transition-fast);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    nav a:hover {
+      background: var(--primary-light);
+      color: var(--primary);
+    }
+
+    nav a.nav-active {
+      background: var(--primary);
+      color: white;
+    }
+
+    .nav-arrow {
+      font-size: 0.6rem;
+      transition: var(--transition-fast);
+    }
+
+    nav li:hover .nav-arrow {
+      transform: rotate(180deg);
+    }
+
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: white;
+      min-width: 220px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-xl);
+      padding: 8px 0;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: var(--transition-smooth);
+      border: 1px solid var(--border);
+      z-index: 100;
+    }
+
+    nav li:hover .dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(5px);
+    }
+
+    .dropdown a {
+      padding: 10px 18px;
+      font-size: 0.85rem;
+      border-radius: 0;
+      font-weight: 500;
+      display: block;
+    }
+
+    .dropdown a:hover {
+      background: var(--light-bg);
+      padding-left: 22px;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 2px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 8px 10px;
+      cursor: pointer;
+      transition: var(--transition-fast);
+    }
+
+    .menu-toggle:hover {
+      border-color: var(--primary);
+      background: var(--primary-light);
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 24px;
+      height: 2.5px;
+      background: var(--secondary);
+      margin: 5px 0;
+      border-radius: 2px;
+      transition: var(--transition-smooth);
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    .menu-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+    .menu-toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* ========== PAGE HERO BANNER ========== */
+    .page-hero {
+      background: linear-gradient(135deg, rgba(0, 92, 55, 0.92) 0%, rgba(31, 41, 55, 0.88) 100%),
+                  url('assets/images/hero-bg.jpg') center/cover no-repeat;
+      color: white;
+      padding: 70px 5%;
+      text-align: center;
+      position: relative;
+    }
+
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    .page-hero-content {
+      position: relative;
+      z-index: 2;
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .page-hero-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(8px);
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .page-hero h2 {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 800;
+      margin-bottom: 12px;
+      text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .page-hero p {
+      font-size: 1.1rem;
+      color: #e2e8f0;
+      max-width: 650px;
+      margin: 0 auto 25px;
+      line-height: 1.7;
+    }
+
+    /* Search Bar */
+    .search-wrapper {
+      position: relative;
+      z-index: 2;
+      max-width: 550px;
+      margin: 0 auto;
+    }
+
+    .search-input-group {
+      display: flex;
+      align-items: center;
+      background: var(--white);
+      border-radius: 50px;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 2px solid transparent;
+      transition: var(--transition-smooth);
+    }
+
+    .search-input-group:focus-within {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 6px var(--primary-glow);
+    }
+
+    .search-icon {
+      padding: 14px 16px;
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      background: transparent;
+      border: none;
+      pointer-events: none;
+    }
+
+    .search-input {
+      flex: 1;
+      padding: 14px 8px 14px 0;
+      border: none;
+      font-size: 0.95rem;
+      font-family: inherit;
+      color: var(--text);
+      background: transparent;
+      outline: none;
+    }
+
+    .search-input::placeholder {
+      color: var(--text-muted);
+    }
+
+    .search-clear {
+      padding: 14px 16px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      transition: var(--transition-fast);
+      display: none;
+    }
+
+    .search-clear.visible {
+      display: block;
+    }
+
+    .search-clear:hover {
+      color: #dc2626;
+    }
+
+    /* ========== BREADCRUMB ========== */
+    .breadcrumb {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 5%;
+    }
+
+    .breadcrumb-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .breadcrumb-inner a {
+      color: var(--primary);
+      font-weight: 600;
+      transition: var(--transition-fast);
+    }
+
+    .breadcrumb-inner a:hover {
+      color: var(--primary-dark);
+      text-decoration: underline;
+    }
+
+    .breadcrumb-separator {
+      margin: 0 8px;
+      color: var(--text-muted);
+    }
+
+    /* ========== FAQ SECTION ========== */
+    .faq-section {
+      padding: 50px 5% 40px;
+    }
+
+    .faq-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Category Filter Tabs */
+    .category-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 35px;
+    }
+
+    .category-tab {
+      padding: 10px 20px;
+      border: 2px solid var(--border);
+      border-radius: 50px;
+      background: var(--white);
+      color: var(--text-light);
+      font-weight: 600;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      white-space: nowrap;
+    }
+
+    .category-tab:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      background: var(--primary-light);
+    }
+
+    .category-tab.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+      box-shadow: 0 4px 15px var(--primary-glow);
+    }
+
+    .category-count {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      margin-left: 6px;
+    }
+
+    .category-tab.active .category-count {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    /* Results count */
+    .results-info {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      display: none;
+    }
+
+    .results-info.visible {
+      display: block;
+    }
+
+    .results-info strong {
+      color: var(--primary);
+    }
+
+    /* No Results */
+    .no-results {
+      display: none;
+      text-align: center;
+      padding: 40px 20px;
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+    }
+
+    .no-results.visible {
+      display: block;
+    }
+
+    .no-results-icon {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .no-results h3 {
+      font-size: 1.2rem;
+      color: var(--secondary);
+      margin-bottom: 8px;
+    }
+
+    .no-results p {
+      color: var(--text-light);
+      margin-bottom: 15px;
+    }
+
+    .no-results .btn-reset {
+      display: inline-block;
+      padding: 10px 24px;
+      background: var(--primary);
+      color: white;
+      border-radius: 50px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      font-size: 0.9rem;
+      transition: var(--transition-smooth);
+    }
+
+    .no-results .btn-reset:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 135, 81, 0.3);
+    }
+
+    /* FAQ Accordion */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .faq-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: var(--transition-smooth);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .faq-item:hover {
+      box-shadow: var(--shadow-md);
+    }
+
+    .faq-item.hidden {
+      display: none;
+    }
+
+    .faq-question {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 22px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--secondary);
+      text-align: left;
+      font-family: inherit;
+      transition: var(--transition-fast);
+      gap: 15px;
+    }
+
+    .faq-question:hover {
+      color: var(--primary);
+      background: var(--light-bg);
+    }
+
+    .faq-question-text {
+      flex: 1;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .faq-category-badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .badge-general {
+      background: #e0e7ff;
+      color: #3730a3;
+    }
+
+    .badge-taxes {
+      background: #fef3c7;
+      color: #92400e;
+    }
+
+    .badge-permits {
+      background: #dbeafe;
+      color: #1e40af;
+    }
+
+    .badge-health {
+      background: #fce7f3;
+      color: #9d174d;
+    }
+
+    .faq-arrow {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--light-bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition-smooth);
+      flex-shrink: 0;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .faq-item.active .faq-arrow {
+      background: var(--primary);
+      color: white;
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.4s ease;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 500px;
+    }
+
+    .faq-answer-content {
+      padding: 0 22px 20px;
+      font-size: 0.92rem;
+      color: var(--text-light);
+      line-height: 1.7;
+      border-top: 1px solid var(--border);
+      margin: 0 22px;
+    }
+
+    .faq-item.active .faq-answer-content {
+      padding-top: 16px;
+    }
+
+    .faq-answer-content ul {
+      margin: 10px 0 0 20px;
+    }
+
+    .faq-answer-content ul li {
+      margin-bottom: 6px;
+    }
+
+    .faq-answer-content a {
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: underline;
+      transition: var(--transition-fast);
+    }
+
+    .faq-answer-content a:hover {
+      color: var(--primary-dark);
+    }
+
+    /* ========== CTA SECTION ========== */
+    .cta-section {
+      padding: 30px 5% 60px;
+    }
+
+    .cta-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .cta-box {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: white;
+      padding: 40px 30px;
+      border-radius: var(--radius-lg);
+      text-align: center;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-box::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .cta-box h3 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    .cta-box p {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .btn-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 32px;
+      background: var(--white);
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 0.95rem;
+      border-radius: 50px;
+      border: 2px solid var(--white);
+      transition: var(--transition-bounce);
+      cursor: pointer;
+      position: relative;
+    }
+
+    .btn-cta:hover {
+      background: transparent;
+      color: white;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-cta .btn-icon {
+      transition: var(--transition-fast);
+    }
+
+    .btn-cta:hover .btn-icon {
+      transform: translateX(4px);
+    }
+
+    /* ========== FOOTER ========== */
+    footer {
+      background: linear-gradient(180deg, var(--secondary) 0%, #111827 100%);
+      color: #cbd5e1;
+      padding: 60px 5% 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+      gap: 40px;
+      margin-bottom: 40px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .footer-col h4 {
+      color: var(--white);
+      margin-bottom: 20px;
+      font-size: 1rem;
+      font-weight: 700;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .footer-col h4::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 3px;
+      background: var(--primary);
+      border-radius: 3px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col ul a {
+      font-size: 0.88rem;
+      transition: var(--transition-fast);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: #9ca3af;
+    }
+
+    .footer-col ul a:hover {
+      color: var(--white);
+      padding-left: 6px;
+    }
+
+    .footer-about-text {
+      font-size: 0.85rem;
+      color: #9ca3af;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    .tax-download-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 10px 16px;
+      border-radius: var(--radius-sm);
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.85rem;
+      transition: var(--transition-smooth);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .tax-download-link:hover {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 20px 0;
+      text-align: center;
+      font-size: 0.82rem;
+      color: #6b7280;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* ========== RESPONSIVE DESIGN ========== */
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        box-shadow: var(--shadow-lg);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      nav.open {
+        max-height: 500px;
+        overflow-y: auto;
+      }
+
+      nav ul {
+        flex-direction: column;
+        padding: 15px 5%;
+        gap: 5px;
+      }
+
+      nav a {
+        padding: 12px 15px;
+        border-radius: var(--radius-sm);
+      }
+
+      .dropdown {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        border: none;
+        padding-left: 20px;
+        display: none;
+      }
+
+      nav li:hover .dropdown {
+        display: block;
+      }
+
+      .page-hero {
+        padding: 50px 5%;
+      }
+
+      .category-tabs {
+        gap: 8px;
+      }
+
+      .category-tab {
+        padding: 8px 14px;
+        font-size: 0.78rem;
+      }
+
+      .faq-question {
+        padding: 16px 18px;
+        font-size: 0.9rem;
+      }
+
+      .faq-answer-content {
+        padding: 0 18px 16px;
+        margin: 0 18px;
+        font-size: 0.85rem;
+      }
+
+      .cta-box {
+        padding: 30px 20px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .top-bar-right {
+        display: none;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .page-hero h2 {
+        font-size: 1.6rem;
+      }
+
+      .category-tab {
+        padding: 7px 12px;
+        font-size: 0.72rem;
+      }
+
+      .faq-question {
+        padding: 14px 15px;
+        font-size: 0.85rem;
+      }
+
+      .faq-category-badge {
+        font-size: 0.65rem;
+        padding: 2px 7px;
+      }
+
+      .cta-box h3 {
+        font-size: 1.2rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--primary);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+  <!-- ==================== SCROLL TO TOP ==================== -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+  <!-- ==================== TOP BAR ==================== -->
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="top-bar-left">
+        <div class="top-bar-item">
+          <span class="top-bar-icon">📞</span>
+          <span>+234 9 000 0000</span>
+        </div>
+        <div class="top-bar-item">
+          <span class="top-bar-icon">🕐</span>
+          <span>Mon - Fri: 8:00 AM - 4:00 PM</span>
+        </div>
+        <div class="top-bar-item">
+          <span class="top-bar-icon">📍</span>
+          <span>Kuje, FCT Abuja, Nigeria</span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <span class="govt-badge">🇳🇬 Federal Republic of Nigeria</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== HEADER ==================== -->
+  <header id="mainHeader">
+    <div class="nav-container">
+      <a href="/" class="logo" aria-label="Kuje Area Council Home">
+        <div class="logo-img-wrapper">
+          <img src="assets/images/logo.jpeg" alt="Kuje Area Council Official Seal" class="logo-img">
+          <span class="logo-pulse"></span>
+        </div>
+        <div class="logo-text">
+          <h1>Kuje Area Council</h1>
+          <p>FCT – ABUJA</p>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="navMenu" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li>
+            <a href="/about-us.html">About Us <span class="nav-arrow">▾</span></a>
+            <div class="dropdown">
+              <a href="/about-us/history">Our History</a>
+              <a href="/about-us/chairman">Executive Chairman</a>
+              <a href="/about-us/council-members">Council Members</a>
+              <a href="/about-us/wards">Wards & Districts</a>
+            </div>
+          </li>
+          <li><a href="/services">Services</a></li>
+          <li>
+            <a href="/departments">Departments <span class="nav-arrow">▾</span></a>
+            <div class="dropdown">
+              <a href="/departments/administration-and-general-services">Admin & General Services</a>
+              <a href="/departments/agriculture-and-natural-resources">Agriculture & Resources</a>
+              <a href="/departments/education-and-social-development">Education & Social Dev.</a>
+              <a href="/departments/finance-and-accounts">Finance & Accounts</a>
+              <a href="/departments/environmental-services">Environmental Services</a>
+            </div>
+          </li>
+          <li><a href="/governance-and-strategy">Governance</a></li>
+          <li><a href="/news">News</a></li>
+          <li><a href="/faqs.html" class="nav-active">FAQs</a></li>
+          <li><a href="/contact.html" >Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== PAGE HERO BANNER ==================== -->
+      <section class="page-hero" aria-labelledby="page-hero-heading" style="background-image: url('/assets/images/hero.jpeg'); background-size: cover; background-position: center;">
+  <div class="page-hero-content">
+        <span class="page-hero-badge">💡 Help Center</span>
+        <h2 id="page-hero-heading">Frequently Asked Questions (FAQs)</h2>
+        <p>Find answers to common questions about council services, local taxes, permits, and community programs.</p>
+      </div>
+      <!-- Search Bar -->
+      <div class="search-wrapper">
+        <div class="search-input-group">
+          <span class="search-icon">🔍</span>
+          <input 
+            type="text" 
+            class="search-input" 
+            id="faqSearch" 
+            placeholder="Search for answers... (e.g., taxes, permits, health)"
+            aria-label="Search frequently asked questions"
+          >
+          <button class="search-clear" id="searchClear" aria-label="Clear search">✕</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== BREADCRUMB ==================== -->
+    <div class="breadcrumb" aria-label="Breadcrumb">
+      <div class="breadcrumb-inner">
+        <a href="/">Home</a>
+        <span class="breadcrumb-separator">›</span>
+        <span>Frequently Asked Questions</span>
+      </div>
+    </div>
+
+    <!-- ==================== FAQ SECTION ==================== -->
+    <section class="faq-section" aria-labelledby="faq-heading">
+      <div class="faq-container">
+        <!-- Category Filter Tabs -->
+        <div class="category-tabs" id="categoryTabs" role="tablist" aria-label="Filter FAQs by category">
+          <button class="category-tab active" data-category="all" role="tab" aria-selected="true">
+            📋 All <span class="category-count">12</span>
+          </button>
+          <button class="category-tab" data-category="general" role="tab" aria-selected="false">
+            🏛️ General & Governance <span class="category-count">3</span>
+          </button>
+          <button class="category-tab" data-category="taxes" role="tab" aria-selected="false">
+            🧾 Taxes & Revenue <span class="category-count">3</span>
+          </button>
+          <button class="category-tab" data-category="permits" role="tab" aria-selected="false">
+            📄 Permits & Licensing <span class="category-count">3</span>
+          </button>
+          <button class="category-tab" data-category="health" role="tab" aria-selected="false">
+            🌿 Health, Agriculture & Youth <span class="category-count">3</span>
+          </button>
+        </div>
+
+        <!-- Results Info -->
+        <div class="results-info" id="resultsInfo">
+          Showing <strong id="resultsCount">12</strong> of <strong>12</strong> questions
+        </div>
+
+        <!-- No Results Message -->
+        <div class="no-results" id="noResults">
+          <div class="no-results-icon">🔍</div>
+          <h3>No matching questions found</h3>
+          <p>Try adjusting your search term or browse by category.</p>
+          <button class="btn-reset" id="btnReset">Clear Search & Show All</button>
+        </div>
+
+        <!-- FAQ Accordion List -->
+        <div class="faq-list" id="faqList">
+          
+          <!-- ===== GENERAL & GOVERNANCE ===== -->
+          <div class="faq-item" data-category="general">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-question-text">
+                <span class="faq-category-badge badge-general">General</span>
+                What are the operating hours of the Kuje Secretariat?
+              </span>
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>The Kuje Area Council Secretariat operates from <strong>Monday to Friday, 8:00 AM to 4:00 PM</strong>. The secretariat is closed on weekends (Saturdays and Sundays) and all federally recognized public holidays.</p>
+                <p>For urgent matters outside regular hours, please contact our emergency lines listed on the <a href="/contact.html">Contact page</a>.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="general">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-question-text">
+                <span class="faq-category-badge badge-general">General</span>
+                How can I contact the Executive Chairman or Council officials?
+              </span>
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>You can reach the Executive Chairman's office through the following channels:</p>
+                <ul>
+                  <li><strong>Phone:</strong>+2347015676309 (Executive Enquiries)</li>
+                  <li><strong>Email:</strong> chairman@kujeareacouncil.gov.ng</li>
+                  <li><strong>In Person:</strong> Visit the Secretariat during office hours and request an appointment at the Executive Chairman's office.</li>
+                </ul>
+                <p>For general inquiries, use our <a href="/contact.html">Contact Form</a> and select the appropriate department.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="general">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-question-text">
+                <span class="faq-category-badge badge-general">General</span>
+                Where is the Kuje Area Council Secretariat located?
+              </span>
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>The Kuje Area Council Secretariat is located at:</p>
+                <p><strong>Secretariat Road, Kuje, Federal Capital Territory, Abuja, Nigeria.</strong></p>
+                <p>The secretariat is easily accessible from the Kuje Main Market and is a landmark building in the town center. You can view the exact location on our <a href="/contact">Contact page</a> map.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== TAXES & REVENUE ===== -->
+          <div class="faq-item" data-category="taxes">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-question-text">
+                <span class="faq-category-badge badge-taxes">Taxes</span>
+                How do I pay my tenement rates and local council taxes?
+              </span>
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>You can pay your tenement rates and council taxes through the following methods:</p>
+                <ul>
+                  <li><strong>In Person:</strong> Visit the Revenue Department at the Secretariat with your payment assessment notice.</li>
+                  <li><strong>Bank Deposit:</strong> Pay into the official Kuje Area Council revenue account at any designated commercial bank.</li>
+                  <li><strong>Online:</strong> Visit our <a href="/services/taxes-and-bills.html">E-Services portal</a> to make secure online payments.</li>
+                </ul>
+                <p><strong>Important:</strong> Always collect an official receipt for every payment made. Verify that the receipt bears the Kuje Area Council official stamp and seal.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="taxes">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-question-text">
+                <span class="faq-category-badge badge-taxes">Taxes</span>
+                Where can I download the official Kuje Area Council Approved Revenue Rates list?
+              </span>
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>The official Approved Revenue Rates list is available for download:</p>
+                <ul>
+                  <li><strong>PDF Download:</strong> <a href="assets/docs/tax-policy.pdf" download>Download Tax Guidelines (PDF)</a> from our website footer or resources section.</li>
+                  <li><strong>Physical Copy:</strong> Available at the Revenue Department, Kuje Secretariat during office hours.</li>
+                </ul>
+                <p>The rates are updated annually. Always refer to the latest version for current charges.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="taxes">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-question-text">
+                <span class="faq-category-badge badge-taxes">Taxes</span>
+                How do I verify an official council revenue collection officer?
+              </span>
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>To verify the identity of a revenue collection officer:</p>
+                <ul>
+                  <li><strong>ID Card:</strong> All legitimate officers carry a <strong>photo ID card</strong> issued by Kuje Area Council with a unique identification number.</li>
+                  <li><strong>Uniform:</strong> Official collectors wear designated council uniforms with Kuje Area Council branding.</li>
+                  <li><strong>Verification:</strong> Call the Revenue Department at <strong>+234 9 000 0001</strong> to confirm the officer's identity before making any payment.</li>
+                </ul>
+                <p><strong>Warning:</strong> Never pay cash to anyone who cannot produce valid council identification. Report suspicious collectors immediately.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== PERMITS & LICENSING ===== -->
+          <div class="faq-item" data-category="permits">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-question-text">
+                <span class="faq-category-badge badge-permits">Permits</span>
+                How do I apply for a Business Premises Permit in Kuje?
+              </span>
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>To apply for a Business Premises Permit:</p>
+                <ol>
+                  <li>Visit the <strong>Works & Housing Department</strong> at the Secretariat.</li>
+                  <li>Obtain and complete the Business Premises Permit application form.</li>
+                  <li>Submit required documents: proof of ownership/tenancy, business registration certificate, and passport photographs.</li>
+                  <li>Pay the prescribed fee at the Revenue Department.</li>
+                  <li>A site inspection will be scheduled by council officials.</li>
+                  <li>Upon approval, collect your permit from the Works & Housing Department.</li>
+                </ol>
+                <p>Processing time is typically <strong>5-10 working days</strong> after submission of complete documents.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="permits">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-question-text">
+                <span class="faq-category-badge badge-permits">Permits</span>
+                What is the process for obtaining a Trade License or Market Stall allocation?
+              </span>
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>For Trade Licenses and Market Stall allocation:</p>
+                <ul>
+                  <li><strong>Trade License:</strong> Apply through the Revenue Department with your business details. Pay the applicable fee based on your business category.</li>
+                  <li><strong>Market Stall:</strong> Visit the Market Management Office at your preferred market (e.g., Kuje Main Market). Complete the allocation form and pay the stall fee. Allocation is subject to availability.</li>
+                </ul>
+                <p>Both processes require valid identification and may involve a waiting period depending on demand.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="permits">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-question-text">
+                <span class="faq-category-badge badge-permits">Permits</span>
+                How can I register a birth or marriage at the Secretariat?
+              </span>
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>Registration of vital events is handled by the <strong>Health & Social Development Department</strong>:</p>
+                <ul>
+                  <li><strong>Birth Registration:</strong> Bring the hospital notification of birth, parents' identification, and witnesses. Registration is free for infants under 1 year.</li>
+                  <li><strong>Marriage Registration:</strong> Both parties must appear in person with valid ID, passport photographs, and witnesses. A statutory fee applies.</li>
+                </ul>
+                <p>Visit the Secretariat during office hours or <a href="/contact.html">contact us</a> for more details.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== HEALTH, AGRICULTURE & YOUTH ===== -->
+          <div class="faq-item" data-category="health">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-question-text">
+                <span class="faq-category-badge badge-health">Health</span>
+                What primary health centers are managed by Kuje Area Council?
+              </span>
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>Kuje Area Council manages several primary health centers across the 10 wards, including:</p>
+                <ul>
+                  <li><strong>Kuje Primary Health Care Center</strong> – Main facility near the Secretariat</li>
+                  <li><strong>Kayarda Primary Health Clinic</strong></li>
+                  <li><strong>Gaube Primary Health Post</strong></li>
+                  <li><strong>Other ward-level health posts</strong> serving rural communities</li>
+                </ul>
+                <p>Services include maternal care, immunization, outpatient treatment, and health education. All centers operate on weekdays with emergency services available at the main center.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="health">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-question-text">
+                <span class="faq-category-badge badge-health">Agriculture</span>
+                How do farmers access local agricultural support and fertilizer distribution programs?
+              </span>
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>Farmers in Kuje Area Council can access agricultural support through:</p>
+                <ul>
+                  <li><strong>Agriculture & Natural Resources Department:</strong> Register as a farmer at the Secretariat to be included in support programs.</li>
+                  <li><strong>Fertilizer Distribution:</strong> Subsidized fertilizer is distributed seasonally. Listen for announcements or visit the department for schedules.</li>
+                  <li><strong>Extension Services:</strong> Council agricultural officers provide training and technical support to registered farmers.</li>
+                </ul>
+                <p>Bring proof of farmland (community leader's letter) and valid ID when registering.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="health">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-question-text">
+                <span class="faq-category-badge badge-health">Youth</span>
+                How can youth apply for skill acquisition and empowerment programs?
+              </span>
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>Kuje Area Council runs regular youth empowerment initiatives:</p>
+                <ul>
+                  <li><strong>Registration:</strong> Visit the Education & Social Development Department at the Secretariat to register your interest.</li>
+                  <li><strong>Programs Offered:</strong> Vocational skills training (tailoring, carpentry, ICT), entrepreneurship workshops, and apprenticeship placements.</li>
+                  <li><strong>Eligibility:</strong> Open to Kuje residents aged 18-35. Priority is given to unemployed youth.</li>
+                </ul>
+                <p>Follow our <a href="/news">News page</a> for announcements on upcoming empowerment programs and application deadlines.</p>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /faq-list -->
+      </div>
+    </section>
+
+    <!-- ==================== CTA SECTION ==================== -->
+    <section class="cta-section">
+      <div class="cta-container">
+        <div class="cta-box">
+          <h3>Still Have Questions?</h3>
+          <p>Didn't find the answer you were looking for? Our team is ready to assist you with any inquiries.</p>
+          <a href="/contact.html" class="btn-cta">
+            Contact Us Directly <span class="btn-icon">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Kuje Area Council</h4>
+        <p class="footer-about-text">
+          Official portal of Kuje Local Government Secretariat, Federal Capital Territory, 
+          Abuja, Nigeria. Committed to transparent governance and community development.
+        </p>
+        <a href="assets/docs/tax-policy.pdf" download class="tax-download-link">
+          📄 Download Tax Guidelines (PDF)
+        </a>
+      </div>
+      <div class="footer-col">
+        <h4>Departments</h4>
+        <ul>
+          <li><a href="/departments/administration-and-general-services">Admin & General Services</a></li>
+          <li><a href="/departments/agriculture-and-natural-resources">Agriculture & Resources</a></li>
+          <li><a href="/departments/education-and-social-development">Education & Social Dev.</a></li>
+          <li><a href="/departments/finance-and-accounts">Finance & Accounts</a></li>
+          <li><a href="/departments/environmental-services">Environmental Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="/about-us">About Kuje</a></li>
+          <li><a href="/governance-and-strategy">Governance Policy</a></li>
+          <li><a href="/news">News & Announcements</a></li>
+          <li><a href="/faqs" class="nav-active">FAQs</a></li>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li>📍 Council Secretariat, Kuje, FCT</li>
+          <li>📞 +234 9 000 0000</li>
+          <li>📧 info@kujeareacouncil.gov.ng</li>
+          <li>🕐 Mon - Fri: 8AM - 4PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Kuje Area Council, Federal Capital Territory, Abuja. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ==================== EXTERNAL SCRIPTS ==================== -->
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- ==================== FAQ PAGE JAVASCRIPT ==================== -->
+  <script>
+    (function() {
+      'use strict';
+
+      // ========== MOBILE MENU TOGGLE ==========
+      const menuToggle = document.getElementById('menuToggle');
+      const navMenu = document.getElementById('navMenu');
+
+      if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', function() {
+          const isOpen = navMenu.classList.toggle('open');
+          menuToggle.classList.toggle('active');
+          menuToggle.setAttribute('aria-expanded', isOpen);
+        });
+
+        navMenu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', function() {
+            if (window.innerWidth <= 768 && navMenu.classList.contains('open')) {
+              navMenu.classList.remove('open');
+              menuToggle.classList.remove('active');
+              menuToggle.setAttribute('aria-expanded', 'false');
+            }
+          });
+        });
+      }
+
+      // ========== HEADER SCROLL EFFECT ==========
+      const header = document.getElementById('mainHeader');
+
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+
+      // ========== SCROLL TO TOP BUTTON ==========
+      const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 400) {
+          scrollTopBtn.classList.add('visible');
+        } else {
+          scrollTopBtn.classList.remove('visible');
+        }
+      });
+
+      scrollTopBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // ========== FAQ ACCORDION LOGIC ==========
+      const faqItems = document.querySelectorAll('.faq-item');
+      const faqQuestions = document.querySelectorAll('.faq-question');
+
+      faqQuestions.forEach(question => {
+        question.addEventListener('click', function() {
+          const faqItem = this.parentElement;
+          const isActive = faqItem.classList.contains('active');
+
+          // Close all other FAQ items
+          faqItems.forEach(item => {
+            if (item !== faqItem) {
+              item.classList.remove('active');
+              item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+            }
+          });
+
+          // Toggle current item
+          if (isActive) {
+            faqItem.classList.remove('active');
+            this.setAttribute('aria-expanded', 'false');
+          } else {
+            faqItem.classList.add('active');
+            this.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+
+      // ========== SEARCH FUNCTIONALITY ==========
+      const searchInput = document.getElementById('faqSearch');
+      const searchClear = document.getElementById('searchClear');
+      const resultsInfo = document.getElementById('resultsInfo');
+      const noResults = document.getElementById('noResults');
+      const resultsCount = document.getElementById('resultsCount');
+      const faqList = document.getElementById('faqList');
+      const categoryTabs = document.querySelectorAll('.category-tab');
+      const btnReset = document.getElementById('btnReset');
+
+      let activeCategory = 'all';
+      let searchQuery = '';
+
+      function filterFAQs() {
+        let visibleCount = 0;
+        const allItems = faqList.querySelectorAll('.faq-item');
+
+        allItems.forEach(item => {
+          const category = item.getAttribute('data-category');
+          const questionText = item.querySelector('.faq-question-text').textContent.toLowerCase();
+          const answerText = item.querySelector('.faq-answer-content').textContent.toLowerCase();
+          const combinedText = questionText + ' ' + answerText;
+
+          const matchesCategory = (activeCategory === 'all' || category === activeCategory);
+          const matchesSearch = (searchQuery === '' || combinedText.includes(searchQuery.toLowerCase()));
+
+          if (matchesCategory && matchesSearch) {
+            item.classList.remove('hidden');
+            visibleCount++;
+          } else {
+            item.classList.add('hidden');
+            // Close accordion if hidden
+            item.classList.remove('active');
+            item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          }
+        });
+
+        // Update results info
+        const totalVisible = (activeCategory === 'all') ? allItems.length : 
+          faqList.querySelectorAll(`[data-category="${activeCategory}"]`).length;
+
+        resultsCount.textContent = visibleCount;
+
+        if (searchQuery !== '') {
+          resultsInfo.classList.add('visible');
+        } else if (activeCategory !== 'all') {
+          resultsInfo.classList.add('visible');
+        } else {
+          resultsInfo.classList.remove('visible');
+        }
+
+        // Show/hide no results message
+        if (visibleCount === 0) {
+          noResults.classList.add('visible');
+        } else {
+          noResults.classList.remove('visible');
+        }
+      }
+
+      // Search input event
+      searchInput.addEventListener('input', function() {
+        searchQuery = this.value.trim();
+        
+        if (searchQuery !== '') {
+          searchClear.classList.add('visible');
+        } else {
+          searchClear.classList.remove('visible');
+        }
+
+        filterFAQs();
+      });
+
+      // Clear search
+      searchClear.addEventListener('click', function() {
+        searchInput.value = '';
+        searchQuery = '';
+        searchClear.classList.remove('visible');
+        filterFAQs();
+        searchInput.focus();
+      });
+
+      // Reset button
+      btnReset.addEventListener('click', function() {
+        searchInput.value = '';
+        searchQuery = '';
+        searchClear.classList.remove('visible');
+        
+        // Reset to All category
+        activeCategory = 'all';
+        categoryTabs.forEach(tab => {
+          tab.classList.remove('active');
+          tab.setAttribute('aria-selected', 'false');
+        });
+        document.querySelector('.category-tab[data-category="all"]').classList.add('active');
+        document.querySelector('.category-tab[data-category="all"]').setAttribute('aria-selected', 'true');
+        
+        filterFAQs();
+        searchInput.focus();
+      });
+
+      // ========== CATEGORY FILTER TABS ==========
+      categoryTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+          // Update active tab
+          categoryTabs.forEach(t => {
+            t.classList.remove('active');
+            t.setAttribute('aria-selected', 'false');
+          });
+          this.classList.add('active');
+          this.setAttribute('aria-selected', 'true');
+
+          // Update active category
+          activeCategory = this.getAttribute('data-category');
+
+          // Re-filter
+          filterFAQs();
+        });
+      });
+
+      // ========== KEYBOARD SUPPORT FOR ACCORDION ==========
+      faqQuestions.forEach(question => {
+        question.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            this.click();
+          }
+        });
+      });
+
+      // Initial filter to set up counts
+      filterFAQs();
+
+      console.log('💡 Kuje Area Council FAQs Page Ready');
+      console.log('🔍 Search filtering enabled');
+      console.log('📂 Category tabs active (5 categories)');
+      console.log('📋 12 FAQ items with accordion functionality');
+    })();
+  </script>
+</body>
+</html>
