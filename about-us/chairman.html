@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="About Kuje Area Council, FCT Abuja - Learn about our history, leadership, vision, mission, wards, and commitment to community development.">
+  <meta name="description" content="Profile of Hon. Danjuma Samuel Shekwolo, Executive Chairman of Kuje Area Council, FCT Abuja - Learn about his vision, election, and commitment to the Renewed Hope Agenda.">
   <meta name="theme-color" content="#008751">
-  <meta property="og:title" content="About Us | Kuje Area Council, FCT Abuja">
-  <meta property="og:description" content="Discover the history, leadership, vision, and administrative structure of Kuje Area Council, Federal Capital Territory, Abuja.">
-  <title>About Us – Kuje Area Council | FCT Abuja</title>
+  <meta property="og:title" content="Executive Chairman | Kuje Area Council, FCT Abuja">
+  <meta property="og:description" content="Meet Hon. Danjuma Samuel Shekwolo, the Executive Chairman of Kuje Area Council, leading with the Renewed Hope Agenda for grassroots development.">
+  <title>Executive Chairman – Hon. Danjuma Samuel Shekwolo | Kuje Area Council</title>
 
   <!-- Favicon Asset -->
   <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
@@ -467,7 +467,7 @@
     }
 
     .section-container {
-      max-width: 1200px;
+      max-width: 1100px;
       margin: 0 auto;
     }
 
@@ -488,27 +488,19 @@
       margin-bottom: 15px;
     }
 
-    .section-desc {
-      color: var(--text-light);
-      max-width: 700px;
-      font-size: 1rem;
-      line-height: 1.7;
-      margin-bottom: 30px;
-    }
-
-    /* ========== CHAIRMAN'S WELCOME ========== */
-    .chairman-welcome {
+    /* ========== CHAIRMAN PROFILE HEADER ========== */
+    .profile-header {
       background: var(--white);
     }
 
-    .chairman-grid {
+    .profile-grid {
       display: grid;
       grid-template-columns: 1fr 1.5fr;
       gap: 50px;
-      align-items: center;
+      align-items: start;
     }
 
-    .chairman-image-card {
+    .profile-image-card {
       position: relative;
       border-radius: var(--radius-lg);
       overflow: hidden;
@@ -516,19 +508,19 @@
       transition: var(--transition-smooth);
     }
 
-    .chairman-image-card:hover {
+    .profile-image-card:hover {
       transform: translateY(-5px);
       box-shadow: var(--shadow-xl);
     }
 
-    .chairman-image-card img {
+    .profile-image-card img {
       width: 100%;
-      height: 400px;
+      height: 450px;
       object-fit: cover;
       display: block;
     }
 
-    .chairman-image-overlay {
+    .profile-image-overlay {
       position: absolute;
       bottom: 0;
       left: 0;
@@ -538,91 +530,149 @@
       color: white;
     }
 
-    .chairman-image-overlay h3 {
-      font-size: 1.2rem;
+    .profile-image-overlay h3 {
+      font-size: 1.3rem;
       margin-bottom: 3px;
     }
 
-    .chairman-image-overlay span {
-      font-size: 0.82rem;
-      opacity: 0.9;
-      color: #6ee7b7;
-      font-weight: 600;
+    .profile-image-overlay .party-badge {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 3px 12px;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 5px;
     }
 
-    .welcome-content .section-label {
-      margin-bottom: 8px;
-    }
-
-    .welcome-content h3 {
+    .profile-info h3 {
       font-size: 1.8rem;
       color: var(--secondary);
       font-weight: 800;
-      margin-bottom: 18px;
+      margin-bottom: 5px;
     }
 
-    .welcome-content blockquote {
-      font-style: italic;
+    .profile-info .designation {
+      font-size: 1rem;
       color: var(--primary);
-      font-size: 1.15rem;
-      margin-bottom: 20px;
-      border-left: 4px solid var(--primary);
-      padding: 15px 20px;
-      background: var(--primary-light);
-      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-      font-weight: 500;
-      line-height: 1.7;
-    }
-
-    .welcome-content p {
-      font-size: 0.95rem;
-      color: var(--text-light);
-      line-height: 1.8;
+      font-weight: 600;
       margin-bottom: 15px;
     }
 
-    .signature-block {
-      margin-top: 10px;
-      font-weight: 700;
-      color: var(--secondary);
+    .profile-quick-facts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 20px 0;
     }
 
-    .signature-block span {
-      color: var(--primary);
-      font-size: 0.85rem;
-      display: block;
+    .quick-fact {
+      background: var(--light-bg);
+      padding: 14px;
+      border-radius: var(--radius-sm);
+      border-left: 3px solid var(--primary);
+    }
+
+    .quick-fact .fact-label {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 3px;
+    }
+
+    .quick-fact .fact-value {
+      font-size: 0.9rem;
+      color: var(--secondary);
       font-weight: 600;
     }
 
-    /* ========== VISION, MISSION & VALUES ========== */
-    .vision-mission {
+    .profile-bio {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      line-height: 1.8;
+      margin-top: 10px;
+    }
+
+    /* ========== ELECTION DETAILS ========== */
+    .election-section {
       background: var(--light-bg);
     }
 
-    .vm-grid {
+    .election-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 25px;
     }
 
-    .vm-card {
+    .election-card {
       background: var(--white);
-      border-radius: var(--radius-lg);
       padding: 30px;
+      border-radius: var(--radius-lg);
       box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+      text-align: center;
+      transition: var(--transition-smooth);
+    }
+
+    .election-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--primary);
+    }
+
+    .election-icon {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    .election-card h4 {
+      font-size: 1.1rem;
+      color: var(--secondary);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .election-card p {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    .vote-highlight {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--primary);
+      display: block;
+      margin: 10px 0;
+    }
+
+    /* ========== VISION & AGENDA ========== */
+    .vision-section {
+      background: var(--white);
+    }
+
+    .vision-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .vision-card {
+      background: var(--light-bg);
+      padding: 30px;
+      border-radius: var(--radius-lg);
       border: 1px solid var(--border);
       transition: var(--transition-smooth);
       position: relative;
       overflow: hidden;
     }
 
-    .vm-card:hover {
-      transform: translateY(-8px);
-      box-shadow: var(--shadow-lg);
-      border-color: transparent;
-    }
-
-    .vm-card::before {
+    .vision-card::before {
       content: '';
       position: absolute;
       top: 0;
@@ -635,11 +685,17 @@
       transition: transform 0.4s ease;
     }
 
-    .vm-card:hover::before {
+    .vision-card:hover::before {
       transform: scaleX(1);
     }
 
-    .vm-icon {
+    .vision-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-5px);
+      border-color: var(--primary);
+    }
+
+    .vision-icon {
       width: 56px;
       height: 56px;
       background: var(--primary-light);
@@ -653,260 +709,136 @@
       transition: var(--transition-smooth);
     }
 
-    .vm-card:hover .vm-icon {
+    .vision-card:hover .vision-icon {
       background: var(--primary);
       color: white;
       transform: scale(1.1);
     }
 
-    .vm-card h4 {
-      font-size: 1.2rem;
+    .vision-card h4 {
+      font-size: 1.1rem;
       color: var(--secondary);
-      margin-bottom: 10px;
       font-weight: 700;
+      margin-bottom: 10px;
     }
 
-    .vm-card p {
-      font-size: 0.92rem;
+    .vision-card p {
+      font-size: 0.9rem;
       color: var(--text-light);
       line-height: 1.7;
     }
 
-    /* Values List */
-    .values-list {
-      list-style: none;
-      margin-top: 10px;
-    }
-
-    .values-list li {
-      padding: 6px 0;
-      font-size: 0.9rem;
-      color: var(--text-light);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .values-list li::before {
-      content: '✓';
-      color: var(--primary);
-      font-weight: 700;
-      font-size: 1rem;
-    }
-
-    /* ========== HISTORY SECTION ========== */
-    .history-section {
-      background: var(--white);
-    }
-
-    .history-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
-      align-items: center;
-    }
-
-    .history-content h3 {
-      font-size: 1.8rem;
-      color: var(--secondary);
-      font-weight: 800;
-      margin-bottom: 18px;
-    }
-
-    .history-content p {
-      font-size: 0.95rem;
-      color: var(--text-light);
-      line-height: 1.8;
-      margin-bottom: 15px;
-    }
-
-    .history-highlights {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 15px;
-      margin-top: 20px;
-    }
-
-    .highlight-card {
-      background: var(--primary-light);
-      padding: 20px;
-      border-radius: var(--radius-md);
-      text-align: center;
-      border-left: 3px solid var(--primary);
-      transition: var(--transition-smooth);
-    }
-
-    .highlight-card:hover {
-      background: var(--primary);
-      color: white;
-      transform: translateY(-3px);
-    }
-
-    .highlight-card:hover .highlight-title {
-      color: white;
-    }
-
-    .highlight-card:hover .highlight-desc {
-      color: rgba(255, 255, 255, 0.85);
-    }
-
-    .highlight-icon {
-      font-size: 1.8rem;
-      margin-bottom: 8px;
-    }
-
-    .highlight-title {
-      font-weight: 700;
-      color: var(--secondary);
-      font-size: 0.9rem;
-      margin-bottom: 4px;
-    }
-
-    .highlight-desc {
-      font-size: 0.8rem;
-      color: var(--text-light);
-    }
-
-    .history-image {
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      box-shadow: var(--shadow-lg);
-      position: relative;
-    }
-
-    .history-image img {
-      width: 100%;
-      height: 380px;
-      object-fit: cover;
-    }
-
-    .history-image-accent {
-      position: absolute;
-      bottom: -15px;
-      right: -15px;
-      width: 100%;
-      height: 100%;
-      border: 3px solid var(--primary);
-      border-radius: var(--radius-lg);
-      z-index: -1;
-    }
-
-    /* ========== WARDS SECTION ========== */
-    .wards-section {
+    /* ========== RECENT ACTIONS ========== */
+    .actions-section {
       background: var(--light-bg);
     }
 
-    .wards-header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    .wards-grid {
+    .actions-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 15px;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
     }
 
-    .ward-card {
+    .action-card {
       background: var(--white);
-      padding: 25px 20px;
-      border-radius: var(--radius-md);
-      text-align: center;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
       box-shadow: var(--shadow-sm);
       border: 1px solid var(--border);
       transition: var(--transition-smooth);
-      cursor: default;
     }
 
-    .ward-card:hover {
+    .action-card:hover {
+      box-shadow: var(--shadow-lg);
       transform: translateY(-6px);
-      box-shadow: var(--shadow-md);
-      border-color: var(--primary);
-      background: linear-gradient(180deg, var(--primary-light) 0%, white 100%);
     }
 
-    .ward-icon {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
+    .action-image {
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
     }
 
-    .ward-card h4 {
-      font-size: 0.95rem;
-      color: var(--secondary);
-      font-weight: 700;
-    }
-
-    .ward-number {
-      display: inline-block;
-      background: var(--primary);
-      color: white;
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      font-size: 0.75rem;
-      font-weight: 700;
-      line-height: 28px;
-      margin-bottom: 8px;
-    }
-
-    /* ========== DEPARTMENTS SECTION ========== */
-    .departments-section {
-      background: var(--white);
-    }
-
-    .dept-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-
-    .dept-card {
-      background: var(--light-bg);
-      padding: 25px;
-      border-radius: var(--radius-md);
-      border: 1px solid var(--border);
-      transition: var(--transition-smooth);
-      display: flex;
-      align-items: flex-start;
-      gap: 15px;
-    }
-
-    .dept-card:hover {
-      box-shadow: var(--shadow-md);
-      transform: translateY(-4px);
-      border-color: var(--primary);
-    }
-
-    .dept-icon {
-      width: 48px;
-      height: 48px;
-      background: var(--primary-light);
-      border-radius: 50%;
+    .action-image.skills-bg {
+      background: linear-gradient(135deg, #e8f5e9, #a5d6a7);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.3rem;
-      flex-shrink: 0;
+      font-size: 3.5rem;
+    }
+
+    .action-image.football-bg {
+      background: linear-gradient(135deg, #e3f2fd, #90caf9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.5rem;
+    }
+
+    .action-body {
+      padding: 25px;
+    }
+
+    .action-date {
+      font-size: 0.75rem;
       color: var(--primary);
-      transition: var(--transition-smooth);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
-    .dept-card:hover .dept-icon {
-      background: var(--primary);
-      color: white;
-    }
-
-    .dept-info h4 {
-      font-size: 1rem;
+    .action-body h4 {
+      font-size: 1.1rem;
       color: var(--secondary);
       font-weight: 700;
-      margin-bottom: 5px;
+      margin: 8px 0;
     }
 
-    .dept-info p {
-      font-size: 0.85rem;
+    .action-body p {
+      font-size: 0.9rem;
       color: var(--text-light);
-      line-height: 1.5;
+      line-height: 1.6;
+    }
+
+    /* ========== QUOTE SECTION ========== */
+    .quote-section {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: white;
+      padding: 50px 5%;
+      text-align: center;
+    }
+
+    .quote-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .quote-mark {
+      font-size: 4rem;
+      line-height: 1;
+      opacity: 0.4;
+      margin-bottom: 10px;
+    }
+
+    .quote-text {
+      font-size: 1.4rem;
+      font-style: italic;
+      font-weight: 500;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .quote-author {
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    .quote-author span {
+      display: block;
+      font-size: 0.85rem;
+      opacity: 0.8;
+      font-weight: 500;
     }
 
     /* ========== FOOTER ========== */
@@ -1010,15 +942,11 @@
       .footer-grid {
         grid-template-columns: 1fr 1fr;
       }
-      .chairman-grid {
+      .profile-grid {
         gap: 30px;
       }
-      .history-grid {
+      .actions-grid {
         grid-template-columns: 1fr;
-        gap: 30px;
-      }
-      .history-image {
-        order: -1;
       }
     }
 
@@ -1070,28 +998,39 @@
         display: block;
       }
 
-      .chairman-grid {
+      .profile-grid {
         grid-template-columns: 1fr;
       }
-      .chairman-image-card img {
-        height: 300px;
+
+      .profile-image-card img {
+        height: 350px;
       }
-      .history-grid {
+
+      .profile-quick-facts {
         grid-template-columns: 1fr;
       }
-      .history-highlights {
+
+      .vision-grid {
         grid-template-columns: 1fr;
       }
-      .wards-grid {
-        grid-template-columns: repeat(2, 1fr);
+
+      .election-grid {
+        grid-template-columns: 1fr;
       }
+
+      .actions-grid {
+        grid-template-columns: 1fr;
+      }
+
       .footer-grid {
         grid-template-columns: 1fr;
         gap: 30px;
       }
+
       .top-bar-right {
         display: none;
       }
+
       .page-hero {
         padding: 50px 5%;
       }
@@ -1101,21 +1040,21 @@
       .page-hero h2 {
         font-size: 1.6rem;
       }
-      .vm-grid {
-        grid-template-columns: 1fr;
-      }
-      .wards-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-      }
-      .ward-card {
-        padding: 18px 12px;
-      }
-      .dept-grid {
-        grid-template-columns: 1fr;
-      }
+
       .section-title {
         font-size: 1.5rem;
+      }
+
+      .profile-info h3 {
+        font-size: 1.4rem;
+      }
+
+      .quote-text {
+        font-size: 1.1rem;
+      }
+
+      .vote-highlight {
+        font-size: 2rem;
       }
     }
 
@@ -1166,7 +1105,7 @@
     <div class="nav-container">
       <a href="/" class="logo" aria-label="Kuje Area Council Home">
         <div class="logo-img-wrapper">
-          <img src="assets/images/logo.jpeg" alt="Kuje Area Council Official Seal" class="logo-img">
+          <img src="/assets/images/logo.jpeg" alt="Kuje Area Council Official Seal" class="logo-img">
           <span class="logo-pulse"></span>
         </div>
         <div class="logo-text">
@@ -1185,8 +1124,8 @@
           <li>
             <a href="/about-us.html" class="nav-active">About Us <span class="nav-arrow">▾</span></a>
             <div class="dropdown">
-              <a href="/about-us/history.html">Our History</a>
-              <a href="/about-us/chairman.html">Executive Chairman</a>
+              <a href="/about-us/our-history.html">Our History</a>
+              <a href="/about-us/chairman.html" style="background:var(--primary-light); color:var(--primary); font-weight:700;">Executive Chairman</a>
               <a href="/about-us/council-members.html">Council Members</a>
               <a href="/about-us/wards.html">Wards & Districts</a>
             </div>
@@ -1199,13 +1138,12 @@
               <a href="/departments/agriculture-and-natural-resources.html">Agriculture & Resources</a>
               <a href="/departments/education-and-social-development.html">Education & Social Dev.</a>
               <a href="/departments/finance-and-accounts.html">Finance & Accounts</a>
-              <a href="/departments/environmental-services.html">Environmental Services</a>
+              <a href="/departments/environmental-services">Environmental Services</a>
             </div>
           </li>
-          <li><a href="/governance-and-strategy.html">Governance</a></li>
-          <li><a href="/news.html">News</a></li>
-          <li><a href="/faqs.html"> FAQs</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/governance-and-strategy">Governance</a></li>
+          <li><a href="/news">News</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -1213,11 +1151,12 @@
 
   <main>
     <!-- ==================== PAGE HERO BANNER ==================== -->
-    <section class="page-hero" aria-labelledby="page-hero-heading">
-      <div class="page-hero-content">
-        <span class="page-hero-badge">🏛️ Discover Kuje</span>
-        <h2 id="page-hero-heading">About Kuje Area Council</h2>
-        <p>Discover our history, leadership, vision, and commitment to serving the people of the Federal Capital Territory.</p>
+<section class="page-hero" aria-labelledby="page-hero-heading" style="background-image: url('/assets/images/hero.jpeg'); background-size: cover; background-position: center;">
+  <div class="page-hero-content">
+        
+        <span class="page-hero-badge">👤 Executive Leadership</span>
+        <h2 id="page-hero-heading">The Executive Chairman</h2>
+        <p>Meet the leader driving Kuje Area Council's transformation through the Renewed Hope Agenda and grassroots development.</p>
       </div>
     </section>
 
@@ -1226,239 +1165,177 @@
       <div class="breadcrumb-inner">
         <a href="/">Home</a>
         <span class="breadcrumb-separator">›</span>
-        <span>About Us</span>
+        <a href="/about-us">About Us</a>
+        <span class="breadcrumb-separator">›</span>
+        <span>Executive Chairman</span>
       </div>
     </div>
 
-    <!-- ==================== CHAIRMAN'S WELCOME ==================== -->
-    <section class="chairman-welcome section-padding" aria-labelledby="chairman-heading">
+    <!-- ==================== CHAIRMAN PROFILE HEADER ==================== -->
+    <section class="profile-header section-padding" aria-labelledby="profile-heading">
       <div class="section-container">
-        <div class="chairman-grid">
-          <div class="chairman-image-card">
-            <img src="assets/images/chairman.jpeg" alt="Executive Chairman of Kuje Area Council">
-            <div class="chairman-image-overlay">
-              <h3>Hon. Executive Chairman</h3>
-              <span>Kuje Area Council, FCT Abuja</span>
+        <div class="profile-grid">
+          <div class="profile-image-card">
+            <img src="/assets/images/chairman.jpeg" alt="Hon. Danjuma Samuel Shekwolo, Executive Chairman of Kuje Area Council">
+            <div class="profile-image-overlay">
+              <h3>Hon. Danjuma Samuel Shekwolo</h3>
+              <span class="party-badge">APC – All Progressives Congress</span>
             </div>
           </div>
-          <div class="welcome-content">
-            <span class="section-label">Leadership Message</span>
-            <h3 id="chairman-heading">Welcome Address from the Executive Chairman</h3>
-            <blockquote>
-              "Our administration is built on the foundation of servant leadership. We are dedicated to transforming Kuje into a model Area Council through transparent governance, infrastructural renewal, and inclusive community development that leaves no ward behind."
-            </blockquote>
-            <p>
-              It is my distinct honor to welcome you to the official portal of Kuje Area Council. As one of the six Area Councils in Nigeria's Federal Capital Territory, we bear the responsibility of bringing governance closer to the people at the grassroots level.
+          <div class="profile-info">
+            <span class="section-label">About the Chairman</span>
+            <h3 id="profile-heading">Hon. Danjuma Samuel Shekwolo</h3>
+            <p class="designation">Executive Chairman, Kuje Area Council, FCT Abuja</p>
+
+            <div class="profile-quick-facts">
+              <div class="quick-fact">
+                <span class="fact-label">Political Party</span>
+                <span class="fact-value">All Progressives Congress (APC)</span>
+              </div>
+              <div class="quick-fact">
+                <span class="fact-label">Sworn Into Office</span>
+                <span class="fact-value">June 16, 2026</span>
+              </div>
+              <div class="quick-fact">
+                <span class="fact-label">Election Date</span>
+                <span class="fact-value">February 21, 2026</span>
+              </div>
+              <div class="quick-fact">
+                <span class="fact-label">Votes Secured</span>
+                <span class="fact-value">17,269 Votes</span>
+              </div>
+            </div>
+
+            <p class="profile-bio">
+              Hon. Danjuma Samuel Shekwolo is a seasoned political leader with vast experience, exposure, and a strong ideological footprint. Described by political stakeholders as a consensus builder, he emerged as the APC's unanimous candidate for the Kuje Area Council chairmanship after seven other aspirants voluntarily stepped down for him during the June 2025 primaries—a testament to his widespread popularity and track record of service across the Federal Capital Territory.
             </p>
-            <p>
-              Our administration remains steadfast in its commitment to youth empowerment, agricultural development, primary healthcare delivery, quality education, and sustainable infrastructure. We believe that every resident of Kuje—from Chibiri to Rubochi, from Gaube to Gudun Karya—deserves access to the dividends of democracy.
-            </p>
-            <p class="signature-block">
-              Hon. Executive Chairman
-              <span>Kuje Area Council, Federal Capital Territory, Abuja</span>
+            <p class="profile-bio">
+              His leadership philosophy is anchored on servant leadership, transparent governance, and a relentless commitment to grassroots development. Since assuming office, he has centered his administration around President Bola Ahmed Tinubu's <strong>"Renewed Hope Agenda,"</strong> emphasizing that "Renewed Hope is not a slogan but an action."
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== VISION, MISSION & CORE VALUES ==================== -->
-    <section class="vision-mission section-padding" aria-labelledby="vm-heading">
+    <!-- ==================== ELECTION DETAILS ==================== -->
+    <section class="election-section section-padding" aria-labelledby="election-heading">
       <div class="section-container">
         <div style="text-align:center; margin-bottom:40px;">
-          <span class="section-label">Our Guiding Principles</span>
-          <h2 id="vm-heading" class="section-title" style="margin:0 auto;">Vision, Mission & Core Values</h2>
+          <span class="section-label">The Mandate</span>
+          <h2 id="election-heading" class="section-title" style="margin:0 auto;">Election Details & Inauguration</h2>
+          <p style="color:var(--text-light); max-width:600px; margin:10px auto 0;">The historic election that brought Hon. Shekwolo to office as the Executive Chairman of Kuje Area Council.</p>
         </div>
-        <div class="vm-grid">
-          <!-- Vision Card -->
-          <div class="vm-card">
-            <div class="vm-icon">🔭</div>
-            <h4>Our Vision</h4>
-            <p>To build a progressive, peaceful, and economically self-sustaining Area Council in the Federal Capital Territory—a model of grassroots development and good governance for generations to come.</p>
+        <div class="election-grid">
+          <div class="election-card">
+            <div class="election-icon">🗳️</div>
+            <h4>The Election</h4>
+            <p>Hon. Shekwolo won the Kuje Area Council chairmanship election held on <strong>Saturday, February 21, 2026</strong>, in a competitive and peaceful electoral process.</p>
           </div>
-
-          <!-- Mission Card -->
-          <div class="vm-card">
-            <div class="vm-icon">🎯</div>
-            <h4>Our Mission</h4>
-            <p>Delivering quality governance, infrastructural growth, primary healthcare, and agricultural development to every community in Kuje through transparent leadership, efficient resource management, and active citizen participation.</p>
+          <div class="election-card">
+            <div class="election-icon">🏆</div>
+            <h4>The Results</h4>
+            <span class="vote-highlight">17,269</span>
+            <p>He was declared the winner on <strong>February 22, 2026</strong>, by the INEC Returning Officer, <strong>Prof. Nkiruka Odoh</strong> of the University of Abuja, having secured a decisive victory over his rivals.</p>
           </div>
-
-          <!-- Core Values Card -->
-          <div class="vm-card">
-            <div class="vm-icon">💎</div>
-            <h4>Our Core Values</h4>
-            <ul class="values-list">
-              <li><strong>Transparency</strong> – Open and accountable governance</li>
-              <li><strong>Community Service</strong> – Putting the people first</li>
-              <li><strong>Integrity</strong> – Upholding ethical standards</li>
-              <li><strong>Accountability</strong> – Responsible stewardship</li>
-              <li><strong>Innovation</strong> – Embracing modern solutions</li>
-            </ul>
+          <div class="election-card">
+            <div class="election-icon">🎖️</div>
+            <h4>Swearing-In Ceremony</h4>
+            <p>He was officially sworn into office on <strong>June 16, 2026</strong>, alongside other FCT Area Council chairmen, marking the beginning of a new era of leadership for Kuje.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== HISTORY & OVERVIEW ==================== -->
-    <section class="history-section section-padding" aria-labelledby="history-heading">
-      <div class="section-container">
-        <div class="history-grid">
-          <div class="history-content">
-            <span class="section-label">Our Story</span>
-            <h3 id="history-heading">History & Overview of Kuje Area Council</h3>
-            <p>
-              Kuje Area Council was established as one of the <strong>six Area Councils</strong> in Nigeria's Federal Capital Territory (FCT), Abuja. Created to bring governance closer to the grassroots, Kuje has grown from a modest rural settlement into a vibrant and strategically important local government area.
-            </p>
-            <p>
-              Fondly referred to as the <strong>"Food Basket of the FCT,"</strong> Kuje boasts vast arable land that supports large-scale farming and agricultural production. The area is renowned for its rich cultural heritage, with diverse ethnic groups including the indigenous Gbagyi people, Hausa, Fulani, and other Nigerian communities living together in harmony.
-            </p>
-            <p>
-              Strategically located near the <strong>Nnamdi Azikiwe International Airport</strong>, Kuje serves as a gateway between the Federal Capital City and the surrounding rural communities. With a land area of approximately <strong>1,644 square kilometers</strong> and a population exceeding <strong>300,000 residents</strong>, Kuje continues to experience rapid growth and urbanization.
-            </p>
-            <div class="history-highlights">
-              <div class="highlight-card">
-                <div class="highlight-icon">🌾</div>
-                <div class="highlight-title">Food Basket of the FCT</div>
-                <div class="highlight-desc">Major supplier of agricultural produce to Abuja</div>
-              </div>
-              <div class="highlight-card">
-                <div class="highlight-icon">✈️</div>
-                <div class="highlight-title">Strategic Location</div>
-                <div class="highlight-desc">Near Nnamdi Azikiwe International Airport</div>
-              </div>
-              <div class="highlight-card">
-                <div class="highlight-icon">👥</div>
-                <div class="highlight-title">300,000+ Residents</div>
-                <div class="highlight-desc">Growing population across 10 wards</div>
-              </div>
-              <div class="highlight-card">
-                <div class="highlight-icon">🏛️</div>
-                <div class="highlight-title">Rich Heritage</div>
-                <div class="highlight-desc">Diverse cultures living in unity</div>
-              </div>
-            </div>
-          </div>
-          <div class="history-image">
-            <img src="assets/images/landscape_veiw.jpeg" alt="Kuje Area Council landscape">
-            <div class="history-image-accent"></div>
-          </div>
-        </div>
+    <!-- ==================== QUOTE SECTION ==================== -->
+    <section class="quote-section" aria-label="Chairman's quote">
+      <div class="quote-container">
+        <div class="quote-mark">"</div>
+        <p class="quote-text">
+          Renewed Hope is not a slogan but an action. Our administration is committed to working closely with the FCT Minister and all stakeholders to attract major infrastructure projects to Kuje and ensure the rapid delivery of basic amenities to every rural community.
+        </p>
+        <p class="quote-author">
+          Hon. Danjuma Samuel Shekwolo
+          <span>Executive Chairman, Kuje Area Council, FCT Abuja</span>
+        </p>
       </div>
     </section>
 
-    <!-- ==================== WARDS & ADMINISTRATIVE DISTRICTS ==================== -->
-    <section class="wards-section section-padding" aria-labelledby="wards-heading">
-      <div class="section-container">
-        <div class="wards-header">
-          <span class="section-label">Administrative Structure</span>
-          <h2 id="wards-heading" class="section-title">Wards & Administrative Districts</h2>
-          <p class="section-desc" style="margin:10px auto 0;">Kuje Area Council is divided into <strong>10 political wards</strong>, each represented by an elected councilor who serves as the voice of the community in the legislative arm of the council.</p>
-        </div>
-        <div class="wards-grid">
-          <div class="ward-card">
-            <div class="ward-number">1</div>
-            <div class="ward-icon">🏘️</div>
-            <h4>Kuje Central</h4>
-          </div>
-          <div class="ward-card">
-            <div class="ward-number">2</div>
-            <div class="ward-icon">🏡</div>
-            <h4>Chibiri</h4>
-          </div>
-          <div class="ward-card">
-            <div class="ward-number">3</div>
-            <div class="ward-icon">🌳</div>
-            <h4>Gaube</h4>
-          </div>
-          <div class="ward-card">
-            <div class="ward-number">4</div>
-            <div class="ward-icon">🏠</div>
-            <h4>Kwaku</h4>
-          </div>
-          <div class="ward-card">
-            <div class="ward-number">5</div>
-            <div class="ward-icon">🏛️</div>
-            <h4>Kuje Ward</h4>
-          </div>
-          <div class="ward-card">
-            <div class="ward-number">6</div>
-            <div class="ward-icon">🌄</div>
-            <h4>Rubochi</h4>
-          </div>
-          <div class="ward-card">
-            <div class="ward-number">7</div>
-            <div class="ward-icon">🏞️</div>
-            <h4>Gudun Karya</h4>
-          </div>
-          <div class="ward-card">
-            <div class="ward-number">8</div>
-            <div class="ward-icon">🌅</div>
-            <h4>Yebu</h4>
-          </div>
-          <div class="ward-card">
-            <div class="ward-number">9</div>
-            <div class="ward-icon">⛰️</div>
-            <h4>Kabi</h4>
-          </div>
-          <div class="ward-card">
-            <div class="ward-number">10</div>
-            <div class="ward-icon">🌿</div>
-            <h4>Gudun-Karya/Yebu</h4>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== DEPARTMENTS ==================== -->
-    <section class="departments-section section-padding" aria-labelledby="dept-heading">
+    <!-- ==================== VISION, MISSION & AGENDA ==================== -->
+    <section class="vision-section section-padding" aria-labelledby="vision-heading">
       <div class="section-container">
         <div style="text-align:center; margin-bottom:40px;">
-          <span class="section-label">Council Structure</span>
-          <h2 id="dept-heading" class="section-title" style="margin:0 auto;">Leadership & Key Departments</h2>
-          <p class="section-desc" style="margin:10px auto 0;">Our administrative departments work collaboratively to deliver essential services and implement council policies across all wards.</p>
+          <span class="section-label">The Agenda</span>
+          <h2 id="vision-heading" class="section-title" style="margin:0 auto;">Vision, Mission & Core Agenda</h2>
+          <p style="color:var(--text-light); max-width:600px; margin:10px auto 0;">The guiding principles and priorities of the Shekwolo administration for Kuje Area Council.</p>
         </div>
-        <div class="dept-grid">
-          <div class="dept-card">
-            <div class="dept-icon">🏗️</div>
-            <div class="dept-info">
-              <h4>Works & Housing</h4>
-              <p>Infrastructure development, road construction, building plan approvals, and public works maintenance.</p>
+        <div class="vision-grid">
+          <div class="vision-card">
+            <div class="vision-icon">🇳🇬</div>
+            <h4>The "Renewed Hope" Alignment</h4>
+            <p>
+              Shekwolo has centered his administration's mission around President Bola Ahmed Tinubu's <strong>"Renewed Hope Agenda."</strong> During his inauguration, he emphasized that <em>"Renewed Hope is not a slogan but an action,"</em> signaling a hands-on approach to local governance that prioritizes tangible results over rhetoric.
+            </p>
+          </div>
+          <div class="vision-card">
+            <div class="vision-icon">🤝</div>
+            <h4>Collaboration for Infrastructure</h4>
+            <p>
+              His vision relies heavily on inter-governmental collaboration. He pledged to work closely with the <strong>FCT Minister, Nyesom Wike</strong>, to attract major infrastructure projects to Kuje and ensure the rapid delivery of basic amenities such as roads, water supply, and electricity to rural communities across all 10 wards.
+            </p>
+          </div>
+          <div class="vision-card">
+            <div class="vision-icon">💼</div>
+            <h4>Economic Empowerment</h4>
+            <p>
+              A primary focus of his mandate is tackling youth and female unemployment, reducing poverty, and driving sustainable economic empowerment at the grassroots level. His administration aims to create opportunities through skills training, small business support, and agricultural value chain development.
+            </p>
+          </div>
+          <div class="vision-card">
+            <div class="vision-icon">🌱</div>
+            <h4>Grassroots Development</h4>
+            <p>
+              His agenda includes driving sociopolitical and economic progress through local initiatives, such as supporting sports programs like the <strong>Kuje Football League</strong> to engage youths and stimulate the local economy. The council under his leadership prioritizes community-driven development projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== RECENT ACTIONS ==================== -->
+    <section class="actions-section section-padding" aria-labelledby="actions-heading">
+      <div class="section-container">
+        <div style="text-align:center; margin-bottom:40px;">
+          <span class="section-label">Delivering Results</span>
+          <h2 id="actions-heading" class="section-title" style="margin:0 auto;">Recent Actions in Office</h2>
+          <p style="color:var(--text-light); max-width:600px; margin:10px auto 0;">Since assuming office, Hon. Shekwolo has hit the ground running with impactful initiatives.</p>
+        </div>
+        <div class="actions-grid">
+        <div class="action-card">
+  <!-- The emoji has been replaced with an image container -->
+  <div class="action-image skills-bg" style="background-image: url('/assets/images/youth_empoerment.jpeg');"></div>
+
+            <div class="action-body">
+              <span class="action-date">July 2026</span>
+              <h4>Skills Acquisition Program for Women & Youths</h4>
+              <p>
+                Hon. Shekwolo flagged off a comprehensive <strong>skills acquisition program</strong> specifically targeted at women and youths in Kuje Area Council. During the launch, he reaffirmed his administration's commitment to equipping residents with the necessary vocational and entrepreneurial skills to combat unemployment and drive self-reliance.
+              </p>
+              <p>
+                The program covers training in tailoring, ICT, carpentry, catering, and modern agricultural techniques, with participants receiving starter kits upon completion.
+              </p>
             </div>
           </div>
-          <div class="dept-card">
-            <div class="dept-icon">🌾</div>
-            <div class="dept-info">
-              <h4>Agriculture & Natural Resources</h4>
-              <p>Agricultural extension services, fertilizer distribution, farmer support programs, and environmental conservation.</p>
-            </div>
-          </div>
-          <div class="dept-card">
-            <div class="dept-icon">🏥</div>
-            <div class="dept-info">
-              <h4>Health & Human Services</h4>
-              <p>Primary healthcare delivery, maternal and child health, immunization programs, and sanitation oversight.</p>
-            </div>
-          </div>
-          <div class="dept-card">
-            <div class="dept-icon">📚</div>
-            <div class="dept-info">
-              <h4>Education & Social Development</h4>
-              <p>Primary education support, scholarship schemes, youth empowerment, and social welfare programs.</p>
-            </div>
-          </div>
-          <div class="dept-card">
-            <div class="dept-icon">💰</div>
-            <div class="dept-info">
-              <h4>Finance & Accounts</h4>
-              <p>Revenue collection, budgeting, financial management, and expenditure control.</p>
-            </div>
-          </div>
-          <div class="dept-card">
-            <div class="dept-icon">📋</div>
-            <div class="dept-info">
-              <h4>Administration & General Services</h4>
-              <p>Human resources, council secretariat management, procurement, and inter-departmental coordination.</p>
+          <div class="action-card">
+             <div class="action-image skills-bg" style="background-image: url('/assets/images/football.jpg');"></div>
+            <div class="action-body">
+              <span class="action-date">Ongoing Initiative</span>
+              <h4>Kuje Football League & Youth Sports Development</h4>
+              <p>
+                Recognizing the power of sports in youth engagement and community development, the Chairman has thrown his weight behind the <strong>Kuje Football League</strong> and other sporting initiatives. These programs provide a platform for young talents to showcase their skills while promoting unity and healthy competition among communities.
+              </p>
+              <p>
+                The council has committed to upgrading local sports facilities and organizing regular tournaments to discover and nurture sporting talents across the 10 wards.
+              </p>
             </div>
           </div>
         </div>
@@ -1518,7 +1395,7 @@
   <script src="assets/js/nav.js"></script>
   <script src="assets/js/main.js"></script>
 
-  <!-- ==================== ABOUT PAGE JAVASCRIPT ==================== -->
+  <!-- ==================== CHAIRMAN PAGE JAVASCRIPT ==================== -->
   <script>
     (function() {
       'use strict';
@@ -1571,12 +1448,11 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
 
-      console.log('🏛️ Kuje Area Council About Us Page Ready');
-      console.log('👤 Chairman welcome message loaded');
-      console.log('🎯 Vision, Mission & Core Values displayed');
-      console.log('📜 History & Overview section active');
-      console.log('📍 10 Political Wards listed');
-      console.log('🏢 6 Key Departments highlighted');
+      console.log('👤 Kuje Area Council - Executive Chairman Page Ready');
+      console.log('📋 Hon. Danjuma Samuel Shekwolo profile displayed');
+      console.log('🗳️ Election details: 17,269 votes | Sworn in June 16, 2026');
+      console.log('🎯 Renewed Hope Agenda featured');
+      console.log('🛠️ Recent actions: Skills acquisition & Football League');
     })();
   </script>
 </body>

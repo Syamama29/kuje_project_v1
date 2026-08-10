@@ -1,0 +1,1731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the 10 political wards of Kuje Area Council, FCT Abuja - Learn about Kuje Central, Chibiri, Gaube, Kwaku, Rubochi, and all administrative districts.">
+  <meta name="theme-color" content="#008751">
+  <meta property="og:title" content="Wards & Districts | Kuje Area Council, FCT Abuja">
+  <meta property="og:description" content="Discover all 10 political wards of Kuje Area Council, each with its unique communities, elected councilors, and development priorities.">
+  <title>Wards & Districts – Kuje Area Council | FCT Abuja</title>
+
+  <!-- Favicon Asset -->
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <style>
+    :root {
+      --primary: #008751;
+      --primary-dark: #005c37;
+      --primary-light: #e8f5e9;
+      --primary-glow: rgba(0, 135, 81, 0.3);
+      --secondary: #1f2937;
+      --secondary-light: #374151;
+      --accent: #d97706;
+      --accent-light: #fef3c7;
+      --light-bg: #f8fafc;
+      --white: #ffffff;
+      --text: #334155;
+      --text-light: #64748b;
+      --text-muted: #94a3b8;
+      --border: #e2e8f0;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+      --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.12);
+      --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.15);
+      --transition-fast: 0.2s ease;
+      --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* ========== SCROLL TO TOP BUTTON ========== */
+    .scroll-top-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 48px;
+      height: 48px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      font-size: 1.3rem;
+      cursor: pointer;
+      z-index: 999;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: var(--transition-smooth);
+      box-shadow: 0 4px 15px var(--primary-glow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .scroll-top-btn.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .scroll-top-btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0, 135, 81, 0.5);
+    }
+
+    /* ========== TOP UTILITY BAR ========== */
+    .top-bar {
+      background: linear-gradient(135deg, var(--secondary) 0%, #111827 100%);
+      color: #cbd5e1;
+      font-size: 0.82rem;
+      padding: 0;
+      position: relative;
+      z-index: 1001;
+    }
+
+    .top-bar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 5%;
+      max-width: 1400px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .top-bar-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .top-bar-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition-fast);
+    }
+
+    .top-bar-item:hover {
+      color: white;
+    }
+
+    .top-bar-icon {
+      font-size: 0.9rem;
+      color: var(--primary);
+      filter: brightness(1.3);
+    }
+
+    .top-bar-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .govt-badge {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    /* ========== HEADER & NAVIGATION ========== */
+    header {
+      background-color: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid transparent;
+      transition: var(--transition-smooth);
+    }
+
+    header.scrolled {
+      border-bottom-color: var(--border);
+      box-shadow: var(--shadow-md);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 5%;
+      max-width: 1400px;
+      margin: 0 auto;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-shrink: 0;
+    }
+
+    .logo-img-wrapper {
+      position: relative;
+      width: 52px;
+      height: 52px;
+      flex-shrink: 0;
+    }
+
+    .logo-img {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--primary-light);
+      transition: var(--transition-smooth);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo:hover .logo-img {
+      transform: scale(1.05);
+      border-color: var(--primary);
+      box-shadow: 0 4px 15px var(--primary-glow);
+    }
+
+    .logo-pulse {
+      position: absolute;
+      top: -3px;
+      right: -3px;
+      width: 14px;
+      height: 14px;
+      background: var(--primary);
+      border-radius: 50%;
+      border: 2px solid white;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 var(--primary-glow); }
+      50% { box-shadow: 0 0 0 12px transparent; }
+    }
+
+    .logo-text h1 {
+      font-size: 1.15rem;
+      color: var(--secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .logo-text p {
+      font-size: 0.72rem;
+      color: var(--primary);
+      font-weight: 700;
+      letter-spacing: 1.5px;
+    }
+
+    /* Navigation */
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 5px;
+      align-items: center;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav a {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--secondary);
+      padding: 8px 14px;
+      border-radius: var(--radius-sm);
+      transition: var(--transition-fast);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    nav a:hover {
+      background: var(--primary-light);
+      color: var(--primary);
+    }
+
+    nav a.nav-active {
+      background: var(--primary);
+      color: white;
+    }
+
+    .nav-arrow {
+      font-size: 0.6rem;
+      transition: var(--transition-fast);
+    }
+
+    nav li:hover .nav-arrow {
+      transform: rotate(180deg);
+    }
+
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: white;
+      min-width: 220px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-xl);
+      padding: 8px 0;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: var(--transition-smooth);
+      border: 1px solid var(--border);
+      z-index: 100;
+    }
+
+    nav li:hover .dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(5px);
+    }
+
+    .dropdown a {
+      padding: 10px 18px;
+      font-size: 0.85rem;
+      border-radius: 0;
+      font-weight: 500;
+      display: block;
+    }
+
+    .dropdown a:hover {
+      background: var(--light-bg);
+      padding-left: 22px;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 2px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 8px 10px;
+      cursor: pointer;
+      transition: var(--transition-fast);
+    }
+
+    .menu-toggle:hover {
+      border-color: var(--primary);
+      background: var(--primary-light);
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 24px;
+      height: 2.5px;
+      background: var(--secondary);
+      margin: 5px 0;
+      border-radius: 2px;
+      transition: var(--transition-smooth);
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    .menu-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+    .menu-toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* ========== PAGE HERO BANNER ========== */
+    .page-hero {
+      background: linear-gradient(135deg, rgba(0, 92, 55, 0.92) 0%, rgba(31, 41, 55, 0.88) 100%),
+                  url('assets/images/hero-bg.jpg') center/cover no-repeat;
+      color: white;
+      padding: 70px 5%;
+      text-align: center;
+      position: relative;
+    }
+
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    .page-hero-content {
+      position: relative;
+      z-index: 2;
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .page-hero-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(8px);
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .page-hero h2 {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 800;
+      margin-bottom: 12px;
+      text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .page-hero p {
+      font-size: 1.1rem;
+      color: #e2e8f0;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* ========== BREADCRUMB ========== */
+    .breadcrumb {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 5%;
+    }
+
+    .breadcrumb-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .breadcrumb-inner a {
+      color: var(--primary);
+      font-weight: 600;
+      transition: var(--transition-fast);
+    }
+
+    .breadcrumb-inner a:hover {
+      color: var(--primary-dark);
+      text-decoration: underline;
+    }
+
+    .breadcrumb-separator {
+      margin: 0 8px;
+      color: var(--text-muted);
+    }
+
+    /* ========== SECTION STYLES ========== */
+    .section-padding {
+      padding: 60px 5%;
+    }
+
+    .section-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      display: inline-block;
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      color: var(--secondary);
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    .section-desc {
+      color: var(--text-light);
+      max-width: 700px;
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    /* ========== OVERVIEW SECTION ========== */
+    .overview-section {
+      background: var(--white);
+    }
+
+    .overview-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .overview-content p {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .overview-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .overview-stat {
+      background: var(--light-bg);
+      padding: 20px;
+      border-radius: var(--radius-md);
+      text-align: center;
+      border-left: 3px solid var(--primary);
+      transition: var(--transition-smooth);
+    }
+
+    .overview-stat:hover {
+      background: var(--primary-light);
+      transform: translateY(-3px);
+    }
+
+    .overview-stat .stat-num {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--primary);
+      display: block;
+    }
+
+    .overview-stat .stat-lbl {
+      font-size: 0.8rem;
+      color: var(--text-light);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .overview-image {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+    }
+
+    .overview-image img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+
+    .overview-image-accent {
+      position: absolute;
+      bottom: -15px;
+      right: -15px;
+      width: 100%;
+      height: 100%;
+      border: 3px solid var(--primary);
+      border-radius: var(--radius-lg);
+      z-index: -1;
+    }
+
+    /* ========== WARDS GRID ========== */
+    .wards-listing {
+      background: var(--light-bg);
+    }
+
+    .wards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 25px;
+    }
+
+    .ward-detail-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+      transition: var(--transition-smooth);
+      position: relative;
+    }
+
+    .ward-detail-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--primary);
+    }
+
+    .ward-card-header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .ward-number-badge {
+      width: 48px;
+      height: 48px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      font-weight: 800;
+      flex-shrink: 0;
+      border: 2px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .ward-header-info h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+
+    .ward-header-info .ward-subtitle {
+      font-size: 0.75rem;
+      opacity: 0.85;
+      color: #6ee7b7;
+    }
+
+    .ward-card-body {
+      padding: 20px;
+    }
+
+    .ward-detail-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 12px;
+      font-size: 0.88rem;
+      color: var(--text-light);
+    }
+
+    .ward-detail-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .ward-detail-icon {
+      font-size: 1rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .ward-detail-row strong {
+      color: var(--secondary);
+      font-weight: 600;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .ward-communities {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 5px;
+    }
+
+    .community-tag {
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      padding: 3px 10px;
+      border-radius: 15px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      border: 1px solid var(--primary);
+      transition: var(--transition-smooth);
+    }
+
+    .community-tag:hover {
+      background: var(--primary);
+      color: white;
+    }
+
+    /* ========== COUNCILOR INFO ========== */
+    .councilor-section {
+      background: var(--white);
+    }
+
+    .councilor-info-box {
+      background: var(--light-bg);
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .councilor-icon {
+      width: 60px;
+      height: 60px;
+      background: var(--primary-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      flex-shrink: 0;
+      color: var(--primary);
+    }
+
+    .councilor-text h4 {
+      font-size: 1.1rem;
+      color: var(--secondary);
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .councilor-text p {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    /* ========== MAP SECTION ========== */
+    .map-section {
+      background: var(--light-bg);
+    }
+
+    .map-container {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border);
+    }
+
+    .map-placeholder {
+      width: 100%;
+      height: 400px;
+      background: linear-gradient(135deg, #e8f5e9 0%, #f0fdf4 50%, #dcfce7 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-light);
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .map-placeholder .map-pin {
+      font-size: 3.5rem;
+      margin-bottom: 15px;
+      animation: bounce 2s infinite;
+      position: relative;
+      z-index: 1;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    .map-placeholder p {
+      position: relative;
+      z-index: 1;
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--secondary);
+      margin-bottom: 5px;
+    }
+
+    .map-placeholder span {
+      position: relative;
+      z-index: 1;
+      font-size: 0.85rem;
+      color: var(--text-light);
+    }
+
+    /* ========== FOOTER ========== */
+    footer {
+      background: linear-gradient(180deg, var(--secondary) 0%, #111827 100%);
+      color: #cbd5e1;
+      padding: 60px 5% 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+      gap: 40px;
+      margin-bottom: 40px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .footer-col h4 {
+      color: var(--white);
+      margin-bottom: 20px;
+      font-size: 1rem;
+      font-weight: 700;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .footer-col h4::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 3px;
+      background: var(--primary);
+      border-radius: 3px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col ul a {
+      font-size: 0.88rem;
+      transition: var(--transition-fast);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: #9ca3af;
+    }
+
+    .footer-col ul a:hover {
+      color: var(--white);
+      padding-left: 6px;
+    }
+
+    .footer-about-text {
+      font-size: 0.85rem;
+      color: #9ca3af;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    .tax-download-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 10px 16px;
+      border-radius: var(--radius-sm);
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.85rem;
+      transition: var(--transition-smooth);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .tax-download-link:hover {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 20px 0;
+      text-align: center;
+      font-size: 0.82rem;
+      color: #6b7280;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .overview-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      .overview-image {
+        order: -1;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        box-shadow: var(--shadow-lg);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      nav.open {
+        max-height: 500px;
+        overflow-y: auto;
+      }
+
+      nav ul {
+        flex-direction: column;
+        padding: 15px 5%;
+        gap: 5px;
+      }
+
+      nav a {
+        padding: 12px 15px;
+        border-radius: var(--radius-sm);
+      }
+
+      .dropdown {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        border: none;
+        padding-left: 20px;
+        display: none;
+      }
+
+      nav li:hover .dropdown {
+        display: block;
+      }
+
+      .overview-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .overview-stats {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .wards-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .councilor-info-box {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .map-placeholder {
+        height: 300px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .top-bar-right {
+        display: none;
+      }
+
+      .page-hero {
+        padding: 50px 5%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .page-hero h2 {
+        font-size: 1.6rem;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+      }
+
+      .overview-stats {
+        grid-template-columns: 1fr;
+      }
+
+      .ward-detail-card {
+        min-width: 0;
+      }
+
+      .map-placeholder {
+        height: 250px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--primary);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+  <!-- ==================== SCROLL TO TOP ==================== -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+  <!-- ==================== TOP BAR ==================== -->
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="top-bar-left">
+        <div class="top-bar-item">
+          <span class="top-bar-icon">📞</span>
+          <span>+234 9 000 0000</span>
+        </div>
+        <div class="top-bar-item">
+          <span class="top-bar-icon">🕐</span>
+          <span>Mon - Fri: 8:00 AM - 4:00 PM</span>
+        </div>
+        <div class="top-bar-item">
+          <span class="top-bar-icon">📍</span>
+          <span>Kuje, FCT Abuja, Nigeria</span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <span class="govt-badge">🇳🇬 Federal Republic of Nigeria</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== HEADER ==================== -->
+  <header id="mainHeader">
+    <div class="nav-container">
+      <a href="/" class="logo" aria-label="Kuje Area Council Home">
+        <div class="logo-img-wrapper">
+          <img src="/assets/images/logo.jpeg" alt="Kuje Area Council Official Seal" class="logo-img">
+          <span class="logo-pulse"></span>
+        </div>
+        <div class="logo-text">
+          <h1>Kuje Area Council</h1>
+          <p>FCT – ABUJA</p>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="navMenu" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li>
+            <a href="/about-us" class="nav-active">About Us <span class="nav-arrow">▾</span></a>
+            <div class="dropdown">
+              <a href="/about-us/our-history">Our History</a>
+              <a href="/about-us/chairman">Executive Chairman</a>
+              <a href="/about-us/council-members">Council Members</a>
+              <a href="/about-us/wards" style="background:var(--primary-light); color:var(--primary); font-weight:700;">Wards & Districts</a>
+            </div>
+          </li>
+          <li><a href="/services">Services</a></li>
+          <li>
+            <a href="/departments">Departments <span class="nav-arrow">▾</span></a>
+            <div class="dropdown">
+              <a href="/departments/administration-and-general-services">Admin & General Services</a>
+              <a href="/departments/agriculture-and-natural-resources">Agriculture & Resources</a>
+              <a href="/departments/education-and-social-development">Education & Social Dev.</a>
+              <a href="/departments/finance-and-accounts">Finance & Accounts</a>
+              <a href="/departments/environmental-services">Environmental Services</a>
+            </div>
+          </li>
+          <li><a href="/governance-and-strategy">Governance</a></li>
+          <li><a href="/news">News</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== PAGE HERO BANNER ==================== -->
+    <section class="page-hero" aria-labelledby="page-hero-heading">
+      <div class="page-hero-content">
+        <span class="page-hero-badge">📍 Administrative Structure</span>
+        <h2 id="page-hero-heading">Wards & Administrative Districts</h2>
+        <p>Explore the 10 political wards that make up Kuje Area Council, each with its unique communities, elected representation, and development priorities.</p>
+      </div>
+    </section>
+
+    <!-- ==================== BREADCRUMB ==================== -->
+    <div class="breadcrumb" aria-label="Breadcrumb">
+      <div class="breadcrumb-inner">
+        <a href="/">Home</a>
+        <span class="breadcrumb-separator">›</span>
+        <a href="/about-us">About Us</a>
+        <span class="breadcrumb-separator">›</span>
+        <span>Wards & Districts</span>
+      </div>
+    </div>
+
+    <!-- ==================== OVERVIEW SECTION ==================== -->
+    <section class="overview-section section-padding" aria-labelledby="overview-heading">
+      <div class="section-container">
+        <div class="overview-grid">
+          <div class="overview-content">
+            <span class="section-label">Understanding Our Structure</span>
+            <h2 id="overview-heading" class="section-title">Political Wards of Kuje Area Council</h2>
+            <p>
+              Kuje Area Council is divided into <strong>10 political wards</strong>, which serve as the foundational units of local governance and political representation. Each ward is represented by an <strong>elected councilor</strong> who serves in the Kuje Legislative Council, voicing the concerns and aspirations of their constituents.
+            </p>
+            <p>
+              These wards encompass numerous towns, villages, and settlements spread across the council's <strong>1,644 square kilometers</strong> of land area. From the bustling Kuje Central to the agricultural heartlands of Gaube and Rubochi, each ward contributes uniquely to the council's identity as the <strong>"Food Basket of the FCT."</strong>
+            </p>
+            <div class="overview-stats">
+              <div class="overview-stat">
+                <span class="stat-num">10</span>
+                <span class="stat-lbl">Political Wards</span>
+              </div>
+              <div class="overview-stat">
+                <span class="stat-num">10</span>
+                <span class="stat-lbl">Elected Councilors</span>
+              </div>
+              <div class="overview-stat">
+                <span class="stat-num">50+</span>
+                <span class="stat-lbl">Communities</span>
+              </div>
+              <div class="overview-stat">
+                <span class="stat-num">1,644</span>
+                <span class="stat-lbl">Square Kilometers</span>
+              </div>
+            </div>
+          </div>
+          <div class="overview-image">
+            <img src="/assets/images/landscape_veiw.jpeg" alt="Kuje Area Council wards map representation">
+            <div class="overview-image-accent"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== WARDS GRID LISTING ==================== -->
+    <section class="wards-listing section-padding" aria-labelledby="wards-heading">
+      <div class="section-container">
+        <div style="text-align:center; margin-bottom:40px;">
+          <span class="section-label">All 10 Wards</span>
+          <h2 id="wards-heading" class="section-title" style="margin:0 auto;">Complete Ward Directory</h2>
+          <p style="color:var(--text-light); max-width:600px; margin:10px auto 0;">Detailed information about each political ward, including key communities and administrative details.</p>
+        </div>
+
+        <div class="wards-grid">
+          <!-- Ward 1: Kuje Central -->
+          <div class="ward-detail-card">
+            <div class="ward-card-header">
+              <div class="ward-number-badge">1</div>
+              <div class="ward-header-info">
+                <h3>Kuje Central</h3>
+                <span class="ward-subtitle">Administrative Hub</span>
+              </div>
+            </div>
+            <div class="ward-card-body">
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">📍</span>
+                <div>
+                  <strong>Location</strong>
+                  <span>Central Kuje Town, hosts the Council Secretariat</span>
+                </div>
+              </div>
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">🏛️</span>
+                <div>
+                  <strong>Key Facilities</strong>
+                  <span>Kuje Secretariat, Main Market, Central Mosque, Police Station</span>
+                </div>
+              </div>
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">🏘️</span>
+                <div>
+                  <strong>Communities</strong>
+                  <div class="ward-communities">
+                    <span class="community-tag">Kuje Town</span>
+                    <span class="community-tag">Secretariat Area</span>
+                    <span class="community-tag">Old Kuje</span>
+                    <span class="community-tag">Market Road</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ward 2: Chibiri -->
+          <div class="ward-detail-card">
+            <div class="ward-card-header">
+              <div class="ward-number-badge">2</div>
+              <div class="ward-header-info">
+                <h3>Chibiri</h3>
+                <span class="ward-subtitle">Residential & Commercial Zone</span>
+              </div>
+            </div>
+            <div class="ward-card-body">
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">📍</span>
+                <div>
+                  <strong>Location</strong>
+                  <span>Eastern corridor of Kuje, near airport road</span>
+                </div>
+              </div>
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">🏛️</span>
+                <div>
+                  <strong>Key Facilities</strong>
+                  <span>Primary Health Center, Public Schools, Motor Park</span>
+                </div>
+              </div>
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">🏘️</span>
+                <div>
+                  <strong>Communities</strong>
+                  <div class="ward-communities">
+                    <span class="community-tag">Chibiri Village</span>
+                    <span class="community-tag">New Layout</span>
+                    <span class="community-tag">Airport Road</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ward 3: Gaube -->
+          <div class="ward-detail-card">
+            <div class="ward-card-header">
+              <div class="ward-number-badge">3</div>
+              <div class="ward-header-info">
+                <h3>Gaube</h3>
+                <span class="ward-subtitle">Agricultural Heartland</span>
+              </div>
+            </div>
+            <div class="ward-card-body">
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">📍</span>
+                <div>
+                  <strong>Location</strong>
+                  <span>Northern part of Kuje Area Council</span>
+                </div>
+              </div>
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">🏛️</span>
+                <div>
+                  <strong>Key Facilities</strong>
+                  <span>Health Post, Agricultural Extension Center, Primary School</span>
+                </div>
+              </div>
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">🏘️</span>
+                <div>
+                  <strong>Communities</strong>
+                  <div class="ward-communities">
+                    <span class="community-tag">Gaube Village</span>
+                    <span class="community-tag">Farming Settlements</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ward 4: Kwaku -->
+          <div class="ward-detail-card">
+            <div class="ward-card-header">
+              <div class="ward-number-badge">4</div>
+              <div class="ward-header-info">
+                <h3>Kwaku</h3>
+                <span class="ward-subtitle">Rural Development Zone</span>
+              </div>
+            </div>
+            <div class="ward-card-body">
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">📍</span>
+                <div>
+                  <strong>Location</strong>
+                  <span>Western region of Kuje Area Council</span>
+                </div>
+              </div>
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">🏛️</span>
+                <div>
+                  <strong>Key Facilities</strong>
+                  <span>Community Health Post, Primary School, Rural Market</span>
+                </div>
+              </div>
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">🏘️</span>
+                <div>
+                  <strong>Communities</strong>
+                  <div class="ward-communities">
+                    <span class="community-tag">Kwaku Village</span>
+                    <span class="community-tag">Surrounding Hamlets</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ward 5: Kuje Ward -->
+          <div class="ward-detail-card">
+            <div class="ward-card-header">
+              <div class="ward-number-badge">5</div>
+              <div class="ward-header-info">
+                <h3>Kuje Ward</h3>
+                <span class="ward-subtitle">Urban & Suburban Mix</span>
+              </div>
+            </div>
+            <div class="ward-card-body">
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">📍</span>
+                <div>
+                  <strong>Location</strong>
+                  <span>Adjoining Kuje Central, covering residential districts</span>
+                </div>
+              </div>
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">🏛️</span>
+                <div>
+                  <strong>Key Facilities</strong>
+                  <span>Public Schools, Healthcare Facilities, Community Centers</span>
+                </div>
+              </div>
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">🏘️</span>
+                <div>
+                  <strong>Communities</strong>
+                  <div class="ward-communities">
+                    <span class="community-tag">Kuje Extension</span>
+                    <span class="community-tag">Residential Estates</span>
+                    <span class="community-tag">Suburban Areas</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ward 6: Rubochi -->
+          <div class="ward-detail-card">
+            <div class="ward-card-header">
+              <div class="ward-number-badge">6</div>
+              <div class="ward-header-info">
+                <h3>Rubochi</h3>
+                <span class="ward-subtitle">Farming & Trading Community</span>
+              </div>
+            </div>
+            <div class="ward-card-body">
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">📍</span>
+                <div>
+                  <strong>Location</strong>
+                  <span>Southern part of Kuje Area Council</span>
+                </div>
+              </div>
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">🏛️</span>
+                <div>
+                  <strong>Key Facilities</strong>
+                  <span>Rural Health Center, Weekly Market, Primary School</span>
+                </div>
+              </div>
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">🏘️</span>
+                <div>
+                  <strong>Communities</strong>
+                  <div class="ward-communities">
+                    <span class="community-tag">Rubochi Town</span>
+                    <span class="community-tag">Farming Clusters</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ward 7: Gudun Karya -->
+          <div class="ward-detail-card">
+            <div class="ward-card-header">
+              <div class="ward-number-badge">7</div>
+              <div class="ward-header-info">
+                <h3>Gudun Karya</h3>
+                <span class="ward-subtitle">Pastoral & Agrarian Zone</span>
+              </div>
+            </div>
+            <div class="ward-card-body">
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">📍</span>
+                <div>
+                  <strong>Location</strong>
+                  <span>Eastern agricultural belt of Kuje</span>
+                </div>
+              </div>
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">🏛️</span>
+                <div>
+                  <strong>Key Facilities</strong>
+                  <span>Health Post, Nomadic School, Livestock Market</span>
+                </div>
+              </div>
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">🏘️</span>
+                <div>
+                  <strong>Communities</strong>
+                  <div class="ward-communities">
+                    <span class="community-tag">Gudun Karya</span>
+                    <span class="community-tag">Herder Settlements</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ward 8: Yebu -->
+          <div class="ward-detail-card">
+            <div class="ward-card-header">
+              <div class="ward-number-badge">8</div>
+              <div class="ward-header-info">
+                <h3>Yebu</h3>
+                <span class="ward-subtitle">Agrarian Community</span>
+              </div>
+            </div>
+            <div class="ward-card-body">
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">📍</span>
+                <div>
+                  <strong>Location</strong>
+                  <span>Western rural area of Kuje</span>
+                </div>
+              </div>
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">🏛️</span>
+                <div>
+                  <strong>Key Facilities</strong>
+                  <span>Community Health Outpost, Primary School</span>
+                </div>
+              </div>
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">🏘️</span>
+                <div>
+                  <strong>Communities</strong>
+                  <div class="ward-communities">
+                    <span class="community-tag">Yebu Village</span>
+                    <span class="community-tag">Farm Settlements</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ward 9: Kabi -->
+          <div class="ward-detail-card">
+            <div class="ward-card-header">
+              <div class="ward-number-badge">9</div>
+              <div class="ward-header-info">
+                <h3>Kabi</h3>
+                <span class="ward-subtitle">Developing Rural Ward</span>
+              </div>
+            </div>
+            <div class="ward-card-body">
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">📍</span>
+                <div>
+                  <strong>Location</strong>
+                  <span>Southwestern part of Kuje Area Council</span>
+                </div>
+              </div>
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">🏛️</span>
+                <div>
+                  <strong>Key Facilities</strong>
+                  <span>Health Post, Community School, Rural Market</span>
+                </div>
+              </div>
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">🏘️</span>
+                <div>
+                  <strong>Communities</strong>
+                  <div class="ward-communities">
+                    <span class="community-tag">Kabi Village</span>
+                    <span class="community-tag">Surrounding Areas</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ward 10: Gudun-Karya/Yebu -->
+          <div class="ward-detail-card">
+            <div class="ward-card-header">
+              <div class="ward-number-badge">10</div>
+              <div class="ward-header-info">
+                <h3>Gudun-Karya/Yebu</h3>
+                <span class="ward-subtitle">Combined Administrative Ward</span>
+              </div>
+            </div>
+            <div class="ward-card-body">
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">📍</span>
+                <div>
+                  <strong>Location</strong>
+                  <span>Eastern-Southeastern corridor of Kuje</span>
+                </div>
+              </div>
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">🏛️</span>
+                <div>
+                  <strong>Key Facilities</strong>
+                  <span>Integrated Health Center, Public Schools, Market Stalls</span>
+                </div>
+              </div>
+              <div class="ward-detail-row">
+                <span class="ward-detail-icon">🏘️</span>
+                <div>
+                  <strong>Communities</strong>
+                  <div class="ward-communities">
+                    <span class="community-tag">Gudun-Karya Ext.</span>
+                    <span class="community-tag">Yebu Ext.</span>
+                    <span class="community-tag">Border Settlements</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== COUNCILOR INFORMATION ==================== -->
+    <section class="councilor-section section-padding" aria-labelledby="councilor-heading">
+      <div class="section-container">
+        <span class="section-label">Legislative Representation</span>
+        <h2 id="councilor-heading" class="section-title">Ward Councilors & Legislative Council</h2>
+        <p class="section-desc">
+          Each of the 10 political wards elects a councilor who represents the community's interests in the Kuje Legislative Council. The councilors work alongside the Executive Chairman to enact by-laws, approve budgets, and oversee development projects.
+        </p>
+        <div class="councilor-info-box">
+          <div class="councilor-icon">🏛️</div>
+          <div class="councilor-text">
+            <h4>The Kuje Legislative Council</h4>
+            <p>
+              The Legislative Council comprises <strong>10 elected councilors</strong> representing each ward, led by the <strong>Speaker of the Council</strong>. The council meets regularly at the Kuje Secretariat to deliberate on matters affecting the welfare of residents, approve annual budgets, and provide oversight on executive projects across all wards.
+            </p>
+            <p style="margin-top:10px;">
+              Councilors maintain constituency offices within their respective wards, ensuring that every resident has direct access to their elected representative for grievances, requests, and community development proposals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== MAP SECTION ==================== -->
+    <section class="map-section section-padding" aria-labelledby="map-heading">
+      <div class="section-container">
+        <div style="text-align:center; margin-bottom:30px;">
+          <span class="section-label">Location Overview</span>
+          <h2 id="map-heading" class="section-title" style="margin:0 auto;">Wards Map of Kuje Area Council</h2>
+          <p style="color:var(--text-light); max-width:600px; margin:10px auto 0;">Geographic distribution of the 10 political wards across the 1,644 km² council area.</p>
+        </div>
+        <div class="map-container">
+          <div class="map-placeholder" id="mapPlaceholder" title="Click to view interactive ward map">
+            <div class="map-pin">🗺️</div>
+            <p>Interactive Ward Map</p>
+            <span>Click to load the detailed ward boundary map</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Kuje Area Council</h4>
+        <p class="footer-about-text">
+          Official portal of Kuje Local Government Secretariat, Federal Capital Territory, 
+          Abuja, Nigeria. Committed to transparent governance and community development.
+        </p>
+        <a href="assets/docs/tax-policy.pdf" download class="tax-download-link">
+          📄 Download Tax Guidelines (PDF)
+        </a>
+      </div>
+      <div class="footer-col">
+        <h4>Departments</h4>
+        <ul>
+          <li><a href="/departments/administration-and-general-services">Admin & General Services</a></li>
+          <li><a href="/departments/agriculture-and-natural-resources">Agriculture & Resources</a></li>
+          <li><a href="/departments/education-and-social-development">Education & Social Dev.</a></li>
+          <li><a href="/departments/finance-and-accounts">Finance & Accounts</a></li>
+          <li><a href="/departments/environmental-services">Environmental Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="/about-us">About Kuje</a></li>
+          <li><a href="/governance-and-strategy">Governance Policy</a></li>
+          <li><a href="/news">News & Announcements</a></li>
+          <li><a href="/faqs">FAQs</a></li>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li>📍 Council Secretariat, Kuje, FCT</li>
+          <li>📞 +234 9 000 0000</li>
+          <li>📧 info@kujeareacouncil.gov.ng</li>
+          <li>🕐 Mon - Fri: 8AM - 4PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Kuje Area Council, Federal Capital Territory, Abuja. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ==================== EXTERNAL SCRIPTS ==================== -->
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- ==================== WARDS PAGE JAVASCRIPT ==================== -->
+  <script>
+    (function() {
+      'use strict';
+
+      // ========== MOBILE MENU TOGGLE ==========
+      const menuToggle = document.getElementById('menuToggle');
+      const navMenu = document.getElementById('navMenu');
+
+      if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', function() {
+          const isOpen = navMenu.classList.toggle('open');
+          menuToggle.classList.toggle('active');
+          menuToggle.setAttribute('aria-expanded', isOpen);
+        });
+
+        navMenu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', function() {
+            if (window.innerWidth <= 768 && navMenu.classList.contains('open')) {
+              navMenu.classList.remove('open');
+              menuToggle.classList.remove('active');
+              menuToggle.setAttribute('aria-expanded', 'false');
+            }
+          });
+        });
+      }
+
+      // ========== HEADER SCROLL EFFECT ==========
+      const header = document.getElementById('mainHeader');
+
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+
+      // ========== SCROLL TO TOP BUTTON ==========
+      const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 400) {
+          scrollTopBtn.classList.add('visible');
+        } else {
+          scrollTopBtn.classList.remove('visible');
+        }
+      });
+
+      scrollTopBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // ========== MAP PLACEHOLDER INTERACTION ==========
+      const mapPlaceholder = document.getElementById('mapPlaceholder');
+      let mapClicked = false;
+
+      if (mapPlaceholder) {
+        mapPlaceholder.addEventListener('click', function() {
+          if (!mapClicked) {
+            mapClicked = true;
+            mapPlaceholder.innerHTML = '';
+            
+            const mapMessage = document.createElement('div');
+            mapMessage.style.cssText = 'text-align:center; padding:40px; position:relative; z-index:1;';
+            mapMessage.innerHTML = `
+              <div style="font-size:3rem; margin-bottom:15px;">🗺️</div>
+              <p style="font-weight:700; color:var(--secondary); font-size:1.1rem; margin-bottom:10px;">
+                Interactive Ward Boundary Map
+              </p>
+              <p style="color:var(--text-light); font-size:0.9rem; line-height:1.6; max-width:500px; margin:0 auto;">
+                The detailed ward boundary map showing all 10 political wards is available at the 
+                <strong>Kuje Area Council Secretariat</strong>, Works & Housing Department. 
+                Visit us during office hours for a physical copy or GIS data request.
+              </p>
+              <p style="color:var(--primary); font-weight:600; margin-top:15px; font-size:0.9rem;">
+                📍 Secretariat Road, Kuje, FCT Abuja
+              </p>
+            `;
+            mapPlaceholder.appendChild(mapMessage);
+            mapPlaceholder.style.cursor = 'default';
+          }
+        });
+      }
+
+      console.log('📍 Kuje Area Council - Wards & Districts Page Ready');
+      console.log('🏘️ 10 Political Wards displayed with details');
+      console.log('👥 Ward councilor information provided');
+      console.log('🗺️ Interactive map placeholder active');
+    })();
+  </script>
+</body>
+</html>
