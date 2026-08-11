@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Latest news, announcements, and events from Kuje Area Council, FCT Abuja - Stay updated on council projects, community initiatives, and governance developments.">
+  <meta name="theme-color" content="#008751">
+  <meta property="og:title" content="News & Events | Kuje Area Council, FCT Abuja">
+  <meta property="og:description" content="Stay informed with the latest news, press releases, and community events from Kuje Area Council.">
+  <title>News & Events – Kuje Area Council | FCT Abuja</title>
+
+  <!-- Favicon Asset -->
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <style>
+    :root {
+      --primary: #008751;
+      --primary-dark: #005c37;
+      --primary-light: #e8f5e9;
+      --primary-glow: rgba(0, 135, 81, 0.3);
+      --secondary: #1f2937;
+      --secondary-light: #374151;
+      --accent: #d97706;
+      --accent-light: #fef3c7;
+      --light-bg: #f8fafc;
+      --white: #ffffff;
+      --text: #334155;
+      --text-light: #64748b;
+      --text-muted: #94a3b8;
+      --border: #e2e8f0;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+      --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.12);
+      --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.15);
+      --transition-fast: 0.2s ease;
+      --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* ========== SCROLL TO TOP BUTTON ========== */
+    .scroll-top-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 48px;
+      height: 48px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      font-size: 1.3rem;
+      cursor: pointer;
+      z-index: 999;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: var(--transition-smooth);
+      box-shadow: 0 4px 15px var(--primary-glow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .scroll-top-btn.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .scroll-top-btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0, 135, 81, 0.5);
+    }
+
+    /* ========== TOP UTILITY BAR ========== */
+    .top-bar {
+      background: linear-gradient(135deg, var(--secondary) 0%, #111827 100%);
+      color: #cbd5e1;
+      font-size: 0.82rem;
+      padding: 0;
+      position: relative;
+      z-index: 1001;
+    }
+
+    .top-bar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 5%;
+      max-width: 1400px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .top-bar-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .top-bar-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition-fast);
+    }
+
+    .top-bar-item:hover {
+      color: white;
+    }
+
+    .top-bar-icon {
+      font-size: 0.9rem;
+      color: var(--primary);
+      filter: brightness(1.3);
+    }
+
+    .top-bar-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .govt-badge {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    /* ========== HEADER & NAVIGATION ========== */
+    header {
+      background-color: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid transparent;
+      transition: var(--transition-smooth);
+    }
+
+    header.scrolled {
+      border-bottom-color: var(--border);
+      box-shadow: var(--shadow-md);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 5%;
+      max-width: 1400px;
+      margin: 0 auto;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-shrink: 0;
+    }
+
+    .logo-img-wrapper {
+      position: relative;
+      width: 52px;
+      height: 52px;
+      flex-shrink: 0;
+    }
+
+    .logo-img {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--primary-light);
+      transition: var(--transition-smooth);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo:hover .logo-img {
+      transform: scale(1.05);
+      border-color: var(--primary);
+      box-shadow: 0 4px 15px var(--primary-glow);
+    }
+
+    .logo-pulse {
+      position: absolute;
+      top: -3px;
+      right: -3px;
+      width: 14px;
+      height: 14px;
+      background: var(--primary);
+      border-radius: 50%;
+      border: 2px solid white;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 var(--primary-glow); }
+      50% { box-shadow: 0 0 0 12px transparent; }
+    }
+
+    .logo-text h1 {
+      font-size: 1.15rem;
+      color: var(--secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .logo-text p {
+      font-size: 0.72rem;
+      color: var(--primary);
+      font-weight: 700;
+      letter-spacing: 1.5px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 5px;
+      align-items: center;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav a {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--secondary);
+      padding: 8px 14px;
+      border-radius: var(--radius-sm);
+      transition: var(--transition-fast);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    nav a:hover {
+      background: var(--primary-light);
+      color: var(--primary);
+    }
+
+    nav a.nav-active {
+      background: var(--primary);
+      color: white;
+    }
+
+    .nav-arrow {
+      font-size: 0.6rem;
+      transition: var(--transition-fast);
+    }
+
+    nav li:hover .nav-arrow {
+      transform: rotate(180deg);
+    }
+
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: white;
+      min-width: 220px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-xl);
+      padding: 8px 0;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: var(--transition-smooth);
+      border: 1px solid var(--border);
+      z-index: 100;
+    }
+
+    nav li:hover .dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(5px);
+    }
+
+    .dropdown a {
+      padding: 10px 18px;
+      font-size: 0.85rem;
+      border-radius: 0;
+      font-weight: 500;
+      display: block;
+    }
+
+    .dropdown a:hover {
+      background: var(--light-bg);
+      padding-left: 22px;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 2px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 8px 10px;
+      cursor: pointer;
+      transition: var(--transition-fast);
+    }
+
+    .menu-toggle:hover {
+      border-color: var(--primary);
+      background: var(--primary-light);
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 24px;
+      height: 2.5px;
+      background: var(--secondary);
+      margin: 5px 0;
+      border-radius: 2px;
+      transition: var(--transition-smooth);
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    .menu-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+    .menu-toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* ========== PAGE HERO BANNER ========== */
+    .page-hero {
+      background: linear-gradient(135deg, rgba(0, 92, 55, 0.92) 0%, rgba(31, 41, 55, 0.88) 100%),
+                  url('assets/images/hero-bg.jpg') center/cover no-repeat;
+      color: white;
+      padding: 70px 5%;
+      text-align: center;
+      position: relative;
+    }
+
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    .page-hero-content {
+      position: relative;
+      z-index: 2;
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .page-hero-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(8px);
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .page-hero h2 {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 800;
+      margin-bottom: 12px;
+      text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .page-hero p {
+      font-size: 1.1rem;
+      color: #e2e8f0;
+      max-width: 650px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* ========== BREADCRUMB ========== */
+    .breadcrumb {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 5%;
+    }
+
+    .breadcrumb-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .breadcrumb-inner a {
+      color: var(--primary);
+      font-weight: 600;
+      transition: var(--transition-fast);
+    }
+
+    .breadcrumb-inner a:hover {
+      color: var(--primary-dark);
+      text-decoration: underline;
+    }
+
+    .breadcrumb-separator {
+      margin: 0 8px;
+      color: var(--text-muted);
+    }
+
+    /* ========== SECTION STYLES ========== */
+    .section-padding {
+      padding: 50px 5%;
+    }
+
+    .section-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      display: inline-block;
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      color: var(--secondary);
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    /* ========== CATEGORY FILTER TABS ========== */
+    .category-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .category-tab {
+      padding: 10px 20px;
+      border: 2px solid var(--border);
+      border-radius: 50px;
+      background: var(--white);
+      color: var(--text-light);
+      font-weight: 600;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      white-space: nowrap;
+    }
+
+    .category-tab:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      background: var(--primary-light);
+    }
+
+    .category-tab.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+      box-shadow: 0 4px 15px var(--primary-glow);
+    }
+
+    /* ========== FEATURED NEWS ========== */
+    .featured-news {
+      background: var(--white);
+    }
+
+    .featured-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 25px;
+    }
+
+    .featured-main {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border);
+      transition: var(--transition-smooth);
+      position: relative;
+    }
+
+    .featured-main:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .featured-image {
+      height: 320px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .featured-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .featured-badge {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: var(--primary);
+      color: white;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      z-index: 2;
+    }
+
+    .featured-body {
+      padding: 25px;
+    }
+
+    .featured-meta {
+      display: flex;
+      gap: 15px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+
+    .featured-meta span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .featured-body h3 {
+      font-size: 1.4rem;
+      color: var(--secondary);
+      font-weight: 700;
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+
+    .featured-body p {
+      font-size: 0.92rem;
+      color: var(--text-light);
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    .read-more {
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: var(--transition-fast);
+    }
+
+    .read-more:hover {
+      gap: 10px;
+      color: var(--primary-dark);
+    }
+
+    /* Sidebar News */
+    .featured-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .sidebar-news-card {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+      transition: var(--transition-smooth);
+      display: flex;
+      gap: 15px;
+      padding: 15px;
+    }
+
+    .sidebar-news-card:hover {
+      transform: translateX(5px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--primary);
+    }
+
+    .sidebar-news-image {
+      width: 100px;
+      height: 100px;
+      border-radius: var(--radius-sm);
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+
+    .sidebar-news-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .sidebar-news-content {
+      flex: 1;
+    }
+
+    .sidebar-news-content .news-date {
+      font-size: 0.7rem;
+      color: var(--primary);
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .sidebar-news-content h4 {
+      font-size: 0.9rem;
+      color: var(--secondary);
+      font-weight: 700;
+      margin: 4px 0;
+      line-height: 1.3;
+    }
+
+    .sidebar-news-content p {
+      font-size: 0.8rem;
+      color: var(--text-light);
+      line-height: 1.4;
+    }
+
+    /* ========== NEWS GRID ========== */
+    .all-news-section {
+      background: var(--light-bg);
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
+    }
+
+    .news-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+      transition: var(--transition-smooth);
+    }
+
+    .news-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--primary);
+    }
+
+    .news-card.hidden {
+      display: none;
+    }
+
+    .news-card-image {
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .news-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .news-card:hover .news-card-image img {
+      transform: scale(1.05);
+    }
+
+    .news-card-category {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      padding: 4px 12px;
+      border-radius: 15px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      z-index: 2;
+    }
+
+    .cat-governance { background: #e0e7ff; color: #3730a3; }
+    .cat-education { background: #fef3c7; color: #92400e; }
+    .cat-security { background: #fce7f3; color: #9d174d; }
+    .cat-health { background: #dbeafe; color: #1e40af; }
+    .cat-environment { background: #d1fae5; color: #065f46; }
+    .cat-youth { background: #fef2f2; color: #991b1b; }
+    .cat-sports { background: #ede9fe; color: #5b21b6; }
+    .cat-agriculture { background: #ecfdf5; color: #064e3b; }
+
+    .news-card-body {
+      padding: 20px;
+    }
+
+    .news-card-body .news-date {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .news-card-body h4 {
+      font-size: 1.05rem;
+      color: var(--secondary);
+      font-weight: 700;
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+
+    .news-card-body p {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    /* ========== PAGINATION ========== */
+    .pagination {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 35px;
+      flex-wrap: wrap;
+    }
+
+    .page-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid var(--border);
+      background: var(--white);
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition-fast);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      color: var(--text);
+    }
+
+    .page-btn:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      background: var(--primary-light);
+    }
+
+    .page-btn.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+
+    .page-btn.disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+
+    /* ========== SUBSCRIBE SECTION ========== */
+    .subscribe-section {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: white;
+      padding: 50px 5%;
+      text-align: center;
+    }
+
+    .subscribe-container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .subscribe-container h3 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .subscribe-container p {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 20px;
+    }
+
+    .subscribe-form {
+      display: flex;
+      gap: 10px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .subscribe-form input {
+      flex: 1;
+      padding: 14px 18px;
+      border-radius: 50px;
+      border: 2px solid rgba(255,255,255,0.3);
+      background: rgba(255,255,255,0.15);
+      color: white;
+      font-size: 0.9rem;
+      font-family: inherit;
+      outline: none;
+      transition: var(--transition-fast);
+    }
+
+    .subscribe-form input::placeholder {
+      color: rgba(255,255,255,0.6);
+    }
+
+    .subscribe-form input:focus {
+      border-color: white;
+      background: rgba(255,255,255,0.25);
+    }
+
+    .subscribe-form button {
+      padding: 14px 28px;
+      background: var(--white);
+      color: var(--primary);
+      border: 2px solid var(--white);
+      border-radius: 50px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+
+    .subscribe-form button:hover {
+      background: transparent;
+      color: white;
+    }
+
+    /* ========== FOOTER ========== */
+    footer {
+      background: linear-gradient(180deg, var(--secondary) 0%, #111827 100%);
+      color: #cbd5e1;
+      padding: 60px 5% 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+      gap: 40px;
+      margin-bottom: 40px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .footer-col h4 {
+      color: var(--white);
+      margin-bottom: 20px;
+      font-size: 1rem;
+      font-weight: 700;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .footer-col h4::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 3px;
+      background: var(--primary);
+      border-radius: 3px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col ul a {
+      font-size: 0.88rem;
+      transition: var(--transition-fast);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: #9ca3af;
+    }
+
+    .footer-col ul a:hover {
+      color: var(--white);
+      padding-left: 6px;
+    }
+
+    .footer-about-text {
+      font-size: 0.85rem;
+      color: #9ca3af;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    .tax-download-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 10px 16px;
+      border-radius: var(--radius-sm);
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.85rem;
+      transition: var(--transition-smooth);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .tax-download-link:hover {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 20px 0;
+      text-align: center;
+      font-size: 0.82rem;
+      color: #6b7280;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .featured-grid {
+        grid-template-columns: 1fr;
+      }
+      .featured-image {
+        height: 250px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        box-shadow: var(--shadow-lg);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      nav.open {
+        max-height: 500px;
+        overflow-y: auto;
+      }
+
+      nav ul {
+        flex-direction: column;
+        padding: 15px 5%;
+        gap: 5px;
+      }
+
+      nav a {
+        padding: 12px 15px;
+        border-radius: var(--radius-sm);
+      }
+
+      .dropdown {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        border: none;
+        padding-left: 20px;
+        display: none;
+      }
+
+      nav li:hover .dropdown {
+        display: block;
+      }
+
+      .featured-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar-news-card {
+        flex-direction: column;
+      }
+
+      .sidebar-news-image {
+        width: 100%;
+        height: 140px;
+      }
+
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .subscribe-form {
+        flex-direction: column;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .top-bar-right {
+        display: none;
+      }
+
+      .page-hero {
+        padding: 50px 5%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .page-hero h2 {
+        font-size: 1.6rem;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+      }
+
+      .featured-image {
+        height: 200px;
+      }
+
+      .featured-body h3 {
+        font-size: 1.1rem;
+      }
+
+      .category-tab {
+        padding: 7px 12px;
+        font-size: 0.72rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--primary);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+  <!-- ==================== SCROLL TO TOP ==================== -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+  <!-- ==================== TOP BAR ==================== -->
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="top-bar-left">
+        <div class="top-bar-item">
+          <span class="top-bar-icon">📞</span>
+          <span>+234 9 000 0000</span>
+        </div>
+        <div class="top-bar-item">
+          <span class="top-bar-icon">🕐</span>
+          <span>Mon - Fri: 8:00 AM - 4:00 PM</span>
+        </div>
+        <div class="top-bar-item">
+          <span class="top-bar-icon">📍</span>
+          <span>Kuje, FCT Abuja, Nigeria</span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <span class="govt-badge">🇳🇬 Federal Republic of Nigeria</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== HEADER ==================== -->
+  <header id="mainHeader">
+    <div class="nav-container">
+      <a href="/" class="logo" aria-label="Kuje Area Council Home">
+        <div class="logo-img-wrapper">
+          <img src="assets/images/logo.jpeg" alt="Kuje Area Council Official Seal" class="logo-img">
+          <span class="logo-pulse"></span>
+        </div>
+        <div class="logo-text">
+          <h1>Kuje Area Council</h1>
+          <p>FCT – ABUJA</p>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="navMenu" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li>
+            <a href="/about-us">About Us <span class="nav-arrow">▾</span></a>
+            <div class="dropdown">
+              <a href="/about-us/our-history">Our History</a>
+              <a href="/about-us/chairman">Executive Chairman</a>
+              <a href="/about-us/council-members">Council Members</a>
+              <a href="/about-us/wards">Wards & Districts</a>
+            </div>
+          </li>
+          <li><a href="/services">Services</a></li>
+          <li>
+            <a href="/departments">Departments <span class="nav-arrow">▾</span></a>
+            <div class="dropdown">
+              <a href="/departments/administration-and-general-services">Admin & General Services</a>
+              <a href="/departments/agriculture-and-natural-resources">Agriculture & Resources</a>
+              <a href="/departments/education-and-social-development">Education & Social Dev.</a>
+              <a href="/departments/finance-and-accounts">Finance & Accounts</a>
+              <a href="/departments/environmental-services">Environmental Services</a>
+            </div>
+          </li>
+          <li><a href="/governance-and-strategy">Governance</a></li>
+          <li><a href="/news" class="nav-active">News</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== PAGE HERO BANNER ==================== -->
+    <section class="page-hero" aria-labelledby="page-hero-heading">
+      <div class="page-hero-content">
+        <span class="page-hero-badge">📰 Latest Updates</span>
+        <h2 id="page-hero-heading">News & Announcements</h2>
+        <p>Stay informed with the latest news, press releases, community events, and developmental updates from Kuje Area Council.</p>
+      </div>
+    </section>
+
+    <!-- ==================== BREADCRUMB ==================== -->
+    <div class="breadcrumb" aria-label="Breadcrumb">
+      <div class="breadcrumb-inner">
+        <a href="/">Home</a>
+        <span class="breadcrumb-separator">›</span>
+        <span>News & Events</span>
+      </div>
+    </div>
+
+    <!-- ==================== FEATURED NEWS ==================== -->
+    <section class="featured-news section-padding" aria-labelledby="featured-heading">
+      <div class="section-container">
+        <span class="section-label">Top Story</span>
+        <h2 id="featured-heading" class="section-title">Featured News</h2>
+        <div class="featured-grid">
+          <!-- Main Featured Article -->
+          <article class="featured-main">
+            <div class="featured-image">
+              <span class="featured-badge">📋 Governance</span>
+              <img src="assets/images/action_plan.jpeg" alt="Action Plan Drafting Committee Submission of Final Report">
+            </div>
+            <div class="featured-body">
+              <div class="featured-meta">
+                <span>📅 August 5, 2026</span>
+                <span>👤 Council Secretariat</span>
+                <span>📂 Press Release</span>
+              </div>
+              <h3>Action Plan Drafting Committee Submits Final Report to Executive Chairman</h3>
+              <p>
+                The Kuje Area Council Action Plan Drafting Committee has officially submitted its comprehensive final report to the Executive Chairman, Hon. Danjuma Samuel Shekwolo. The report outlines strategic developmental priorities for the council over the next four years.
+              </p>
+              <a href="/news/action-plan-report" class="read-more">Read Full Article →</a>
+            </div>
+          </article>
+
+          <!-- Sidebar News -->
+          <aside class="featured-sidebar">
+            <article class="sidebar-news-card">
+              <div class="sidebar-news-image">
+                <img src="assets/images/education_programme.jpeg" alt="Hon. Chairman's Education Support Programme">
+              </div>
+              <div class="sidebar-news-content">
+                <span class="news-date">July 28, 2026</span>
+                <h4>Hon. Chairman's Education Support Programme Benefits 2,000 Students</h4>
+                <p>Scholarships and learning materials distributed across all 10 wards.</p>
+                <a href="/news/education-support" class="read-more" style="font-size:0.8rem;">Read More →</a>
+              </div>
+            </article>
+            <article class="sidebar-news-card">
+              <div class="sidebar-news-image">
+                <img src="assets/images/security_post.jpeg" alt="Construction of Security Post in Kayarda">
+              </div>
+              <div class="sidebar-news-content">
+                <span class="news-date">July 20, 2026</span>
+                <h4>Construction of New Security Post Completed in Kayarda Community</h4>
+                <p>Enhanced security infrastructure to protect residents and property.</p>
+                <a href="/news/security-post-kayarda" class="read-more" style="font-size:0.8rem;">Read More →</a>
+              </div>
+            </article>
+            <article class="sidebar-news-card">
+              <div class="sidebar-news-image">
+                <img src="assets/images/visit_healthcenter.jpeg" alt="Executive Chairman Visits Kuje Primary Health Care Center">
+              </div>
+              <div class="sidebar-news-content">
+                <span class="news-date">July 15, 2026</span>
+                <h4>Executive Chairman Pays Inspection Visit to Kuje Primary Health Care Center</h4>
+                <p>Assessing facilities and engaging with healthcare workers for improved service delivery.</p>
+                <a href="/news/health-center-visit" class="read-more" style="font-size:0.8rem;">Read More →</a>
+              </div>
+            </article>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ALL NEWS ==================== -->
+    <section class="all-news-section section-padding" aria-labelledby="all-news-heading">
+      <div class="section-container">
+        <div style="margin-bottom:30px;">
+          <span class="section-label">Stay Updated</span>
+          <h2 id="all-news-heading" class="section-title">All News & Announcements</h2>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="category-tabs" id="categoryTabs">
+          <button class="category-tab active" data-category="all">📋 All News</button>
+          <button class="category-tab" data-category="governance">🏛️ Governance</button>
+          <button class="category-tab" data-category="education">📚 Education</button>
+          <button class="category-tab" data-category="security">🛡️ Security</button>
+          <button class="category-tab" data-category="health">🏥 Health</button>
+          <button class="category-tab" data-category="environment">🌿 Environment</button>
+          <button class="category-tab" data-category="youth">💪 Youth</button>
+          <button class="category-tab" data-category="sports">🏅 Sports</button>
+        </div>
+
+        <!-- News Grid -->
+        <div class="news-grid" id="newsGrid">
+          <!-- News 1: Action Plan -->
+          <article class="news-card" data-category="governance">
+            <div class="news-card-image">
+              <span class="news-card-category cat-governance">Governance</span>
+              <img src="assets/images/action_plan.jpeg" alt="Action Plan Drafting Committee Submission of Final Report" loading="lazy">
+            </div>
+            <div class="news-card-body">
+              <span class="news-date">📅 August 5, 2026</span>
+              <h4>Action Plan Drafting Committee Submission of Final Report</h4>
+              <p>The committee presents its comprehensive action plan to guide the council's developmental agenda for the coming year.</p>
+              <a href="/news/action-plan-report" class="read-more">Read More →</a>
+            </div>
+          </article>
+
+          <!-- News 2: Education Support -->
+          <article class="news-card" data-category="education">
+            <div class="news-card-image">
+              <span class="news-card-category cat-education">Education</span>
+              <img src="assets/images/education_programme.jpeg" alt="Hon. Chairman's Education Support Programme" loading="lazy">
+            </div>
+            <div class="news-card-body">
+              <span class="news-date">📅 July 28, 2026</span>
+              <h4>Hon. Chairman's Education Support Programme</h4>
+              <p>Empowering students across Kuje with educational materials and scholarships for a brighter future.</p>
+              <a href="/news/education-support" class="read-more">Read More →</a>
+            </div>
+          </article>
+
+          <!-- News 3: Security Post -->
+          <article class="news-card" data-category="security">
+            <div class="news-card-image">
+              <span class="news-card-category cat-security">Security</span>
+              <img src="assets/images/security_post.jpeg" alt="Construction of Security Post in Kayarda" loading="lazy">
+            </div>
+            <div class="news-card-body">
+              <span class="news-date">📅 July 20, 2026</span>
+              <h4>Construction of Security Post in Kayarda</h4>
+              <p>Enhancing community safety with the construction of a new security post to serve the Kayarda community.</p>
+              <a href="/news/security-post-kayarda" class="read-more">Read More →</a>
+            </div>
+          </article>
+
+          <!-- News 4: Health Center Visit -->
+          <article class="news-card" data-category="health">
+            <div class="news-card-image">
+              <span class="news-card-category cat-health">Health</span>
+              <img src="assets/images/visit_healthcenter.jpeg" alt="Hon. Chairman's Visit to Kuje Primary Health Care Center" loading="lazy">
+            </div>
+            <div class="news-card-body">
+              <span class="news-date">📅 July 15, 2026</span>
+              <h4>Hon. Chairman's Visit to Kuje Primary Health Care Center</h4>
+              <p>Inspecting facilities and engaging with healthcare workers to improve service delivery for residents.</p>
+              <a href="/news/health-center-visit" class="read-more">Read More →</a>
+            </div>
+          </article>
+
+          <!-- News 5: Sanitary Inspection -->
+          <article class="news-card" data-category="environment">
+            <div class="news-card-image">
+              <span class="news-card-category cat-environment">Environment</span>
+              <img src="assets/images/sanitary_condition.jpeg" alt="Hon. Chairman Inspects the Sanitary Condition of Kuje Town" loading="lazy">
+            </div>
+            <div class="news-card-body">
+              <span class="news-date">📅 July 10, 2026</span>
+              <h4>Hon. Chairman Inspects the Sanitary Condition of Kuje Town</h4>
+              <p>Ensuring a clean and healthy environment for all residents through regular sanitation inspections.</p>
+              <a href="/news/sanitary-inspection" class="read-more">Read More →</a>
+            </div>
+          </article>
+
+          <!-- News 6: Youth Empowerment -->
+          <article class="news-card" data-category="youth">
+            <div class="news-card-image">
+              <span class="news-card-category cat-youth">Youth</span>
+              <img src="assets/images/youth_empoerment.jpeg" alt="Hon. Chairman with Participants of Youth Empowerment Programme" loading="lazy">
+            </div>
+            <div class="news-card-body">
+              <span class="news-date">📅 July 5, 2026</span>
+              <h4>Hon. Chairman with Participants of Youth Empowerment Programme</h4>
+              <p>Equipping the youth of Kuje with vocational skills and opportunities for self-reliance and entrepreneurship.</p>
+              <a href="/news/youth-empowerment" class="read-more">Read More →</a>
+            </div>
+          </article>
+
+          <!-- News 7: Commonwealth Gold -->
+          <article class="news-card" data-category="sports">
+            <div class="news-card-image">
+              <span class="news-card-category cat-sports">Sports</span>
+              <img src="assets/images/chairman_goldmedal.jpeg" alt="Hon. Chairman Celebrates with Rilwanu Idris Sabo, Gold Medalist" loading="lazy">
+            </div>
+            <div class="news-card-body">
+              <span class="news-date">📅 July 3, 2026</span>
+              <h4>Hon. Chairman Celebrates with Rilwanu Idris Sabo, Gold Medalist at 2026 Commonwealth Games</h4>
+              <p>Kuje Area Council celebrates local talent as Rilwanu Idris Sabo brings home gold from the 2026 Commonwealth Games.</p>
+              <a href="/news/commonwealth-gold" class="read-more">Read More →</a>
+            </div>
+          </article>
+
+          <!-- News 8: Agricultural Support -->
+          <article class="news-card" data-category="agriculture">
+            <div class="news-card-image">
+              <span class="news-card-category cat-agriculture">Agriculture</span>
+              <img src="assets/images/hero-bg.jpg" alt="Council Distributes Fertilizers to Registered Farmers" loading="lazy">
+            </div>
+            <div class="news-card-body">
+              <span class="news-date">📅 June 25, 2026</span>
+              <h4>Council Distributes Fertilizers to 5,000 Registered Farmers Across 10 Wards</h4>
+              <p>Supporting the agricultural sector as part of the administration's food security initiative for Kuje Area Council.</p>
+              <a href="/news/fertilizer-distribution" class="read-more">Read More →</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+          <button class="page-btn disabled">←</button>
+          <button class="page-btn active">1</button>
+          <button class="page-btn">2</button>
+          <button class="page-btn">3</button>
+          <button class="page-btn">→</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SUBSCRIBE SECTION ==================== -->
+    <section class="subscribe-section" aria-labelledby="subscribe-heading">
+      <div class="subscribe-container">
+        <h3 id="subscribe-heading">📬 Stay Informed</h3>
+        <p>Subscribe to our newsletter to receive the latest news, announcements, and updates from Kuje Area Council directly in your inbox.</p>
+        <form class="subscribe-form" id="subscribeForm">
+          <input type="email" placeholder="Enter your email address" required aria-label="Email for newsletter">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Kuje Area Council</h4>
+        <p class="footer-about-text">
+          Official portal of Kuje Local Government Secretariat, Federal Capital Territory, 
+          Abuja, Nigeria. Committed to transparent governance and community development.
+        </p>
+        <a href="assets/docs/tax-policy.pdf" download class="tax-download-link">
+          📄 Download Tax Guidelines (PDF)
+        </a>
+      </div>
+      <div class="footer-col">
+        <h4>Departments</h4>
+        <ul>
+          <li><a href="/departments/administration-and-general-services">Admin & General Services</a></li>
+          <li><a href="/departments/agriculture-and-natural-resources">Agriculture & Resources</a></li>
+          <li><a href="/departments/education-and-social-development">Education & Social Dev.</a></li>
+          <li><a href="/departments/finance-and-accounts">Finance & Accounts</a></li>
+          <li><a href="/departments/environmental-services">Environmental Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="/about-us">About Kuje</a></li>
+          <li><a href="/governance-and-strategy">Governance Policy</a></li>
+          <li><a href="/news">News & Announcements</a></li>
+          <li><a href="/faqs">FAQs</a></li>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li>📍 Council Secretariat, Kuje, FCT</li>
+          <li>📞 +234 9 000 0000</li>
+          <li>📧 info@kujeareacouncil.gov.ng</li>
+          <li>🕐 Mon - Fri: 8AM - 4PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Kuje Area Council, Federal Capital Territory, Abuja. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ==================== EXTERNAL SCRIPTS ==================== -->
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- ==================== NEWS PAGE JAVASCRIPT ==================== -->
+  <script>
+    (function() {
+      'use strict';
+
+      // ========== MOBILE MENU TOGGLE ==========
+      const menuToggle = document.getElementById('menuToggle');
+      const navMenu = document.getElementById('navMenu');
+
+      if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', function() {
+          const isOpen = navMenu.classList.toggle('open');
+          menuToggle.classList.toggle('active');
+          menuToggle.setAttribute('aria-expanded', isOpen);
+        });
+
+        navMenu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', function() {
+            if (window.innerWidth <= 768 && navMenu.classList.contains('open')) {
+              navMenu.classList.remove('open');
+              menuToggle.classList.remove('active');
+              menuToggle.setAttribute('aria-expanded', 'false');
+            }
+          });
+        });
+      }
+
+      // ========== HEADER SCROLL EFFECT ==========
+      const header = document.getElementById('mainHeader');
+
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+
+      // ========== SCROLL TO TOP BUTTON ==========
+      const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 400) {
+          scrollTopBtn.classList.add('visible');
+        } else {
+          scrollTopBtn.classList.remove('visible');
+        }
+      });
+
+      scrollTopBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // ========== CATEGORY FILTER TABS ==========
+      const categoryTabs = document.querySelectorAll('.category-tab');
+      const newsCards = document.querySelectorAll('.news-card');
+
+      categoryTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+          categoryTabs.forEach(t => t.classList.remove('active'));
+          this.classList.add('active');
+
+          const selectedCategory = this.getAttribute('data-category');
+
+          newsCards.forEach(card => {
+            if (selectedCategory === 'all' || card.getAttribute('data-category') === selectedCategory) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          });
+        });
+      });
+
+      // ========== SUBSCRIBE FORM ==========
+      const subscribeForm = document.getElementById('subscribeForm');
+
+      if (subscribeForm) {
+        subscribeForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const emailInput = this.querySelector('input[type="email"]');
+          const email = emailInput.value.trim();
+
+          if (email) {
+            const btn = this.querySelector('button');
+            const originalText = btn.textContent;
+            btn.textContent = '✓ Subscribed!';
+            btn.style.background = '#6ee7b7';
+            btn.style.color = '#005c37';
+            emailInput.value = '';
+
+            setTimeout(() => {
+              btn.textContent = originalText;
+              btn.style.background = '';
+              btn.style.color = '';
+            }, 3000);
+
+            alert('Thank you for subscribing! You will receive news updates from Kuje Area Council.');
+          }
+        });
+      }
+
+      // ========== PAGINATION ==========
+      const pageButtons = document.querySelectorAll('.page-btn:not(.disabled)');
+
+      pageButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+          if (!this.classList.contains('disabled') && !this.textContent.includes('←') && !this.textContent.includes('→')) {
+            pageButtons.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            document.getElementById('newsGrid').scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+
+      // ========== IMAGE LOADING ERROR HANDLING ==========
+      document.querySelectorAll('img').forEach(img => {
+        img.addEventListener('error', function() {
+          this.style.display = 'none';
+          const fallback = document.createElement('div');
+          fallback.style.cssText = 'width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;background:var(--primary-light);color:var(--primary);';
+          fallback.textContent = '📰';
+          this.parentElement.appendChild(fallback);
+        });
+      });
+
+      console.log('📰 Kuje Area Council - News & Events Page Ready');
+      console.log('🖼️ Images loaded for all news cards');
+      console.log('📋 1 Featured article + 3 sidebar news items');
+      console.log('📂 8 news articles with category filtering');
+      console.log('📬 Newsletter subscription form active');
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy of Kuje Area Council, FCT Abuja - Learn how we collect, use, and protect your personal information when you use our website and services.">
+  <meta name="theme-color" content="#008751">
+  <meta property="og:title" content="Privacy Policy | Kuje Area Council, FCT Abuja">
+  <meta property="og:description" content="Read the privacy policy of Kuje Area Council to understand how we handle your personal data and protect your privacy.">
+  <title>Privacy Policy – Kuje Area Council | FCT Abuja</title>
+
+  <!-- Favicon Asset -->
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <style>
+    :root {
+      --primary: #008751;
+      --primary-dark: #005c37;
+      --primary-light: #e8f5e9;
+      --primary-glow: rgba(0, 135, 81, 0.3);
+      --secondary: #1f2937;
+      --secondary-light: #374151;
+      --accent: #d97706;
+      --accent-light: #fef3c7;
+      --light-bg: #f8fafc;
+      --white: #ffffff;
+      --text: #334155;
+      --text-light: #64748b;
+      --text-muted: #94a3b8;
+      --border: #e2e8f0;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+      --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.12);
+      --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.15);
+      --transition-fast: 0.2s ease;
+      --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* ========== SCROLL TO TOP BUTTON ========== */
+    .scroll-top-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 48px;
+      height: 48px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      font-size: 1.3rem;
+      cursor: pointer;
+      z-index: 999;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: var(--transition-smooth);
+      box-shadow: 0 4px 15px var(--primary-glow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .scroll-top-btn.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .scroll-top-btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0, 135, 81, 0.5);
+    }
+
+    /* ========== TOP UTILITY BAR ========== */
+    .top-bar {
+      background: linear-gradient(135deg, var(--secondary) 0%, #111827 100%);
+      color: #cbd5e1;
+      font-size: 0.82rem;
+      padding: 0;
+      position: relative;
+      z-index: 1001;
+    }
+
+    .top-bar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 5%;
+      max-width: 1400px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .top-bar-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .top-bar-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition-fast);
+    }
+
+    .top-bar-item:hover {
+      color: white;
+    }
+
+    .top-bar-icon {
+      font-size: 0.9rem;
+      color: var(--primary);
+      filter: brightness(1.3);
+    }
+
+    .top-bar-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .govt-badge {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    /* ========== HEADER & NAVIGATION ========== */
+    header {
+      background-color: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid transparent;
+      transition: var(--transition-smooth);
+    }
+
+    header.scrolled {
+      border-bottom-color: var(--border);
+      box-shadow: var(--shadow-md);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 5%;
+      max-width: 1400px;
+      margin: 0 auto;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-shrink: 0;
+    }
+
+    .logo-img-wrapper {
+      position: relative;
+      width: 52px;
+      height: 52px;
+      flex-shrink: 0;
+    }
+
+    .logo-img {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--primary-light);
+      transition: var(--transition-smooth);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo:hover .logo-img {
+      transform: scale(1.05);
+      border-color: var(--primary);
+      box-shadow: 0 4px 15px var(--primary-glow);
+    }
+
+    .logo-pulse {
+      position: absolute;
+      top: -3px;
+      right: -3px;
+      width: 14px;
+      height: 14px;
+      background: var(--primary);
+      border-radius: 50%;
+      border: 2px solid white;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 var(--primary-glow); }
+      50% { box-shadow: 0 0 0 12px transparent; }
+    }
+
+    .logo-text h1 {
+      font-size: 1.15rem;
+      color: var(--secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .logo-text p {
+      font-size: 0.72rem;
+      color: var(--primary);
+      font-weight: 700;
+      letter-spacing: 1.5px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 5px;
+      align-items: center;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav a {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--secondary);
+      padding: 8px 14px;
+      border-radius: var(--radius-sm);
+      transition: var(--transition-fast);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    nav a:hover {
+      background: var(--primary-light);
+      color: var(--primary);
+    }
+
+    nav a.nav-active {
+      background: var(--primary);
+      color: white;
+    }
+
+    .nav-arrow {
+      font-size: 0.6rem;
+      transition: var(--transition-fast);
+    }
+
+    nav li:hover .nav-arrow {
+      transform: rotate(180deg);
+    }
+
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: white;
+      min-width: 220px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-xl);
+      padding: 8px 0;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: var(--transition-smooth);
+      border: 1px solid var(--border);
+      z-index: 100;
+    }
+
+    nav li:hover .dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(5px);
+    }
+
+    .dropdown a {
+      padding: 10px 18px;
+      font-size: 0.85rem;
+      border-radius: 0;
+      font-weight: 500;
+      display: block;
+    }
+
+    .dropdown a:hover {
+      background: var(--light-bg);
+      padding-left: 22px;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 2px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 8px 10px;
+      cursor: pointer;
+      transition: var(--transition-fast);
+    }
+
+    .menu-toggle:hover {
+      border-color: var(--primary);
+      background: var(--primary-light);
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 24px;
+      height: 2.5px;
+      background: var(--secondary);
+      margin: 5px 0;
+      border-radius: 2px;
+      transition: var(--transition-smooth);
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    .menu-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+    .menu-toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* ========== PAGE HERO BANNER ========== */
+    .page-hero {
+      background: linear-gradient(135deg, rgba(0, 92, 55, 0.92) 0%, rgba(31, 41, 55, 0.88) 100%),
+                  url('assets/images/hero-bg.jpg') center/cover no-repeat;
+      color: white;
+      padding: 70px 5%;
+      text-align: center;
+      position: relative;
+    }
+
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    .page-hero-content {
+      position: relative;
+      z-index: 2;
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .page-hero-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(8px);
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .page-hero h2 {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 800;
+      margin-bottom: 12px;
+      text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .page-hero p {
+      font-size: 1.1rem;
+      color: #e2e8f0;
+      max-width: 650px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* ========== BREADCRUMB ========== */
+    .breadcrumb {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 5%;
+    }
+
+    .breadcrumb-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .breadcrumb-inner a {
+      color: var(--primary);
+      font-weight: 600;
+      transition: var(--transition-fast);
+    }
+
+    .breadcrumb-inner a:hover {
+      color: var(--primary-dark);
+      text-decoration: underline;
+    }
+
+    .breadcrumb-separator {
+      margin: 0 8px;
+      color: var(--text-muted);
+    }
+
+    /* ========== SECTION STYLES ========== */
+    .section-padding {
+      padding: 60px 5%;
+    }
+
+    .section-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      display: inline-block;
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      color: var(--secondary);
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    /* ========== POLICY CONTENT ========== */
+    .policy-section {
+      background: var(--white);
+    }
+
+    .policy-content {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+    }
+
+    .policy-content .last-updated {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+      font-style: italic;
+    }
+
+    .policy-content h3 {
+      font-size: 1.3rem;
+      color: var(--secondary);
+      font-weight: 700;
+      margin: 30px 0 15px;
+      padding-top: 10px;
+    }
+
+    .policy-content h3:first-of-type {
+      margin-top: 0;
+    }
+
+    .policy-content p {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .policy-content ul,
+    .policy-content ol {
+      margin: 0 0 20px 25px;
+      color: var(--text-light);
+    }
+
+    .policy-content ul li,
+    .policy-content ol li {
+      font-size: 0.92rem;
+      line-height: 1.8;
+      margin-bottom: 8px;
+    }
+
+    .policy-content strong {
+      color: var(--secondary);
+      font-weight: 700;
+    }
+
+    .policy-content a {
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: underline;
+      transition: var(--transition-fast);
+    }
+
+    .policy-content a:hover {
+      color: var(--primary-dark);
+    }
+
+    /* Info Box */
+    .info-box {
+      background: var(--primary-light);
+      border-left: 4px solid var(--primary);
+      padding: 20px 25px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      margin: 25px 0;
+    }
+
+    .info-box h4 {
+      font-size: 1rem;
+      color: var(--secondary);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .info-box p {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+    /* Table of Contents */
+    .toc {
+      background: var(--light-bg);
+      border-radius: var(--radius-md);
+      padding: 25px 30px;
+      margin-bottom: 30px;
+      border: 1px solid var(--border);
+    }
+
+    .toc h4 {
+      font-size: 1rem;
+      color: var(--secondary);
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .toc ol {
+      margin: 0 0 0 20px;
+      color: var(--text-light);
+    }
+
+    .toc ol li {
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+    }
+
+    .toc ol li a {
+      color: var(--primary);
+      font-weight: 600;
+      transition: var(--transition-fast);
+    }
+
+    .toc ol li a:hover {
+      color: var(--primary-dark);
+      text-decoration: underline;
+    }
+
+    /* ========== CTA SECTION ========== */
+    .cta-section {
+      background: var(--light-bg);
+    }
+
+    .cta-box {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: white;
+      padding: 40px 30px;
+      border-radius: var(--radius-lg);
+      text-align: center;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .cta-box h3 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .cta-box p {
+      font-size: 0.95rem;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 20px;
+    }
+
+    .btn-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 32px;
+      background: var(--white);
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 0.95rem;
+      border-radius: 50px;
+      border: 2px solid var(--white);
+      transition: var(--transition-bounce);
+      cursor: pointer;
+    }
+
+    .btn-cta:hover {
+      background: transparent;
+      color: white;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-cta .btn-icon {
+      transition: var(--transition-fast);
+    }
+
+    .btn-cta:hover .btn-icon {
+      transform: translateX(4px);
+    }
+
+    /* ========== FOOTER ========== */
+    footer {
+      background: linear-gradient(180deg, var(--secondary) 0%, #111827 100%);
+      color: #cbd5e1;
+      padding: 60px 5% 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+      gap: 40px;
+      margin-bottom: 40px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .footer-col h4 {
+      color: var(--white);
+      margin-bottom: 20px;
+      font-size: 1rem;
+      font-weight: 700;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .footer-col h4::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 3px;
+      background: var(--primary);
+      border-radius: 3px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col ul a {
+      font-size: 0.88rem;
+      transition: var(--transition-fast);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: #9ca3af;
+    }
+
+    .footer-col ul a:hover {
+      color: var(--white);
+      padding-left: 6px;
+    }
+
+    .footer-about-text {
+      font-size: 0.85rem;
+      color: #9ca3af;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    .tax-download-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 10px 16px;
+      border-radius: var(--radius-sm);
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.85rem;
+      transition: var(--transition-smooth);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .tax-download-link:hover {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 20px 0;
+      text-align: center;
+      font-size: 0.82rem;
+      color: #6b7280;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        box-shadow: var(--shadow-lg);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      nav.open {
+        max-height: 500px;
+        overflow-y: auto;
+      }
+
+      nav ul {
+        flex-direction: column;
+        padding: 15px 5%;
+        gap: 5px;
+      }
+
+      nav a {
+        padding: 12px 15px;
+        border-radius: var(--radius-sm);
+      }
+
+      .dropdown {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        border: none;
+        padding-left: 20px;
+        display: none;
+      }
+
+      nav li:hover .dropdown {
+        display: block;
+      }
+
+      .policy-content {
+        padding: 25px;
+      }
+
+      .page-hero {
+        padding: 50px 5%;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .top-bar-right {
+        display: none;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .page-hero h2 {
+        font-size: 1.6rem;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+      }
+
+      .policy-content {
+        padding: 20px;
+      }
+
+      .policy-content h3 {
+        font-size: 1.1rem;
+      }
+
+      .toc {
+        padding: 15px 20px;
+      }
+
+      .cta-box {
+        padding: 25px 20px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--primary);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+  <!-- ==================== SCROLL TO TOP ==================== -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+  <!-- ==================== TOP BAR ==================== -->
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="top-bar-left">
+        <div class="top-bar-item">
+          <span class="top-bar-icon">📞</span>
+          <span>+234 9 000 0000</span>
+        </div>
+        <div class="top-bar-item">
+          <span class="top-bar-icon">🕐</span>
+          <span>Mon - Fri: 8:00 AM - 4:00 PM</span>
+        </div>
+        <div class="top-bar-item">
+          <span class="top-bar-icon">📍</span>
+          <span>Kuje, FCT Abuja, Nigeria</span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <span class="govt-badge">🇳🇬 Federal Republic of Nigeria</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== HEADER ==================== -->
+  <header id="mainHeader">
+    <div class="nav-container">
+      <a href="/" class="logo" aria-label="Kuje Area Council Home">
+        <div class="logo-img-wrapper">
+          <img src="assets/images/logo.jpeg" alt="Kuje Area Council Official Seal" class="logo-img">
+          <span class="logo-pulse"></span>
+        </div>
+        <div class="logo-text">
+          <h1>Kuje Area Council</h1>
+          <p>FCT – ABUJA</p>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="navMenu" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li>
+            <a href="/about-us">About Us <span class="nav-arrow">▾</span></a>
+            <div class="dropdown">
+              <a href="/about-us/our-history">Our History</a>
+              <a href="/about-us/chairman">Executive Chairman</a>
+              <a href="/about-us/council-members">Council Members</a>
+              <a href="/about-us/wards">Wards & Districts</a>
+            </div>
+          </li>
+          <li><a href="/services">Services</a></li>
+          <li>
+            <a href="/departments">Departments <span class="nav-arrow">▾</span></a>
+            <div class="dropdown">
+              <a href="/departments/administration-and-general-services">Admin & General Services</a>
+              <a href="/departments/agriculture-and-natural-resources">Agriculture & Resources</a>
+              <a href="/departments/education-and-social-development">Education & Social Dev.</a>
+              <a href="/departments/finance-and-accounts">Finance & Accounts</a>
+              <a href="/departments/environmental-services">Environmental Services</a>
+            </div>
+          </li>
+          <li><a href="/governance-and-strategy">Governance</a></li>
+          <li><a href="/news">News</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== PAGE HERO BANNER ==================== -->
+    <section class="page-hero" aria-labelledby="page-hero-heading">
+      <div class="page-hero-content">
+        <span class="page-hero-badge">🔒 Legal Information</span>
+        <h2 id="page-hero-heading">Privacy Policy</h2>
+        <p>Learn how Kuje Area Council collects, uses, and protects your personal information when you interact with our website and services.</p>
+      </div>
+    </section>
+
+    <!-- ==================== BREADCRUMB ==================== -->
+    <div class="breadcrumb" aria-label="Breadcrumb">
+      <div class="breadcrumb-inner">
+        <a href="/">Home</a>
+        <span class="breadcrumb-separator">›</span>
+        <span>Privacy Policy</span>
+      </div>
+    </div>
+
+    <!-- ==================== PRIVACY POLICY CONTENT ==================== -->
+    <section class="policy-section section-padding" aria-labelledby="policy-heading">
+      <div class="section-container">
+        <div class="policy-content">
+          <p class="last-updated">
+            <strong>Last Updated:</strong> August 1, 2026<br>
+            <strong>Effective Date:</strong> August 1, 2026
+          </p>
+
+          <!-- Table of Contents -->
+          <div class="toc">
+            <h4>📑 Table of Contents</h4>
+            <ol>
+              <li><a href="#introduction">Introduction</a></li>
+              <li><a href="#information-we-collect">Information We Collect</a></li>
+              <li><a href="#how-we-use">How We Use Your Information</a></li>
+              <li><a href="#data-sharing">Data Sharing & Disclosure</a></li>
+              <li><a href="#data-security">Data Security</a></li>
+              <li><a href="#cookies">Cookies & Tracking Technologies</a></li>
+              <li><a href="#data-retention">Data Retention</a></li>
+              <li><a href="#your-rights">Your Rights & Choices</a></li>
+              <li><a href="#third-party">Third-Party Links</a></li>
+              <li><a href="#children">Children's Privacy</a></li>
+              <li><a href="#changes">Changes to This Policy</a></li>
+              <li><a href="#contact-us">Contact Us</a></li>
+            </ol>
+          </div>
+
+          <!-- Section 1: Introduction -->
+          <h3 id="introduction">1. Introduction</h3>
+          <p>
+            Kuje Area Council ("we," "our," or "us") is committed to protecting the privacy of all individuals who interact with our official website, digital services, and physical offices. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you visit our website <strong>www.kujeareacouncil.gov.ng</strong> or use any of our e-services.
+          </p>
+          <p>
+            By accessing or using our website and services, you acknowledge that you have read, understood, and agree to the terms of this Privacy Policy. If you do not agree with any part of this policy, please discontinue use of our website and services.
+          </p>
+          <p>
+            This policy is designed to comply with the <strong>Nigeria Data Protection Act (NDPA) 2023</strong> and the guidelines issued by the <strong>Nigeria Data Protection Commission (NDPC)</strong>.
+          </p>
+
+          <!-- Section 2: Information We Collect -->
+          <h3 id="information-we-collect">2. Information We Collect</h3>
+          <p>
+            We collect various types of information to provide and improve our services to you. The information we collect falls into the following categories:
+          </p>
+          
+          <p><strong>2.1 Personal Information You Provide Voluntarily</strong></p>
+          <ul>
+            <li><strong>Contact Information:</strong> Full name, email address, phone number, and residential address when you fill out our contact forms, register for services, or subscribe to our newsletter.</li>
+            <li><strong>Identity Information:</strong> National Identification Number (NIN), voter's card details, or other government-issued identification when required for official council services such as business registration or permit applications.</li>
+            <li><strong>Financial Information:</strong> Payment details when you make online payments for council taxes, rates, levies, or other fees through our e-services portal.</li>
+            <li><strong>Correspondence:</strong> Records of your communications with us, including emails, feedback forms, complaints, and inquiries submitted through our website or in person.</li>
+          </ul>
+
+          <p><strong>2.2 Information Collected Automatically</strong></p>
+          <ul>
+            <li><strong>Device & Usage Data:</strong> IP address, browser type, operating system, device information, pages visited, time spent on pages, and referring URLs.</li>
+            <li><strong>Cookies & Similar Technologies:</strong> Information collected through cookies, web beacons, and similar tracking technologies (see Section 6 for details).</li>
+            <li><strong>Log Data:</strong> Server logs that record access times, error reports, and other diagnostic data.</li>
+          </ul>
+
+          <p><strong>2.3 Information from Third Parties</strong></p>
+          <ul>
+            <li>We may receive information about you from other government agencies, law enforcement bodies, or public records when necessary for official council functions.</li>
+          </ul>
+
+          <!-- Section 3: How We Use Your Information -->
+          <h3 id="how-we-use">3. How We Use Your Information</h3>
+          <p>
+            We use the information we collect for the following purposes:
+          </p>
+          <ul>
+            <li><strong>Service Delivery:</strong> To process your requests, applications, payments, and provide the council services you have requested.</li>
+            <li><strong>Communication:</strong> To respond to your inquiries, send important notices, updates about council services, and newsletters you have subscribed to.</li>
+            <li><strong>Improvement of Services:</strong> To analyze website usage patterns, improve user experience, and develop new features and services for residents.</li>
+            <li><strong>Legal Compliance:</strong> To comply with applicable laws, regulations, legal processes, or enforceable governmental requests.</li>
+            <li><strong>Security:</strong> To detect, prevent, and address fraud, unauthorized access, or other illegal activities.</li>
+            <li><strong>Public Interest:</strong> To carry out official council functions in the public interest, including public announcements, community development programs, and statistical analysis.</li>
+          </ul>
+
+          <!-- Section 4: Data Sharing -->
+          <h3 id="data-sharing">4. Data Sharing & Disclosure</h3>
+          <p>
+            We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following circumstances:
+          </p>
+          <ul>
+            <li><strong>With Your Consent:</strong> When you have given us explicit permission to share your information for a specific purpose.</li>
+            <li><strong>Government Agencies:</strong> With other departments of the Federal Capital Territory Administration, federal government agencies, or law enforcement bodies as required by law or for official purposes.</li>
+            <li><strong>Service Providers:</strong> With trusted third-party vendors who assist us in operating our website, processing payments, or delivering services, subject to strict confidentiality agreements.</li>
+            <li><strong>Legal Obligations:</strong> When required to comply with a legal obligation, court order, or to protect the rights, property, or safety of Kuje Area Council, its residents, or the public.</li>
+            <li><strong>Business Transfers:</strong> In the event of a reorganization, merger, or transfer of council functions, your information may be transferred as part of that process.</li>
+          </ul>
+
+          <!-- Section 5: Data Security -->
+          <h3 id="data-security">5. Data Security</h3>
+          <p>
+            We take the security of your personal information seriously and implement appropriate technical and organizational measures to protect it against unauthorized access, alteration, disclosure, or destruction.
+          </p>
+          <ul>
+            <li><strong>Encryption:</strong> All data transmitted between your browser and our website is encrypted using SSL/TLS technology.</li>
+            <li><strong>Access Controls:</strong> Access to personal data is restricted to authorized personnel who require it for official duties.</li>
+            <li><strong>Regular Audits:</strong> We conduct periodic security assessments and audits of our systems and processes.</li>
+            <li><strong>Staff Training:</strong> All council staff handling personal data receive regular training on data protection and privacy best practices.</li>
+          </ul>
+          <p>
+            While we strive to protect your personal information, no method of transmission over the Internet or electronic storage is 100% secure. We cannot guarantee absolute security but we continuously work to maintain the highest standards of data protection.
+          </p>
+
+          <div class="info-box">
+            <h4>⚠️ Important Notice</h4>
+            <p>
+              If you suspect any unauthorized access to your personal information or a data breach involving council systems, please contact our Data Protection Officer immediately at <strong>dpo@kujeareacouncil.gov.ng</strong> or call <strong>+234 9 000 0000</strong>.
+            </p>
+          </div>
+
+          <!-- Section 6: Cookies -->
+          <h3 id="cookies">6. Cookies & Tracking Technologies</h3>
+          <p>
+            Our website uses cookies and similar tracking technologies to enhance your browsing experience and collect usage data.
+          </p>
+          
+          <p><strong>6.1 What Are Cookies?</strong></p>
+          <p>
+            Cookies are small text files placed on your device when you visit a website. They help the website recognize your device and remember your preferences.
+          </p>
+
+          <p><strong>6.2 Types of Cookies We Use</strong></p>
+          <ul>
+            <li><strong>Essential Cookies:</strong> Necessary for the website to function properly, such as maintaining your session and security features.</li>
+            <li><strong>Analytics Cookies:</strong> Help us understand how visitors interact with our website (e.g., Google Analytics) to improve our services.</li>
+            <li><strong>Preference Cookies:</strong> Remember your language preferences and display settings for a better user experience.</li>
+          </ul>
+
+          <p><strong>6.3 Managing Cookies</strong></p>
+          <p>
+            You can control and manage cookies through your browser settings. Most browsers allow you to refuse cookies or alert you when cookies are being sent. However, disabling essential cookies may affect the functionality of certain parts of our website.
+          </p>
+
+          <!-- Section 7: Data Retention -->
+          <h3 id="data-retention">7. Data Retention</h3>
+          <p>
+            We retain your personal information only for as long as necessary to fulfill the purposes outlined in this policy, unless a longer retention period is required or permitted by law. The retention period varies depending on the type of data and the purpose for which it was collected:
+          </p>
+          <ul>
+            <li><strong>Contact & Inquiry Data:</strong> Retained for up to 2 years after your last interaction with us.</li>
+            <li><strong>Financial & Transaction Records:</strong> Retained for a minimum of 7 years as required by Nigerian financial regulations and tax laws.</li>
+            <li><strong>Official Records:</strong> Retained permanently as public records in accordance with the National Archives Act.</li>
+            <li><strong>Website Usage Data:</strong> Retained for up to 26 months for analytics purposes.</li>
+          </ul>
+          <p>
+            When data is no longer needed, we securely delete, anonymize, or archive it in accordance with applicable laws and council policies.
+          </p>
+
+          <!-- Section 8: Your Rights -->
+          <h3 id="your-rights">8. Your Rights & Choices</h3>
+          <p>
+            Under the Nigeria Data Protection Act (NDPA) 2023, you have the following rights regarding your personal data:
+          </p>
+          <ul>
+            <li><strong>Right to Access:</strong> You may request a copy of the personal data we hold about you.</li>
+            <li><strong>Right to Rectification:</strong> You may request that we correct any inaccurate or incomplete personal data.</li>
+            <li><strong>Right to Erasure:</strong> You may request the deletion of your personal data in certain circumstances ("right to be forgotten").</li>
+            <li><strong>Right to Restrict Processing:</strong> You may request that we limit the processing of your personal data.</li>
+            <li><strong>Right to Data Portability:</strong> You may request a copy of your data in a structured, machine-readable format.</li>
+            <li><strong>Right to Object:</strong> You may object to the processing of your personal data for direct marketing or other purposes.</li>
+            <li><strong>Right to Withdraw Consent:</strong> Where processing is based on consent, you may withdraw that consent at any time.</li>
+          </ul>
+          <p>
+            To exercise any of these rights, please contact our Data Protection Officer using the details provided in the <a href="#contact-us">Contact Us</a> section below. We will respond to your request within 30 days as required by law.
+          </p>
+
+          <!-- Section 9: Third-Party Links -->
+          <h3 id="third-party">9. Third-Party Links</h3>
+          <p>
+            Our website may contain links to external websites operated by third parties, including other government agencies, partner organizations, and service providers. This Privacy Policy applies only to our website. We are not responsible for the privacy practices or content of third-party websites. We encourage you to review the privacy policies of any external sites you visit.
+          </p>
+
+          <!-- Section 10: Children's Privacy -->
+          <h3 id="children">10. Children's Privacy</h3>
+          <p>
+            Our website and services are not directed at children under the age of 18. We do not knowingly collect personal information from children. If we become aware that a child has provided us with personal data without parental consent, we will take steps to delete such information promptly. Parents or guardians who believe their child has provided us with personal information should contact us immediately.
+          </p>
+
+          <!-- Section 11: Changes to This Policy -->
+          <h3 id="changes">11. Changes to This Privacy Policy</h3>
+          <p>
+            We may update this Privacy Policy from time to time to reflect changes in our practices, legal requirements, or operational needs. When we make material changes, we will:
+          </p>
+          <ul>
+            <li>Post the updated policy on this page with a revised "Last Updated" date.</li>
+            <li>Display a prominent notice on our website for at least 30 days.</li>
+            <li>Notify registered users via email where appropriate.</li>
+          </ul>
+          <p>
+            We encourage you to review this policy periodically to stay informed about how we protect your information. Continued use of our website after changes constitutes acceptance of the updated policy.
+          </p>
+
+          <!-- Section 12: Contact Us -->
+          <h3 id="contact-us">12. Contact Us</h3>
+          <p>
+            If you have any questions, concerns, or requests regarding this Privacy Policy or our data protection practices, please contact us using the following details:
+          </p>
+          <ul>
+            <li><strong>Data Protection Officer:</strong> Kuje Area Council Secretariat</li>
+            <li><strong>Address:</strong> Secretariat Road, Kuje, FCT Abuja, Nigeria</li>
+            <li><strong>Email:</strong> dpo@kujeareacouncil.gov.ng</li>
+            <li><strong>Phone:</strong> +234 9 000 0000</li>
+            <li><strong>Office Hours:</strong> Monday – Friday, 8:00 AM – 4:00 PM</li>
+          </ul>
+          <p>
+            You also have the right to lodge a complaint with the <strong>Nigeria Data Protection Commission (NDPC)</strong> if you believe your data protection rights have been violated. Visit <a href="https://www.ndpc.gov.ng" target="_blank" rel="noopener noreferrer">www.ndpc.gov.ng</a> for more information.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CTA SECTION ==================== -->
+    <section class="cta-section section-padding">
+      <div class="section-container">
+        <div class="cta-box">
+          <h3>Have Questions About Your Privacy?</h3>
+          <p>If you have concerns about how your data is handled or wish to exercise your data protection rights, our team is ready to assist you.</p>
+          <a href="/contact" class="btn-cta">
+            Contact Our DPO <span class="btn-icon">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Kuje Area Council</h4>
+        <p class="footer-about-text">
+          Official portal of Kuje Local Government Secretariat, Federal Capital Territory, 
+          Abuja, Nigeria. Committed to transparent governance and community development.
+        </p>
+        <a href="assets/docs/tax-policy.pdf" download class="tax-download-link">
+          📄 Download Tax Guidelines (PDF)
+        </a>
+      </div>
+      <div class="footer-col">
+        <h4>Departments</h4>
+        <ul>
+          <li><a href="/departments/administration-and-general-services">Admin & General Services</a></li>
+          <li><a href="/departments/agriculture-and-natural-resources">Agriculture & Resources</a></li>
+          <li><a href="/departments/education-and-social-development">Education & Social Dev.</a></li>
+          <li><a href="/departments/finance-and-accounts">Finance & Accounts</a></li>
+          <li><a href="/departments/environmental-services">Environmental Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="/about-us">About Kuje</a></li>
+          <li><a href="/governance-and-strategy">Governance Policy</a></li>
+          <li><a href="/news">News & Announcements</a></li>
+          <li><a href="/faqs">FAQs</a></li>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li>📍 Council Secretariat, Kuje, FCT</li>
+          <li>📞 +234 9 000 0000</li>
+          <li>📧 info@kujeareacouncil.gov.ng</li>
+          <li>🕐 Mon - Fri: 8AM - 4PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Kuje Area Council, Federal Capital Territory, Abuja. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ==================== EXTERNAL SCRIPTS ==================== -->
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- ==================== PRIVACY POLICY PAGE JAVASCRIPT ==================== -->
+  <script>
+    (function() {
+      'use strict';
+
+      // ========== MOBILE MENU TOGGLE ==========
+      const menuToggle = document.getElementById('menuToggle');
+      const navMenu = document.getElementById('navMenu');
+
+      if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', function() {
+          const isOpen = navMenu.classList.toggle('open');
+          menuToggle.classList.toggle('active');
+          menuToggle.setAttribute('aria-expanded', isOpen);
+        });
+
+        navMenu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', function() {
+            if (window.innerWidth <= 768 && navMenu.classList.contains('open')) {
+              navMenu.classList.remove('open');
+              menuToggle.classList.remove('active');
+              menuToggle.setAttribute('aria-expanded', 'false');
+            }
+          });
+        });
+      }
+
+      // ========== HEADER SCROLL EFFECT ==========
+      const header = document.getElementById('mainHeader');
+
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+
+      // ========== SCROLL TO TOP BUTTON ==========
+      const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 400) {
+          scrollTopBtn.classList.add('visible');
+        } else {
+          scrollTopBtn.classList.remove('visible');
+        }
+      });
+
+      scrollTopBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // ========== SMOOTH SCROLL FOR TABLE OF CONTENTS ==========
+      document.querySelectorAll('.toc a, .policy-content a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href && href.startsWith('#')) {
+            const target = document.querySelector(href);
+            if (target) {
+              e.preventDefault();
+              target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              
+              // Update URL hash without jumping
+              history.pushState(null, null, href);
+            }
+          }
+        });
+      });
+
+      console.log('🔒 Kuje Area Council - Privacy Policy Page Ready');
+      console.log('📋 12 comprehensive policy sections');
+      console.log('📑 Interactive table of contents with smooth scrolling');
+      console.log('⚖️ NDPA 2023 compliant policy structure');
+      console.log('📧 DPO contact information provided');
+    })();
+  </script>
+</body>
+</html>
