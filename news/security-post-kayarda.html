@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Youth Empowerment Programme - Hon. Chairman with Participants of Youth Empowerment Programme as Kuje Area Council equips youths with vocational skills and opportunities.">
+  <meta name="description" content="Construction of Security Post in Kayarda - Kuje Area Council enhances community safety with new security infrastructure to protect residents and property.">
   <meta name="theme-color" content="#008751">
-  <meta property="og:title" content="Youth Empowerment Programme | Kuje Area Council">
-  <meta property="og:description" content="Kuje Area Council empowers youths with practical vocational skills training in 7 market-ready programs for self-reliance and entrepreneurship.">
-  <meta property="og:image" content="assets/images/youth_empoerment.jpeg">
-  <meta property="og:url" content="https://www.kujeareacouncil.gov.ng/news/youth-empowerment">
+  <meta property="og:title" content="Construction of Security Post in Kayarda | Kuje Area Council">
+  <meta property="og:description" content="Kuje Area Council completes construction of a new security post in Kayarda community, enhancing safety and security for residents across the ward.">
+  <meta property="og:image" content="assets/images/security_post.jpeg">
+  <meta property="og:url" content="https://www.kujeareacouncil.gov.ng/news/security-post-kayarda">
   <meta property="og:type" content="article">
-  <title>Youth Empowerment Programme – Kuje Area Council | FCT Abuja</title>
+  <title>Construction of Security Post in Kayarda – Kuje Area Council | FCT Abuja</title>
 
   <!-- Favicon Asset -->
   <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
@@ -29,6 +29,8 @@
       --secondary-light: #374151;
       --accent: #d97706;
       --accent-light: #fef3c7;
+      --danger: #dc2626;
+      --danger-light: #fef2f2;
       --light-bg: #f8fafc;
       --white: #ffffff;
       --text: #334155;
@@ -448,7 +450,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(45deg, rgba(0,135,81,0.3), transparent, rgba(31,41,55,0.3));
+      background: linear-gradient(45deg, rgba(220,38,38,0.2), transparent, rgba(0,135,81,0.3));
       background-size: 200% 200%;
       animation: gradientShift 8s ease-in-out infinite;
       pointer-events: none;
@@ -566,8 +568,8 @@
     }
 
     .article-category-badge {
-      background: #fef2f2;
-      color: #991b1b;
+      background: #fce7f3;
+      color: #9d174d;
       padding: 4px 14px;
       border-radius: 20px;
       font-size: 0.75rem;
@@ -604,8 +606,8 @@
     }
 
     .key-takeaways {
-      background: var(--primary-light);
-      border-left: 4px solid var(--primary);
+      background: var(--danger-light);
+      border-left: 4px solid var(--danger);
       border-radius: 0 var(--radius-md) var(--radius-md) 0;
       padding: 25px 30px;
       margin-bottom: 30px;
@@ -635,8 +637,7 @@
     }
 
     .key-takeaways ul li::before {
-      content: '✓';
-      color: var(--primary);
+      content: '🛡️';
       font-weight: 700;
       font-size: 1rem;
       flex-shrink: 0;
@@ -682,15 +683,15 @@
       font-weight: 700;
     }
 
-    /* Skills Grid */
-    .skills-grid {
+    /* Security Features Grid */
+    .features-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 15px;
       margin: 25px 0;
     }
 
-    .skill-card {
+    .feature-card {
       background: var(--light-bg);
       border-radius: var(--radius-md);
       padding: 20px;
@@ -699,28 +700,29 @@
       transition: var(--transition-smooth);
       opacity: 0;
       transform: translateY(30px);
+      border-top: 3px solid var(--danger);
     }
 
-    .skill-card.visible {
+    .feature-card.visible {
       opacity: 1;
       transform: translateY(0);
       transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
 
-    .skill-card:hover {
+    .feature-card:hover {
       box-shadow: var(--shadow-md);
       transform: translateY(-5px);
-      border-color: var(--primary);
-      background: var(--primary-light);
+      border-color: var(--danger);
+      background: var(--danger-light);
     }
 
-    .skill-icon {
+    .feature-icon {
       font-size: 2rem;
       margin-bottom: 10px;
     }
 
-    .skill-card h4 {
-      font-size: 0.9rem;
+    .feature-card h4 {
+      font-size: 0.95rem;
       color: var(--secondary);
       font-weight: 700;
       line-height: 1.3;
@@ -800,38 +802,46 @@
       font-weight: 500;
     }
 
-    /* Success Stories */
-    .success-stories {
+    /* Emergency Contacts */
+    .emergency-contacts {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
+      gap: 15px;
       margin: 25px 0;
     }
 
-    .success-card {
+    .emergency-card {
       background: var(--light-bg);
       border-radius: var(--radius-md);
       padding: 20px;
-      border-left: 4px solid var(--primary);
+      border-left: 4px solid var(--danger);
       transition: var(--transition-smooth);
     }
 
-    .success-card:hover {
+    .emergency-card:hover {
       box-shadow: var(--shadow-md);
       transform: translateX(5px);
     }
 
-    .success-card h4 {
+    .emergency-card h4 {
       font-size: 0.95rem;
       color: var(--secondary);
       font-weight: 700;
       margin-bottom: 5px;
     }
 
-    .success-card p {
+    .emergency-card p {
       font-size: 0.85rem;
       color: var(--text-light);
       margin-bottom: 0;
+    }
+
+    .emergency-card .em-phone {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--danger);
+      display: block;
+      margin-top: 8px;
     }
 
     /* Related Articles */
@@ -1125,8 +1135,8 @@
         height: 250px;
       }
 
-      .skills-grid {
-        grid-template-columns: 1fr 1fr;
+      .features-grid {
+        grid-template-columns: 1fr;
       }
 
       .stats-highlight {
@@ -1136,6 +1146,10 @@
 
       .stat-highlight-item .stat-num {
         font-size: 1.5rem;
+      }
+
+      .emergency-contacts {
+        grid-template-columns: 1fr;
       }
 
       .footer-grid {
@@ -1165,17 +1179,9 @@
         font-size: 1.2rem;
       }
 
-      .skills-grid {
-        grid-template-columns: 1fr;
-      }
-
       .stats-highlight {
         grid-template-columns: 1fr 1fr;
         gap: 10px;
-      }
-
-      .success-stories {
-        grid-template-columns: 1fr;
       }
     }
 
@@ -1275,11 +1281,11 @@
 
   <main>
     <!-- ==================== PAGE HERO BANNER ==================== -->
-    <section class="page-hero" aria-labelledby="page-hero-heading" style="background-image: url('../assets/images/youth_empoerment.jpeg'); background-size: cover; background-position: center;">
+     <section class="page-hero" aria-labelledby="page-hero-heading" style="background-image: url('../assets/images/kayarda2.jpeg'); background-size: cover; background-position: center;">
       <div class="page-hero-content">
-        <span class="page-hero-badge">💪 Youth Development</span>
-        <h2 id="page-hero-heading">Hon. Chairman with Participants of Youth Empowerment Programme</h2>
-        <p>Kuje Area Council equips over 100 youths with practical vocational skills for self-reliance and entrepreneurship across 7 market-ready training programs.</p>
+        <span class="page-hero-badge">🛡️ Community Security</span>
+        <h2 id="page-hero-heading">Construction of Security Post in Kayarda</h2>
+        <p>Kuje Area Council enhances community safety with the construction of a new security post to protect residents and property in the Kayarda community.</p>
       </div>
     </section>
 
@@ -1290,7 +1296,7 @@
         <span class="breadcrumb-separator">›</span>
         <a href="news.html">News & Events</a>
         <span class="breadcrumb-separator">›</span>
-        <span>Youth Empowerment Programme</span>
+        <span>Security Post in Kayarda</span>
       </div>
     </div>
 
@@ -1299,154 +1305,117 @@
       <div class="article-container">
         <!-- Article Meta -->
         <div class="article-meta">
-          <span class="article-category-badge">💪 Youth Development</span>
-          <span>📅 July 5, 2026</span>
-          <span>👤 Education & Social Development Dept.</span>
-          <span>⏱️ 4 min read</span>
+          <span class="article-category-badge">🛡️ Security</span>
+          <span>📅 July 20, 2026</span>
+          <span>👤 Works & Housing Department</span>
+          <span>⏱️ 3 min read</span>
         </div>
 
         <!-- Featured Image -->
         <figure class="article-featured-image">
-          <img src="../assets/images/youth_empoerment.jpeg" alt="Hon. Chairman with Participants of Youth Empowerment Programme" loading="lazy">
-          <figcaption>Hon. Danjuma Samuel Shekwolo poses with participants of the Youth Empowerment Programme at the skills acquisition training center in Kuje.</figcaption>
+          <img src="../assets/images/kayarda2.jpeg" alt="Construction of Security Post in Kayarda Community" loading="lazy">
+          <figcaption>The newly constructed security post in Kayarda community, providing enhanced safety and security infrastructure for residents.</figcaption>
         </figure>
 
         <!-- Key Takeaways -->
         <div class="key-takeaways">
-          <h3>🔑 Programme Highlights</h3>
+          <h3>🛡️ Key Highlights</h3>
           <ul>
-            <li><strong>100+ Youths Trained:</strong> Across 7 market-ready vocational skills</li>
-            <li><strong>7 Training Categories:</strong> From ICT to tailoring and videography</li>
-            <li><strong>Free Training:</strong> All programs provided at no cost to participants</li>
-            <li><strong>Starter Kits:</strong> Graduates receive tools to begin their businesses</li>
+            <li><strong>New Security Post:</strong> Fully constructed and operational in Kayarda</li>
+            <li><strong>Enhanced Safety:</strong> Improved security coverage for residents and property</li>
+            <li><strong>Community Partnership:</strong> Built with community collaboration and support</li>
+            <li><strong>24/7 Coverage:</strong> Staffed by trained security personnel</li>
           </ul>
         </div>
 
         <!-- Article Content -->
         <div class="article-content">
           <p>
-            The <strong>Executive Chairman of Kuje Area Council, Hon. Danjuma Samuel Shekwolo</strong>, has officially launched the <strong>Youth Empowerment Programme</strong>, a transformative initiative designed to equip young people across the council with practical, market-ready vocational skills.
+            The <strong>Kuje Area Council</strong> has completed the construction of a <strong>new security post in the Kayarda community</strong>, marking a significant milestone in the administration's commitment to enhancing community safety and security across all 10 wards.
           </p>
           <p>
-            The programme, which trained over <strong>100 youths</strong> in its first cohort, represents a cornerstone of the administration's commitment to tackling youth unemployment and promoting self-reliance. Participants received hands-on training in seven distinct skill areas, preparing them for successful careers and entrepreneurship.
+            The security post, constructed under the leadership of <strong>Hon. Danjuma Samuel Shekwolo</strong>, represents the council's proactive approach to addressing security concerns and ensuring that residents can live and work in a safe environment.
           </p>
 
-          <h2 id="training-programs">Seven Skills Training Programs</h2>
+          <h2 id="project-overview">Project Overview</h2>
           <p>
-            The Youth Empowerment Programme offered comprehensive training in seven market-ready skill areas:
+            The Kayarda security post project was initiated in response to community requests for enhanced security infrastructure. The project involved:
           </p>
+          <ul>
+            <li>Construction of a permanent security post building</li>
+            <li>Installation of basic amenities for security personnel</li>
+            <li>Provision of communication equipment</li>
+            <li>Establishment of a community liaison office</li>
+            <li>Training and deployment of security personnel</li>
+          </ul>
 
-          <div class="skills-grid">
-            <div class="skill-card" data-delay="0">
-              <div class="skill-icon">💇</div>
-              <h4>Barbing & Beauty Care (Make-up)</h4>
+          <!-- Features Grid -->
+          <div class="features-grid">
+            <div class="feature-card" data-delay="0">
+              <div class="feature-icon">🏗️</div>
+              <h4>Permanent Structure</h4>
             </div>
-            <div class="skill-card" data-delay="100">
-              <div class="skill-icon">👜</div>
-              <h4>Bag Making & Craftsmanship</h4>
+            <div class="feature-card" data-delay="100">
+              <div class="feature-icon">📡</div>
+              <h4>Communication Equipment</h4>
             </div>
-            <div class="skill-card" data-delay="200">
-              <div class="skill-icon">🌬️</div>
-              <h4>Room Air Freshener Production</h4>
+            <div class="feature-card" data-delay="200">
+              <div class="feature-icon">👮</div>
+              <h4>Trained Personnel</h4>
             </div>
-            <div class="skill-card" data-delay="0">
-              <div class="skill-icon">💻</div>
-              <h4>Computer Literacy & ICT</h4>
-            </div>
-            <div class="skill-card" data-delay="100">
-              <div class="skill-icon">🍳</div>
-              <h4>Catering & Culinary Arts</h4>
-            </div>
-            <div class="skill-card" data-delay="200">
-              <div class="skill-icon">🧵</div>
-              <h4>Tailoring & Fashion Design</h4>
-            </div>
-            <div class="skill-card" data-delay="0">
-              <div class="skill-icon">📹</div>
-              <h4>Videography & Film Photography</h4>
+            <div class="feature-card" data-delay="0">
+              <div class="feature-icon">🕐</div>
+              <h4>24/7 Coverage</h4>
             </div>
           </div>
 
           <div class="stats-highlight">
             <div class="stat-highlight-item">
-              <span class="stat-num">100+</span>
-              <span class="stat-lbl">Youths Trained</span>
+              <span class="stat-num">1</span>
+              <span class="stat-lbl">New Security Post</span>
             </div>
             <div class="stat-highlight-item">
-              <span class="stat-num">7</span>
-              <span class="stat-lbl">Skill Programs</span>
+              <span class="stat-num">24/7</span>
+              <span class="stat-lbl">Coverage</span>
+            </div>
+            <div class="stat-highlight-item">
+              <span class="stat-num">1,000+</span>
+              <span class="stat-lbl">Residents Protected</span>
             </div>
             <div class="stat-highlight-item">
               <span class="stat-num">10</span>
-              <span class="stat-lbl">Wards Represented</span>
-            </div>
-            <div class="stat-highlight-item">
-              <span class="stat-num">100%</span>
-              <span class="stat-lbl">Free Training</span>
+              <span class="stat-lbl">Wards Security Plan</span>
             </div>
           </div>
 
-          <h2 id="selection-process">Selection Process</h2>
+          <h2 id="community-impact">Community Impact</h2>
           <p>
-            Participants were selected through a transparent process designed to ensure equitable representation across all 10 wards:
-          </p>
-          <ol>
-            <li><strong>Ward Nominations:</strong> Councilors nominated eligible youths from their respective wards.</li>
-            <li><strong>Application Review:</strong> The Education & Social Development Department reviewed all applications.</li>
-            <li><strong>Skill Matching:</strong> Participants were matched to training programs based on their interests and aptitude.</li>
-            <li><strong>Orientation:</strong> Selected participants attended a pre-training orientation session.</li>
-            <li><strong>Training Commencement:</strong> Hands-on training began with experienced instructors.</li>
-          </ol>
-
-          <h2 id="training-details">Training Details</h2>
-          <p>
-            The training programme was structured to provide maximum practical experience:
+            The new security post in Kayarda has already begun to have a positive impact on the community:
           </p>
           <ul>
-            <li><strong>Duration:</strong> 4-6 weeks of intensive hands-on training</li>
-            <li><strong>Instructors:</strong> Experienced professionals and master trainers from each field</li>
-            <li><strong>Venue:</strong> Designated training centers across Kuje Area Council</li>
-            <li><strong>Materials:</strong> All training materials and equipment provided free of charge</li>
-            <li><strong>Certification:</strong> Participants received certificates upon successful completion</li>
+            <li><strong>Faster Response Times:</strong> Security personnel can respond quickly to incidents in the area</li>
+            <li><strong>Crime Deterrence:</strong> Visible security presence deters criminal activities</li>
+            <li><strong>Community Confidence:</strong> Residents feel safer conducting daily activities</li>
+            <li><strong>Business Growth:</strong> Improved security encourages economic activities</li>
+            <li><strong>Property Protection:</strong> Better protection for homes and businesses</li>
           </ul>
 
-          <h2 id="starter-kits">Starter Kits Distribution</h2>
+          <h2 id="security-plan">Council's Security Agenda</h2>
           <p>
-            To ensure that graduates can immediately begin practicing their new skills, the council provides <strong>starter kits</strong> containing essential tools and materials for each trade:
+            The Kayarda security post is part of a broader <strong>10-ward security plan</strong> being implemented by the Shekwolo administration. The plan includes:
           </p>
           <ul>
-            <li>Barbing kits with clippers, combs, and styling tools</li>
-            <li>Sewing machines and tailoring accessories</li>
-            <li>Catering equipment and utensils</li>
-            <li>Computer accessories and software</li>
-            <li>Photography and videography equipment</li>
-            <li>Bag-making materials and leatherworking tools</li>
+            <li>Construction of security posts in key locations across all wards</li>
+            <li>Collaboration with the Kuje Divisional Police Command</li>
+            <li>Community policing initiatives</li>
+            <li>Security awareness programs for residents</li>
+            <li>Installation of street lighting in strategic areas</li>
           </ul>
-
-          <h2 id="success-stories">Success Stories</h2>
-          <p>
-            The programme has already produced inspiring success stories from its first cohort:
-          </p>
-
-          <div class="success-stories">
-            <div class="success-card">
-              <h4>Fatima Abdullahi – Tailoring</h4>
-              <p>"I never imagined I could learn to sew professionally. Today, I have my own small tailoring shop and I'm already taking orders from neighbors."</p>
-            </div>
-            <div class="success-card">
-              <h4>Ibrahim Musa – ICT</h4>
-              <p>"The computer training opened my eyes to so many opportunities. I'm now working at a local business center helping others with digital services."</p>
-            </div>
-            <div class="success-card">
-              <h4>Blessing Okafor – Catering</h4>
-              <p>"The culinary training was a dream come true. I've started a small catering business and I'm getting orders for events in Kuje."</p>
-            </div>
-          </div>
 
           <!-- Chairman Quote -->
           <div class="chairman-quote">
             <p class="quote-text">
-              "Our youth are not just the leaders of tomorrow—they are the entrepreneurs, innovators, and builders of today. This programme is our investment in their potential and our commitment to creating a self-reliant and prosperous Kuje."
+              "The safety of our people is paramount. This security post in Kayarda is just the beginning of our comprehensive security infrastructure development across all wards. We are committed to ensuring that every resident of Kuje can live in peace and security."
             </p>
             <p class="quote-author">
               Hon. Danjuma Samuel Shekwolo
@@ -1454,19 +1423,35 @@
             </p>
           </div>
 
-          <h2 id="how-to-apply">How to Join the Next Cohort</h2>
+          <h2 id="emergency-contacts">Emergency Contact Information</h2>
           <p>
-            The next cohort of the Youth Empowerment Programme is scheduled to begin soon. Interested youths can:
+            Residents of Kayarda and surrounding communities can report security concerns through the following channels:
           </p>
-          <ul>
-            <li>Visit the <strong>Education & Social Development Department</strong> at the Kuje Secretariat</li>
-            <li>Register through their <strong>Ward Councilor</strong></li>
-            <li>Contact the department at <strong>+234 9 000 0000</strong> for application details</li>
-            <li>Follow the <a href="news.html" style="color:var(--primary); font-weight:600;">News page</a> for announcements on upcoming training sessions</li>
-          </ul>
 
+          <div class="emergency-contacts">
+            <div class="emergency-card">
+              <h4>🚔 Kuje Divisional Police</h4>
+              <p>For emergencies and crime reporting</p>
+              <span class="em-phone">+234 800 000 0001</span>
+            </div>
+            <div class="emergency-card">
+              <h4>🛡️ Council Security Unit</h4>
+              <p>Local council security personnel</p>
+              <span class="em-phone">+234 800 000 0004</span>
+            </div>
+            <div class="emergency-card">
+              <h4>🆘 National Emergency</h4>
+              <p>Nigeria's unified emergency number</p>
+              <span class="em-phone">112</span>
+            </div>
+          </div>
+
+          <h2 id="looking-forward">Looking Forward</h2>
           <p>
-            <strong>For more information about the Youth Empowerment Programme, contact the Education & Social Development Department or visit the <a href="../contact.html" style="color:var(--primary); font-weight:600;">Contact page</a>.</strong>
+            The Kuje Area Council administration remains committed to expanding security infrastructure across all communities. Plans are underway for additional security posts in other wards, along with enhanced collaboration with federal security agencies to ensure comprehensive coverage.
+          </p>
+          <p>
+            <strong>For more information about security initiatives in Kuje Area Council, contact the Works & Housing Department or visit the <a href="../contact.html" style="color:var(--primary); font-weight:600;">Contact page</a>.</strong>
           </p>
         </div>
       </div>
@@ -1484,17 +1469,17 @@
               <span>August 12, 2026</span>
             </div>
           </a>
-          <a href="education-support.html" class="related-card">
-            <div class="related-image">📚</div>
+          <a href="action-plan-report.html" class="related-card">
+            <div class="related-image">📋</div>
             <div class="related-content">
-              <h4>Hon. Chairman's Education Support Programme</h4>
-              <span>July 28, 2026</span>
+              <h4>Action Plan Drafting Committee Submits Final Report</h4>
+              <span>August 5, 2026</span>
             </div>
           </a>
           <a href="commonwealth-gold.html" class="related-card">
             <div class="related-image">🏅</div>
             <div class="related-content">
-              <h4>Celebration of Rilwanu Idris Sabo's Commonwealth Gold</h4>
+              <h4>Kuje Celebrates Commonwealth Gold Medalist</h4>
               <span>July 3, 2026</span>
             </div>
           </a>
@@ -1560,7 +1545,7 @@
     </div>
     <div class="footer-bottom">
       <p>&copy; 2026 Kuje Area Council, Federal Capital Territory, Abuja. All Rights Reserved.</p>
-      <p>&copy; Prosper Technologies
+            <p>&copy; Prosper Technologies
         <a href="https://wa.me/2349034388861" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp" style="text-decoration:none; color:inherit;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#25D366" style="vertical-align:middle; margin-left:4px;">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
@@ -1665,8 +1650,8 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
 
-      // ========== SCROLL REVEAL FOR SKILL CARDS ==========
-      const skillCards = document.querySelectorAll('.skill-card');
+      // ========== SCROLL REVEAL FOR FEATURE CARDS ==========
+      const featureCards = document.querySelectorAll('.feature-card');
       
       const cardObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -1680,7 +1665,7 @@
         });
       }, { threshold: 0.1 });
 
-      skillCards.forEach(card => {
+      featureCards.forEach(card => {
         cardObserver.observe(card);
       });
 
@@ -1712,11 +1697,11 @@
         });
       }
 
-      console.log('💪 Youth Empowerment Programme Article Page Ready');
+      console.log('🛡️ Security Post Kayarda Article Page Ready');
       console.log('📊 Reading progress bar active');
       console.log('✨ Scroll reveal animations initialized');
-      console.log('📊 Statistics: 100+ youths, 7 skill programs, 10 wards');
-      console.log('🎓 3 success stories displayed');
+      console.log('📊 Statistics: 1 post, 24/7 coverage, 1,000+ residents, 10 wards');
+      console.log('🚨 3 emergency contacts displayed');
     })();
   </script>
 </body>

@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Youth Empowerment Programme - Hon. Chairman with Participants of Youth Empowerment Programme as Kuje Area Council equips youths with vocational skills and opportunities.">
+  <meta name="description" content="Hon. Chairman Celebrates with Rilwanu Idris Sabo, Gold Medalist at 2026 Commonwealth Games - Kuje Area Council celebrates local sporting excellence.">
   <meta name="theme-color" content="#008751">
-  <meta property="og:title" content="Youth Empowerment Programme | Kuje Area Council">
-  <meta property="og:description" content="Kuje Area Council empowers youths with practical vocational skills training in 7 market-ready programs for self-reliance and entrepreneurship.">
-  <meta property="og:image" content="assets/images/youth_empoerment.jpeg">
-  <meta property="og:url" content="https://www.kujeareacouncil.gov.ng/news/youth-empowerment">
+  <meta property="og:title" content="Kuje Celebrates Commonwealth Gold Medalist | Kuje Area Council">
+  <meta property="og:description" content="Kuje Area Council celebrates local talent as Rilwanu Idris Sabo brings home gold from the 2026 Commonwealth Games, inspiring the next generation of athletes.">
+  <meta property="og:image" content="assets/images/chairman_goldmedal.jpeg">
+  <meta property="og:url" content="https://www.kujeareacouncil.gov.ng/news/commonwealth-gold">
   <meta property="og:type" content="article">
-  <title>Youth Empowerment Programme – Kuje Area Council | FCT Abuja</title>
+  <title>Kuje Celebrates Gold Medalist at 2026 Commonwealth Games – Kuje Area Council | FCT Abuja</title>
 
   <!-- Favicon Asset -->
   <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
@@ -29,6 +29,8 @@
       --secondary-light: #374151;
       --accent: #d97706;
       --accent-light: #fef3c7;
+      --gold: #d4a843;
+      --gold-light: #fef3c7;
       --light-bg: #f8fafc;
       --white: #ffffff;
       --text: #334155;
@@ -88,11 +90,11 @@
       left: 0;
       width: 0%;
       height: 4px;
-      background: linear-gradient(90deg, var(--primary), #6ee7b7);
+      background: linear-gradient(90deg, var(--gold), var(--primary));
       z-index: 2000;
       transition: width 0.1s linear;
       border-radius: 0 2px 0 0;
-      box-shadow: 0 2px 8px var(--primary-glow);
+      box-shadow: 0 2px 8px rgba(212, 168, 67, 0.4);
     }
 
     /* ========== SCROLL TO TOP BUTTON ========== */
@@ -448,7 +450,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(45deg, rgba(0,135,81,0.3), transparent, rgba(31,41,55,0.3));
+      background: linear-gradient(45deg, rgba(212,168,67,0.3), transparent, rgba(0,135,81,0.3));
       background-size: 200% 200%;
       animation: gradientShift 8s ease-in-out infinite;
       pointer-events: none;
@@ -481,7 +483,7 @@
 
     .page-hero-badge {
       display: inline-block;
-      background: rgba(255, 255, 255, 0.15);
+      background: rgba(212, 168, 67, 0.3);
       backdrop-filter: blur(8px);
       padding: 8px 20px;
       border-radius: 50px;
@@ -489,7 +491,7 @@
       text-transform: uppercase;
       letter-spacing: 2px;
       margin-bottom: 15px;
-      border: 1px solid rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(212, 168, 67, 0.5);
     }
 
     .page-hero h2 {
@@ -566,8 +568,8 @@
     }
 
     .article-category-badge {
-      background: #fef2f2;
-      color: #991b1b;
+      background: #ede9fe;
+      color: #5b21b6;
       padding: 4px 14px;
       border-radius: 20px;
       font-size: 0.75rem;
@@ -604,8 +606,8 @@
     }
 
     .key-takeaways {
-      background: var(--primary-light);
-      border-left: 4px solid var(--primary);
+      background: var(--gold-light);
+      border-left: 4px solid var(--gold);
       border-radius: 0 var(--radius-md) var(--radius-md) 0;
       padding: 25px 30px;
       margin-bottom: 30px;
@@ -635,8 +637,8 @@
     }
 
     .key-takeaways ul li::before {
-      content: '✓';
-      color: var(--primary);
+      content: '🏅';
+      color: var(--gold);
       font-weight: 700;
       font-size: 1rem;
       flex-shrink: 0;
@@ -682,15 +684,50 @@
       font-weight: 700;
     }
 
-    /* Skills Grid */
-    .skills-grid {
+    /* Gold Medal Highlight */
+    .gold-medal-box {
+      background: linear-gradient(135deg, var(--gold) 0%, #b8860b 100%);
+      color: white;
+      border-radius: var(--radius-lg);
+      padding: 35px 30px;
+      margin: 30px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(212, 168, 67, 0.4);
+    }
+
+    .gold-medal-box::before {
+      content: '🏅';
+      font-size: 5rem;
+      position: absolute;
+      top: -10px;
+      right: 20px;
+      opacity: 0.2;
+    }
+
+    .gold-medal-box .medal-text {
+      font-size: 1.3rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    .gold-medal-box .medal-subtext {
+      font-size: 1rem;
+      opacity: 0.9;
+      position: relative;
+    }
+
+    /* Achievement Details */
+    .achievement-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 15px;
       margin: 25px 0;
     }
 
-    .skill-card {
+    .achievement-card {
       background: var(--light-bg);
       border-radius: var(--radius-md);
       padding: 20px;
@@ -699,62 +736,32 @@
       transition: var(--transition-smooth);
       opacity: 0;
       transform: translateY(30px);
+      border-top: 3px solid var(--gold);
     }
 
-    .skill-card.visible {
+    .achievement-card.visible {
       opacity: 1;
       transform: translateY(0);
       transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
 
-    .skill-card:hover {
+    .achievement-card:hover {
       box-shadow: var(--shadow-md);
       transform: translateY(-5px);
-      border-color: var(--primary);
-      background: var(--primary-light);
+      border-color: var(--gold);
+      background: var(--gold-light);
     }
 
-    .skill-icon {
+    .achievement-icon {
       font-size: 2rem;
       margin-bottom: 10px;
     }
 
-    .skill-card h4 {
-      font-size: 0.9rem;
+    .achievement-card h4 {
+      font-size: 0.95rem;
       color: var(--secondary);
       font-weight: 700;
       line-height: 1.3;
-    }
-
-    /* Stats Highlight */
-    .stats-highlight {
-      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-      color: white;
-      border-radius: var(--radius-lg);
-      padding: 35px 30px;
-      margin: 30px 0;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 20px;
-      text-align: center;
-    }
-
-    .stat-highlight-item {
-      padding: 10px;
-    }
-
-    .stat-highlight-item .stat-num {
-      font-size: 2rem;
-      font-weight: 800;
-      display: block;
-    }
-
-    .stat-highlight-item .stat-lbl {
-      font-size: 0.8rem;
-      opacity: 0.9;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
     }
 
     /* Chairman Quote */
@@ -800,36 +807,37 @@
       font-weight: 500;
     }
 
-    /* Success Stories */
-    .success-stories {
+    /* Inspiration Section */
+    .inspiration-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 20px;
       margin: 25px 0;
     }
 
-    .success-card {
+    .inspiration-card {
       background: var(--light-bg);
       border-radius: var(--radius-md);
-      padding: 20px;
-      border-left: 4px solid var(--primary);
+      padding: 25px;
+      border-left: 4px solid var(--gold);
       transition: var(--transition-smooth);
     }
 
-    .success-card:hover {
+    .inspiration-card:hover {
       box-shadow: var(--shadow-md);
       transform: translateX(5px);
+      background: var(--gold-light);
     }
 
-    .success-card h4 {
-      font-size: 0.95rem;
+    .inspiration-card h4 {
+      font-size: 1rem;
       color: var(--secondary);
       font-weight: 700;
-      margin-bottom: 5px;
+      margin-bottom: 8px;
     }
 
-    .success-card p {
-      font-size: 0.85rem;
+    .inspiration-card p {
+      font-size: 0.88rem;
       color: var(--text-light);
       margin-bottom: 0;
     }
@@ -1125,17 +1133,12 @@
         height: 250px;
       }
 
-      .skills-grid {
-        grid-template-columns: 1fr 1fr;
+      .achievement-grid {
+        grid-template-columns: 1fr;
       }
 
-      .stats-highlight {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 25px 20px;
-      }
-
-      .stat-highlight-item .stat-num {
-        font-size: 1.5rem;
+      .inspiration-grid {
+        grid-template-columns: 1fr;
       }
 
       .footer-grid {
@@ -1165,17 +1168,8 @@
         font-size: 1.2rem;
       }
 
-      .skills-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .stats-highlight {
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-      }
-
-      .success-stories {
-        grid-template-columns: 1fr;
+      .gold-medal-box .medal-text {
+        font-size: 1.1rem;
       }
     }
 
@@ -1275,11 +1269,11 @@
 
   <main>
     <!-- ==================== PAGE HERO BANNER ==================== -->
-    <section class="page-hero" aria-labelledby="page-hero-heading" style="background-image: url('../assets/images/youth_empoerment.jpeg'); background-size: cover; background-position: center;">
+     <section class="page-hero" aria-labelledby="page-hero-heading" style="background-image: url('../assets/images/sabo.jpg'); background-size: cover; background-position: center;">
       <div class="page-hero-content">
-        <span class="page-hero-badge">💪 Youth Development</span>
-        <h2 id="page-hero-heading">Hon. Chairman with Participants of Youth Empowerment Programme</h2>
-        <p>Kuje Area Council equips over 100 youths with practical vocational skills for self-reliance and entrepreneurship across 7 market-ready training programs.</p>
+        <span class="page-hero-badge">🏅 Sports Excellence</span>
+        <h2 id="page-hero-heading">Hon. Chairman Celebrates with Rilwanu Idris Sabo, Gold Medalist at 2026 Commonwealth Games</h2>
+        <p>Kuje Area Council celebrates local talent as Rilwanu Idris Sabo brings home gold from the 2026 Commonwealth Games, inspiring the next generation of athletes.</p>
       </div>
     </section>
 
@@ -1290,7 +1284,7 @@
         <span class="breadcrumb-separator">›</span>
         <a href="news.html">News & Events</a>
         <span class="breadcrumb-separator">›</span>
-        <span>Youth Empowerment Programme</span>
+        <span>Commonwealth Gold Celebration</span>
       </div>
     </div>
 
@@ -1299,154 +1293,86 @@
       <div class="article-container">
         <!-- Article Meta -->
         <div class="article-meta">
-          <span class="article-category-badge">💪 Youth Development</span>
-          <span>📅 July 5, 2026</span>
-          <span>👤 Education & Social Development Dept.</span>
-          <span>⏱️ 4 min read</span>
+          <span class="article-category-badge">🏅 Sports</span>
+          <span>📅 July 3, 2026</span>
+          <span>👤 Council Media Office</span>
+          <span>⏱️ 3 min read</span>
         </div>
 
         <!-- Featured Image -->
         <figure class="article-featured-image">
-          <img src="../assets/images/youth_empoerment.jpeg" alt="Hon. Chairman with Participants of Youth Empowerment Programme" loading="lazy">
-          <figcaption>Hon. Danjuma Samuel Shekwolo poses with participants of the Youth Empowerment Programme at the skills acquisition training center in Kuje.</figcaption>
+          <img src="../assets/images/sabo.jpg" alt="Hon. Chairman celebrates with Rilwanu Idris Sabo, Gold Medalist at 2026 Commonwealth Games" loading="lazy">
+          <figcaption>Hon. Danjuma Samuel Shekwolo proudly celebrates with Rilwanu Idris Sabo who won gold at the 2026 Commonwealth Games, bringing honor to Kuje Area Council.</figcaption>
         </figure>
 
         <!-- Key Takeaways -->
         <div class="key-takeaways">
-          <h3>🔑 Programme Highlights</h3>
+          <h3>🏅 Achievement Highlights</h3>
           <ul>
-            <li><strong>100+ Youths Trained:</strong> Across 7 market-ready vocational skills</li>
-            <li><strong>7 Training Categories:</strong> From ICT to tailoring and videography</li>
-            <li><strong>Free Training:</strong> All programs provided at no cost to participants</li>
-            <li><strong>Starter Kits:</strong> Graduates receive tools to begin their businesses</li>
+            <li><strong>Gold Medal:</strong> Rilwanu Idris Sabo wins gold at the 2026 Commonwealth Games</li>
+            <li><strong>Kuje's Pride:</strong> First Commonwealth gold medalist from Kuje Area Council</li>
+            <li><strong>Youth Inspiration:</strong> Achievement inspires young athletes across all 10 wards</li>
+            <li><strong>Council Recognition:</strong> Executive Chairman hosts special celebration ceremony</li>
           </ul>
+        </div>
+
+        <!-- Gold Medal Box -->
+        <div class="gold-medal-box">
+          <p class="medal-text">🏅 GOLD MEDAL – 2026 COMMONWEALTH GAMES</p>
+          <p class="medal-subtext">Rilwanu Idris Sabo | Kuje Area Council's Pride | FCT Abuja | Nigeria</p>
         </div>
 
         <!-- Article Content -->
         <div class="article-content">
           <p>
-            The <strong>Executive Chairman of Kuje Area Council, Hon. Danjuma Samuel Shekwolo</strong>, has officially launched the <strong>Youth Empowerment Programme</strong>, a transformative initiative designed to equip young people across the council with practical, market-ready vocational skills.
+            The <strong>Executive Chairman of Kuje Area Council, Hon. Danjuma Samuel Shekwolo</strong>, has expressed immense pride and joy as the council celebrates one of its own, <strong>Rilwanu Idris Sabo</strong>, who brought home a <strong>gold medal</strong> from the <strong>2026 Commonwealth Games</strong>.
           </p>
           <p>
-            The programme, which trained over <strong>100 youths</strong> in its first cohort, represents a cornerstone of the administration's commitment to tackling youth unemployment and promoting self-reliance. Participants received hands-on training in seven distinct skill areas, preparing them for successful careers and entrepreneurship.
+            In a special celebration ceremony held at the Kuje Area Council Secretariat, the Chairman congratulated Rilwanu on his extraordinary achievement, describing it as a historic moment not just for the athlete but for the entire Kuje community.
           </p>
 
-          <h2 id="training-programs">Seven Skills Training Programs</h2>
+          <h2 id="achievement">A Historic Achievement</h2>
           <p>
-            The Youth Empowerment Programme offered comprehensive training in seven market-ready skill areas:
+            Rilwanu Idris Sabo's gold medal at the 2026 Commonwealth Games represents a landmark achievement for Kuje Area Council. It is believed to be the <strong>first Commonwealth gold medal</strong> won by an athlete from Kuje, marking a significant milestone in the council's sporting history.
+          </p>
+          <p>
+            The achievement demonstrates the immense sporting talent that exists within Kuje's communities and validates the council's investment in youth sports development programs, including the <strong>Kuje Football League</strong> and other grassroots sporting initiatives.
           </p>
 
-          <div class="skills-grid">
-            <div class="skill-card" data-delay="0">
-              <div class="skill-icon">💇</div>
-              <h4>Barbing & Beauty Care (Make-up)</h4>
+          <div class="achievement-grid">
+            <div class="achievement-card" data-delay="0">
+              <div class="achievement-icon">🏅</div>
+              <h4>Gold Medal Winner</h4>
             </div>
-            <div class="skill-card" data-delay="100">
-              <div class="skill-icon">👜</div>
-              <h4>Bag Making & Craftsmanship</h4>
+            <div class="achievement-card" data-delay="100">
+              <div class="achievement-icon">🌍</div>
+              <h4>2026 Commonwealth Games</h4>
             </div>
-            <div class="skill-card" data-delay="200">
-              <div class="skill-icon">🌬️</div>
-              <h4>Room Air Freshener Production</h4>
+            <div class="achievement-card" data-delay="200">
+              <div class="achievement-icon">🏘️</div>
+              <h4>Kuje's First Gold</h4>
             </div>
-            <div class="skill-card" data-delay="0">
-              <div class="skill-icon">💻</div>
-              <h4>Computer Literacy & ICT</h4>
-            </div>
-            <div class="skill-card" data-delay="100">
-              <div class="skill-icon">🍳</div>
-              <h4>Catering & Culinary Arts</h4>
-            </div>
-            <div class="skill-card" data-delay="200">
-              <div class="skill-icon">🧵</div>
-              <h4>Tailoring & Fashion Design</h4>
-            </div>
-            <div class="skill-card" data-delay="0">
-              <div class="skill-icon">📹</div>
-              <h4>Videography & Film Photography</h4>
+            <div class="achievement-card" data-delay="0">
+              <div class="achievement-icon">🇳🇬</div>
+              <h4>National Pride</h4>
             </div>
           </div>
 
-          <div class="stats-highlight">
-            <div class="stat-highlight-item">
-              <span class="stat-num">100+</span>
-              <span class="stat-lbl">Youths Trained</span>
-            </div>
-            <div class="stat-highlight-item">
-              <span class="stat-num">7</span>
-              <span class="stat-lbl">Skill Programs</span>
-            </div>
-            <div class="stat-highlight-item">
-              <span class="stat-num">10</span>
-              <span class="stat-lbl">Wards Represented</span>
-            </div>
-            <div class="stat-highlight-item">
-              <span class="stat-num">100%</span>
-              <span class="stat-lbl">Free Training</span>
-            </div>
-          </div>
-
-          <h2 id="selection-process">Selection Process</h2>
+          <h2 id="chairman-reaction">Chairman's Reaction</h2>
           <p>
-            Participants were selected through a transparent process designed to ensure equitable representation across all 10 wards:
+            Speaking at the celebration ceremony, the Executive Chairman expressed his admiration for Rilwanu's dedication and hard work:
           </p>
-          <ol>
-            <li><strong>Ward Nominations:</strong> Councilors nominated eligible youths from their respective wards.</li>
-            <li><strong>Application Review:</strong> The Education & Social Development Department reviewed all applications.</li>
-            <li><strong>Skill Matching:</strong> Participants were matched to training programs based on their interests and aptitude.</li>
-            <li><strong>Orientation:</strong> Selected participants attended a pre-training orientation session.</li>
-            <li><strong>Training Commencement:</strong> Hands-on training began with experienced instructors.</li>
-          </ol>
-
-          <h2 id="training-details">Training Details</h2>
           <p>
-            The training programme was structured to provide maximum practical experience:
+            "Rilwanu's achievement is a testament to the resilience and talent of our youth in Kuje. He has not only brought glory to our council but has also shown our young people that with determination and hard work, anything is possible. We are incredibly proud of him."
           </p>
-          <ul>
-            <li><strong>Duration:</strong> 4-6 weeks of intensive hands-on training</li>
-            <li><strong>Instructors:</strong> Experienced professionals and master trainers from each field</li>
-            <li><strong>Venue:</strong> Designated training centers across Kuje Area Council</li>
-            <li><strong>Materials:</strong> All training materials and equipment provided free of charge</li>
-            <li><strong>Certification:</strong> Participants received certificates upon successful completion</li>
-          </ul>
-
-          <h2 id="starter-kits">Starter Kits Distribution</h2>
           <p>
-            To ensure that graduates can immediately begin practicing their new skills, the council provides <strong>starter kits</strong> containing essential tools and materials for each trade:
+            The Chairman also announced that the council would be exploring ways to support Rilwanu's continued sporting career and to develop more sporting opportunities for young people across all 10 wards.
           </p>
-          <ul>
-            <li>Barbing kits with clippers, combs, and styling tools</li>
-            <li>Sewing machines and tailoring accessories</li>
-            <li>Catering equipment and utensils</li>
-            <li>Computer accessories and software</li>
-            <li>Photography and videography equipment</li>
-            <li>Bag-making materials and leatherworking tools</li>
-          </ul>
-
-          <h2 id="success-stories">Success Stories</h2>
-          <p>
-            The programme has already produced inspiring success stories from its first cohort:
-          </p>
-
-          <div class="success-stories">
-            <div class="success-card">
-              <h4>Fatima Abdullahi – Tailoring</h4>
-              <p>"I never imagined I could learn to sew professionally. Today, I have my own small tailoring shop and I'm already taking orders from neighbors."</p>
-            </div>
-            <div class="success-card">
-              <h4>Ibrahim Musa – ICT</h4>
-              <p>"The computer training opened my eyes to so many opportunities. I'm now working at a local business center helping others with digital services."</p>
-            </div>
-            <div class="success-card">
-              <h4>Blessing Okafor – Catering</h4>
-              <p>"The culinary training was a dream come true. I've started a small catering business and I'm getting orders for events in Kuje."</p>
-            </div>
-          </div>
 
           <!-- Chairman Quote -->
           <div class="chairman-quote">
             <p class="quote-text">
-              "Our youth are not just the leaders of tomorrow—they are the entrepreneurs, innovators, and builders of today. This programme is our investment in their potential and our commitment to creating a self-reliant and prosperous Kuje."
+              "Rilwanu Idris Sabo is a shining example of what our youth can achieve with dedication, discipline, and support. This gold medal is not just his—it belongs to every young person in Kuje who dares to dream. We will continue to invest in sports and youth development to nurture more champions."
             </p>
             <p class="quote-author">
               Hon. Danjuma Samuel Shekwolo
@@ -1454,19 +1380,52 @@
             </p>
           </div>
 
-          <h2 id="how-to-apply">How to Join the Next Cohort</h2>
+          <h2 id="inspiration">Inspiring the Next Generation</h2>
           <p>
-            The next cohort of the Youth Empowerment Programme is scheduled to begin soon. Interested youths can:
+            Rilwanu's achievement has sparked a wave of enthusiasm for sports across Kuje Area Council. Young athletes in schools and communities have been inspired by his success and are now more motivated than ever to pursue their sporting dreams.
+          </p>
+
+          <div class="inspiration-grid">
+            <div class="inspiration-card">
+              <h4>🏃 Youth Athletics Programs</h4>
+              <p>Council to expand athletics training programs in schools across all 10 wards to discover and nurture sporting talent.</p>
+            </div>
+            <div class="inspiration-card">
+              <h4>⚽ Kuje Football League</h4>
+              <p>Ongoing support for the Kuje Football League continues to provide a platform for young footballers to showcase their skills.</p>
+            </div>
+            <div class="inspiration-card">
+              <h4>🏋️ Sports Facilities Upgrades</h4>
+              <p>Plans to upgrade community sports facilities and establish training centers for various sporting disciplines.</p>
+            </div>
+            <div class="inspiration-card">
+              <h4>🎯 Talent Identification</h4>
+              <p>Council to partner with sports federations to identify and develop talented athletes from Kuje communities.</p>
+            </div>
+          </div>
+
+          <h2 id="community-celebration">Community Celebration</h2>
+          <p>
+            The celebration was attended by council officials, traditional rulers, community leaders, family members, and scores of young people who came to catch a glimpse of their new hero. The atmosphere was filled with joy, pride, and renewed hope for the future of sports in Kuje.
+          </p>
+          <p>
+            Rilwanu, in his remarks, thanked the Executive Chairman and the people of Kuje for their support, pledging to continue representing the council with excellence in future competitions.
+          </p>
+
+          <h2 id="future-plans">Future Sports Development Plans</h2>
+          <p>
+            Building on this success, the Kuje Area Council administration has outlined several initiatives to promote sports development:
           </p>
           <ul>
-            <li>Visit the <strong>Education & Social Development Department</strong> at the Kuje Secretariat</li>
-            <li>Register through their <strong>Ward Councilor</strong></li>
-            <li>Contact the department at <strong>+234 9 000 0000</strong> for application details</li>
-            <li>Follow the <a href="news.html" style="color:var(--primary); font-weight:600;">News page</a> for announcements on upcoming training sessions</li>
+            <li><strong>School Sports Championships:</strong> Inter-ward sporting competitions for primary and secondary schools</li>
+            <li><strong>Sports Scholarships:</strong> Scholarships for talented young athletes to pursue sports and education</li>
+            <li><strong>Coaching Development:</strong> Training programs for local sports coaches and officials</li>
+            <li><strong>Facility Investment:</strong> Upgrading community sports facilities and equipment</li>
+            <li><strong>Talent Pipeline:</strong> Partnerships with national sports federations for talent identification</li>
           </ul>
 
           <p>
-            <strong>For more information about the Youth Empowerment Programme, contact the Education & Social Development Department or visit the <a href="../contact.html" style="color:var(--primary); font-weight:600;">Contact page</a>.</strong>
+            <strong>For more information about sports development programs in Kuje Area Council, contact the Education & Social Development Department or visit the <a href="../contact.html" style="color:var(--primary); font-weight:600;">Contact page</a>.</strong>
           </p>
         </div>
       </div>
@@ -1484,18 +1443,18 @@
               <span>August 12, 2026</span>
             </div>
           </a>
+          <a href="youth-empowerment.html" class="related-card">
+            <div class="related-image">💪</div>
+            <div class="related-content">
+              <h4>Youth Empowerment Programme Graduation Ceremony</h4>
+              <span>July 5, 2026</span>
+            </div>
+          </a>
           <a href="education-support.html" class="related-card">
             <div class="related-image">📚</div>
             <div class="related-content">
               <h4>Hon. Chairman's Education Support Programme</h4>
               <span>July 28, 2026</span>
-            </div>
-          </a>
-          <a href="commonwealth-gold.html" class="related-card">
-            <div class="related-image">🏅</div>
-            <div class="related-content">
-              <h4>Celebration of Rilwanu Idris Sabo's Commonwealth Gold</h4>
-              <span>July 3, 2026</span>
             </div>
           </a>
         </div>
@@ -1560,7 +1519,7 @@
     </div>
     <div class="footer-bottom">
       <p>&copy; 2026 Kuje Area Council, Federal Capital Territory, Abuja. All Rights Reserved.</p>
-      <p>&copy; Prosper Technologies
+            <p>&copy; Prosper Technologies
         <a href="https://wa.me/2349034388861" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp" style="text-decoration:none; color:inherit;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#25D366" style="vertical-align:middle; margin-left:4px;">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
@@ -1665,8 +1624,8 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
 
-      // ========== SCROLL REVEAL FOR SKILL CARDS ==========
-      const skillCards = document.querySelectorAll('.skill-card');
+      // ========== SCROLL REVEAL FOR ACHIEVEMENT CARDS ==========
+      const achievementCards = document.querySelectorAll('.achievement-card');
       
       const cardObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -1680,7 +1639,7 @@
         });
       }, { threshold: 0.1 });
 
-      skillCards.forEach(card => {
+      achievementCards.forEach(card => {
         cardObserver.observe(card);
       });
 
@@ -1712,11 +1671,11 @@
         });
       }
 
-      console.log('💪 Youth Empowerment Programme Article Page Ready');
+      console.log('🏅 Commonwealth Gold Medal Article Page Ready');
       console.log('📊 Reading progress bar active');
       console.log('✨ Scroll reveal animations initialized');
-      console.log('📊 Statistics: 100+ youths, 7 skill programs, 10 wards');
-      console.log('🎓 3 success stories displayed');
+      console.log('🏅 Gold medal highlight box displayed');
+      console.log('💪 4 inspiration cards for youth sports development');
     })();
   </script>
 </body>
